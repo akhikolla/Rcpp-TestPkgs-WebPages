@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./rowCumProd_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/riskRegression/inst/testfiles/rowCumProd/rowCumProd_output/1bfff08001a2c2b8c7152f53d890d1afc9eb96b9.pass</line>
+</preamble>
+
+<pid>2479897</pid>
+<ppid>2479896</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/riskRegression/inst/testfiles/rowCumProd/rowCumProd_output/log_1bfff08001a2c2b8c7152f53d890d1afc9eb96b9/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./rowCumProd_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/riskRegression/inst/testfiles/rowCumProd/rowCumProd_output/1bfff08001a2c2b8c7152f53d890d1afc9eb96b9.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.030 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:08.725 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.281 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

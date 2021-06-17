@@ -1,0 +1,15 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/bssm/inst/testfiles/psd_chol/psd_chol_output/491ea39b9b26234a9120a7e86c3497bd0cba0559.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/bssm/inst/testfiles/psd_chol/psd_chol_DeepState_TestHarness.cpp(13)
+input starts
+x values:  -4.2952e-278   4.2420e+22
+ -1.3485e-218  8.0763e-201
+  9.9636e-247  2.9001e+287
+
+input ends
+
+error: max(): object has no elements
+terminate called after throwing an instance of 'std::logic_error'
+  what():  max(): object has no elements
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/bssm/inst/testfiles/psd_chol/psd_chol_output/491ea39b9b26234a9120a7e86c3497bd0cba0559.fail failed

@@ -1,0 +1,9 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/nanotime/inst/testfiles/period_from_integer_impl/period_from_integer_impl_output/800d41c3759dc56bd65461498fec9ca1cbf1cb43.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/nanotime/inst/testfiles/period_from_integer_impl/period_from_integer_impl_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+iint values: 1452738095 1618366851 1679204877 1586657384 -2073912510 2030347660 720227797 1790569921 1375006897 1782658255 1473698998
+input ends
+TRACE: Passed: _

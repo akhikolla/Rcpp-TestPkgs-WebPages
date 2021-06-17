@@ -1,0 +1,24 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/spBFA/inst/testfiles/H/H_output/37ec96573a74956a9ae2ba2377c920067e215788.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/spBFA/inst/testfiles/H/H_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+Psi values: 1.27048e-62
+TempCorInd values: 1746767833
+TimeDist values:   -3.7379e+59 -5.0281e-216   2.1622e+38  4.6111e-106  7.5467e+136  3.5716e-109  -1.1412e+67   2.6722e-96
+ -4.5610e+108  2.1110e-190  2.3442e-262   3.6455e+68  -1.7038e+98  1.9604e+169 -4.0341e-215   8.4584e-55
+  1.7311e-152 -4.4341e+267  -1.3240e-49  -1.2804e-25  2.0631e+285  1.4741e+187  1.0211e-250 -5.0722e+195
+  1.2779e-261   3.1149e+30  2.0338e-295 -1.6347e-257  5.5586e-198   4.7110e+56  -9.5860e-76 -6.4030e+218
+  -6.9057e-18 -1.0963e-166   7.8939e+85  -1.4891e+39  2.6373e+261  4.5195e+163  -7.6277e-53  2.0962e+257
+ -4.6883e-154  1.1190e+232   3.2629e-84   3.9669e-30  1.3095e+193  2.8117e+284   7.8134e-69   8.0644e-68
+ -2.4343e-282  -8.6608e-93 -4.4412e-236   8.7984e-85   1.1876e+27 -1.9396e+293  -1.4798e+74   1.0829e-20
+
+Nu values: -1509604262
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/spBFA/inst/testfiles/H/H_output/37ec96573a74956a9ae2ba2377c920067e215788.fail failed

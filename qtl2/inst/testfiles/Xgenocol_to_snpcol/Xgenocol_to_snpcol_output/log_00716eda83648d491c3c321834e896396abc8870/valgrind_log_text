@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/Xgenocol_to_snpcol/Xgenocol_to_snpcol_output/00716eda83648d491c3c321834e896396abc8870.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/Xgenocol_to_snpcol/Xgenocol_to_snpcol_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+n_str values: -1105761949
+sdp values: 304498753
+input ends
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  SDP out of range
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/Xgenocol_to_snpcol/Xgenocol_to_snpcol_output/00716eda83648d491c3c321834e896396abc8870.fail failed

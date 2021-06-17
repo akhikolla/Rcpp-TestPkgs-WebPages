@@ -1,0 +1,18 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/which_at_col/which_at_col_output/213c782907ee3299b362a396a6f846877b3f4584.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/which_at_col/which_at_col_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+x_i values: 1123438673 2069757405 -1364041863 1062769791 2120796143
+Missing value
+x_p values: 2022640883 -334901093 -1137699589 -996531609 289535729 257629907 -180340114 -1032246982 -2147483648 1056805114 765851062 1315945823 -1330425665 242193156 -1345490319 1201384272 -791132914 -690616061 2080291273
+col values: 1236587801
+input ends
+==2368855==  If you believe this happened as a result of a stack
+==2368855==  overflow in your program's main thread (unlikely but
+==2368855==  possible), you can try to increase the size of the
+==2368855==  main thread stack using the --main-stacksize= flag.
+==2368855==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/which_at_col/which_at_col_output/213c782907ee3299b362a396a6f846877b3f4584.crash crashed

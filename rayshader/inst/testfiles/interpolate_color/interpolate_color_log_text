@@ -1,0 +1,43 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+color_nw values: -2.43318e-187
+color_ne values: -1.64581e+174
+color_se values: -1.66668e-49
+color_sw values: 1.91698e-80
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+color_nw values: -1.5615e-299
+color_ne values: -1.20777e+13
+color_se values: 2.79236e-196
+color_sw values: 1.26379e+187
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+color_nw values: 1.27048e-62
+color_ne values: -2.88162e-134
+color_se values: 8.18711e+299
+color_sw values: 0.00468189
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+color_nw values: 3.16522e+06
+color_ne values: 3.72126e-82
+color_se values: 5.29799e-243
+color_sw values: 7.52749e+12
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+color_nw values: -1.92672e-302
+color_ne values: -4.2952e-278
+color_se values: 4.24195e+22
+color_sw values: -1.34847e-218
+input ends
+INFO: Done fuzzing! Ran 5 tests (2 tests/second) with 0 failed/5 passed/0 abandoned tests

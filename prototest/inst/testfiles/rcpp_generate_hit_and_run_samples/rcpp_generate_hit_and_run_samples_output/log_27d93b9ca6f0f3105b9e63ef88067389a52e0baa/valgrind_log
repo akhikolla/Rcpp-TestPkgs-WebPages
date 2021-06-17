@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./rcpp_generate_hit_and_run_samples_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_output/27d93b9ca6f0f3105b9e63ef88067389a52e0baa.fail</line>
+</preamble>
+
+<pid>2422912</pid>
+<ppid>2422911</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_output/log_27d93b9ca6f0f3105b9e63ef88067389a52e0baa/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./rcpp_generate_hit_and_run_samples_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_output/27d93b9ca6f0f3105b9e63ef88067389a52e0baa.fail</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.045 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:16.020 </time>
+</status>
+
+<error>
+  <unique>0x9</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8 bytes in 1 blocks are definitely lost in loss record 10 of 1,325</text>
+    <leakedbytes>8</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D060F7</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::initialize(int, char const* const*, bool, bool, bool)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>198</line>
+    </frame>
+    <frame>
+      <ip>0x4D06483</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::RInside()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>61</line>
+    </frame>
+    <frame>
+      <ip>0x409BC3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>14</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41E018</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E394</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x2d</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>100 bytes in 1 blocks are possibly lost in loss record 46 of 1,325</text>
+    <leakedbytes>100</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E4A308</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E4BFB8</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E4C055</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E2D331</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+    </frame>
+    <frame>
+      <ip>0x4E3D6D5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::logic_error::logic_error(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D24FCC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>void arma::arma_stop_logic_error&lt;char const*&gt;(char const* const&amp;)</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>144</line>
+    </frame>
+    <frame>
+      <ip>0x4D25650</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>arma_check&lt;char const*&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>382</line>
+    </frame>
+    <frame>
+      <ip>0x4D25650</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>init_cold</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>205</line>
+    </frame>
+    <frame>
+      <ip>0x4D25650</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>Mat&lt;arma::fill::fill_zeros&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>109</line>
+    </frame>
+    <frame>
+      <ip>0x4D25650</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>rcpp_generate_hit_and_run_samples(int, int, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>hit_and_run.cpp</file>
+      <line>183</line>
+    </frame>
+    <frame>
+      <ip>0x40A51F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>40</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41E018</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x35</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 54 of 1,325</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4E052E3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>__cxa_allocate_exception</fn>
+    </frame>
+    <frame>
+      <ip>0x4D24FAD</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>void arma::arma_stop_logic_error&lt;char const*&gt;(char const* const&amp;)</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>144</line>
+    </frame>
+    <frame>
+      <ip>0x4D25650</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>arma_check&lt;char const*&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>382</line>
+    </frame>
+    <frame>
+      <ip>0x4D25650</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>init_cold</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>205</line>
+    </frame>
+    <frame>
+      <ip>0x4D25650</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>Mat&lt;arma::fill::fill_zeros&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>109</line>
+    </frame>
+    <frame>
+      <ip>0x4D25650</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>rcpp_generate_hit_and_run_samples(int, int, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>hit_and_run.cpp</file>
+      <line>183</line>
+    </frame>
+    <frame>
+      <ip>0x40A51F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>40</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41E018</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E394</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4d</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>232 bytes in 1 blocks are definitely lost in loss record 78 of 1,325</text>
+    <leakedbytes>232</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x4D37646</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>acquire&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>memory.hpp</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x4D37646</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>init_cold</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>225</line>
+    </frame>
+    <frame>
+      <ip>0x4D37646</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>Mat</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>168</line>
+    </frame>
+    <frame>
+      <ip>0x4D37646</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>Col</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Col_meat.hpp</file>
+      <line>48</line>
+    </frame>
+    <frame>
+      <ip>0x4D37646</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>get</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/internal</dir>
+      <file>Exporter.h</file>
+      <line>63</line>
+    </frame>
+    <frame>
+      <ip>0x4D37646</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>as&lt;arma::Col&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp</dir>
+      <file>as.h</file>
+      <line>89</line>
+    </frame>
+    <frame>
+      <ip>0x4D37646</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>as&lt;arma::Col&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp</dir>
+      <file>as.h</file>
+      <line>152</line>
+    </frame>
+    <frame>
+      <ip>0x4D37646</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>rcpp_generate_hit_and_run_samples(int, int, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>hit_and_run.cpp</file>
+      <line>174</line>
+    </frame>
+    <frame>
+      <ip>0x40A51F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>40</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41E018</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E394</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x7d</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>416 bytes in 1 blocks are definitely lost in loss record 126 of 1,325</text>
+    <leakedbytes>416</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x4D3781D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>acquire&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>memory.hpp</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x4D3781D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>init_cold</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>225</line>
+    </frame>
+    <frame>
+      <ip>0x4D3781D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>Mat</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>168</line>
+    </frame>
+    <frame>
+      <ip>0x4D3781D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>Col</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Col_meat.hpp</file>
+      <line>48</line>
+    </frame>
+    <frame>
+      <ip>0x4D3781D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>get</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/internal</dir>
+      <file>Exporter.h</file>
+      <line>63</line>
+    </frame>
+    <frame>
+      <ip>0x4D3781D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>as&lt;arma::Col&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp</dir>
+      <file>as.h</file>
+      <line>89</line>
+    </frame>
+    <frame>
+      <ip>0x4D3781D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>as&lt;arma::Col&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp</dir>
+      <file>as.h</file>
+      <line>152</line>
+    </frame>
+    <frame>
+      <ip>0x4D3781D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>rcpp_generate_hit_and_run_samples(int, int, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>hit_and_run.cpp</file>
+      <line>176</line>
+    </frame>
+    <frame>
+      <ip>0x40A51F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>40</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41E018</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E394</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xb5</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,025 bytes in 1 blocks are definitely lost in loss record 182 of 1,325</text>
+    <leakedbytes>1025</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E9F3AF</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::reserve(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D04C55</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>MemBuf::MemBuf(int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>MemBuf.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x4D06467</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::RInside()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>56</line>
+    </frame>
+    <frame>
+      <ip>0x409BC3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>14</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples</dir>
+      <file>rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41E018</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E394</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:17.026 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

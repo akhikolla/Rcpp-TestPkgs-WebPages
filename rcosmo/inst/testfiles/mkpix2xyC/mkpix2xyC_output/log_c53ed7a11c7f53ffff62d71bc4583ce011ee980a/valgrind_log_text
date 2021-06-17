@@ -1,0 +1,9 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/mkpix2xyC/mkpix2xyC_output/c53ed7a11c7f53ffff62d71bc4583ce011ee980a.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/mkpix2xyC/mkpix2xyC_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+nside values: 467495432
+input ends
+TRACE: Passed: _

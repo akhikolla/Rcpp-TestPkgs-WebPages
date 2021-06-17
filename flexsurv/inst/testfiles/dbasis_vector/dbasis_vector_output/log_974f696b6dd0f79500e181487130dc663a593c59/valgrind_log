@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./dbasis_vector_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/flexsurv/inst/testfiles/dbasis_vector/dbasis_vector_output/974f696b6dd0f79500e181487130dc663a593c59.pass</line>
+</preamble>
+
+<pid>2368570</pid>
+<ppid>2368569</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/flexsurv/inst/testfiles/dbasis_vector/dbasis_vector_output/log_974f696b6dd0f79500e181487130dc663a593c59/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./dbasis_vector_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/flexsurv/inst/testfiles/dbasis_vector/dbasis_vector_output/974f696b6dd0f79500e181487130dc663a593c59.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.029 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:11.568 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:12.134 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

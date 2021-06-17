@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/multivariance/inst/testfiles/match_rows/match_rows_output/a9cf752d8921d63a690258d5cf4a1a0b3dba2d7a.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/multivariance/inst/testfiles/match_rows/match_rows_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+A values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+Missing value
+B values: 4.19790e+140    -inf     inf 2.00396e-158 2.91601e+272     inf     nan     nan
+
+input ends
+terminate called after throwing an instance of 'Rcpp::index_out_of_bounds'
+  what():  Row index is out of bounds: [index=1; row extent=1].
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/multivariance/inst/testfiles/match_rows/match_rows_output/a9cf752d8921d63a690258d5cf4a1a0b3dba2d7a.fail failed

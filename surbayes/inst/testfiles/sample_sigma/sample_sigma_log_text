@@ -1,0 +1,146 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+nu values: -2.43318e-187
+V values:   -1.6667e-49   1.9170e-80  2.9387e+294   6.2389e-80   4.7359e-68  1.9237e+304   5.2228e+77
+
+p values: 2140137874
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_output/0349c5501e5d7e4362caf85e271dc0fc43609b0a.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+nu values: -1.5615e-299
+V values:   2.7924e-196  1.2638e+187   1.4207e+49
+  2.5804e-206  3.0201e-260  -9.9123e-57
+ -1.6404e-118  1.0539e+182   8.0561e-38
+ -3.8435e+136  2.3608e-100  3.0172e-124
+  9.5730e+229 -7.9981e-243  3.0603e-110
+
+p values: -889123179
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_output/dc9c2b54c5788111514f26168f763150eec09155.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+nu values: 1.27048e-62
+V values:   8.1871e+299   4.6819e-03  9.2870e-257 -4.4731e+269 -1.0846e-247 -1.0696e+114 -3.4796e-216
+ -8.9518e+215  1.3835e-136  6.2461e+181  -4.1137e+80          nan  2.7901e+291 -2.4367e+290
+  1.1372e+165  1.2493e+186 -9.0601e-190  1.2437e-163   1.0736e-51 -6.7207e-236  3.9327e-254
+  -3.4557e+99   8.9578e+89 -1.0443e+114   2.7723e+43 -2.1856e+139  -2.6381e-55  -1.7767e-44
+
+p values: -1184194678
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_output/68363a12ff221f59074a88570ac7cf837c9a6bc5.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+nu values: 3.16522e+06
+V values:   5.2980e-243   7.5275e+12 -2.1449e+105  -3.9305e-68  -2.0205e-44   1.3699e-76
+
+p values: -1110131481
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_output/b0d9815413fce7fac4109df0444226cd796fbb3c.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+nu values: -1.92672e-302
+V values:    4.2420e+22 -1.3485e-218  8.0763e-201  9.9636e-247  2.9001e+287  -3.6225e+84  -1.6853e-04  -5.5190e-05 -2.0497e+224
+   2.9200e-47  4.0971e+206 -1.0814e+108  -4.5640e-02  7.8653e-108  1.7778e+279  1.9251e-122 -1.7485e+192 -8.6218e+250
+   1.6261e+96  1.5640e+138  1.8651e-245 -1.6578e-126   8.3192e+76   1.2121e-73 -1.8285e+183  4.2949e-206  4.5496e+119
+ -1.5165e+167 -3.7500e-129  3.6939e+234  5.5012e+234 -5.8565e+106  2.3360e+187  -2.6101e-89  5.3980e+140   4.3495e-92
+  4.4304e-127  3.4402e-175  5.9791e+292 -2.9147e-218 -1.6507e-137  -2.2394e+46  8.1101e+134 -1.0326e+153  1.0715e+139
+ -1.3283e+231  4.8805e-239 -5.2607e+264 -5.7640e-280 -9.9465e+188  -1.4992e+56  1.8131e-164  7.2643e+160   3.9789e-75
+  -3.6310e+53  1.3110e+226  -8.0193e-77 -2.7156e+194  2.0929e+260   7.6069e-29  4.5936e+258 -1.0211e+209  -1.6623e+71
+  -1.0038e-02  2.3419e+295 -9.2050e-170 -3.3931e+131  9.8823e-105 -1.7159e-172  5.9368e-148  3.2541e+150  9.0621e-102
+   5.2196e-76 -2.4354e-299 -8.4645e+109  1.7831e+123  9.0688e-199 -5.0885e-155  4.4837e-181   2.4740e-73  3.8250e+232
+
+p values: 1713230968
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_output/f46f4084a94fb92defb901c1ede7cd6b1db5d3a7.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+nu values: -8.5119e-07
+V values:   4.7921e-250  9.6064e+283  5.0046e-274  7.5238e-133  -2.0449e-51   1.0935e+01  4.1314e+182 -8.4039e-124  -1.7193e-91 -3.9883e+298
+ -1.7212e+187  -2.2886e-42 -3.1753e+212   2.4667e-86   2.2839e-55  2.5944e+241 -7.2258e-217  1.1933e+132  -7.2798e+99  4.5428e-241
+  2.4025e-278  -3.6097e+55  5.5050e+287  9.2566e+260  1.0461e+288 -4.4695e+285 -3.8085e+121   4.0382e+81  2.2493e-239 -5.2946e-202
+  -2.9565e+65  -7.3054e+59  -1.5453e+76   6.6372e+22  2.3812e-167  -3.3071e+68  1.4961e-304  5.9276e-300  7.3864e-168 -1.5036e+120
+   7.7919e-90 -7.8650e+286  4.5176e+123   1.3469e-60  -1.8721e-60  3.6399e-237  5.7201e-299  2.8895e+251  1.6393e+214  8.4144e-249
+  3.0867e+146  -3.4284e+16  8.0233e-162 -9.8112e+249  1.6586e+214  6.4499e+171  2.5375e+224 -5.2051e+113  8.4350e-163   1.5071e-55
+ -5.2821e-140 -3.0398e+168  2.9051e-216  5.4753e+116  1.4861e-263 -3.4651e+276  -2.6788e+19  -6.3878e+45  5.0701e+306 -2.6591e-237
+  4.7570e+290 -1.3099e-205   6.1284e+15 -5.0099e+172   1.4155e+02  1.6046e+160 -6.4382e-168  1.2349e-251 -1.8617e-136  1.3948e-252
+  3.6457e+301 -6.4019e+177  5.5254e+159 -3.9244e-180  1.4463e+258  -8.3519e+35  -1.3088e-51   1.4855e+68  4.4437e-101  6.9526e+129
+
+p values: -668902967
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_output/b1c77c77f1d55c0b14389b9a2447eb09dc0487b7.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+nu values: -5.84486e+130
+V values:   -4.4054e-65  9.9377e+292   2.3200e+83 -3.7986e-121  1.8883e-213  2.4540e-127 -5.1683e+138 -6.5185e+234
+   5.7088e+39  -1.9260e+03  3.4062e+177  3.7912e-141  -3.7869e-26  6.6800e+201  1.9530e-225  3.6712e+174
+ -6.0225e+297  -2.4781e-14 -3.6407e+264 -1.0267e+221 -4.9390e-292   1.1883e+83   4.5494e+83  6.1455e-207
+  2.6827e+268 -1.4940e+247  7.6874e-208  5.5498e+180 -1.2110e-290 -9.5676e-120 -1.2378e+306 -6.5868e-128
+
+p values: -736957484
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_output/eb2f7969224d890e8ed0b9811df282c7ee658cea.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+nu values: -3.59873e+296
+V values:   -2.9403e-89 -1.1077e+218 -5.7726e+206 -6.1187e+278  -5.2229e+91
+  -3.3894e+82  1.7635e+157   2.2918e-39  -2.8717e-18  -4.6343e+27
+ -8.6559e-103 -2.1313e-216   7.1551e+47 -1.6136e+274 -1.8813e-107
+  3.9077e+175  9.4400e-247  2.7268e-290   9.2057e-33  1.1680e-262
+ -1.7803e-146  5.7577e-158 -4.4680e-203   3.1035e-12  1.0815e-243
+  -3.6415e-47 -1.2775e+231  4.6956e+110 -2.1876e-107  -4.8053e-07
+
+p values: 638128690
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_output/81acfb16298abec0de1dfba913e50f080b5f6658.fail`
+INFO: Done fuzzing! Ran 8 tests (4 tests/second) with 8 failed/0 passed/0 abandoned tests

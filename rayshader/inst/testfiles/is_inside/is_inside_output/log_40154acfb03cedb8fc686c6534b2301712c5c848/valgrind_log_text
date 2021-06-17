@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/is_inside/is_inside_output/40154acfb03cedb8fc686c6534b2301712c5c848.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/is_inside/is_inside_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+sizehex values: 1.27048e-62
+positionx values: -2.88162e-134
+positiony values: 8.18711e+299
+sinval values: 0.00468189
+cosval values: 9.28697e-257
+input ends
+TRACE: Passed: _

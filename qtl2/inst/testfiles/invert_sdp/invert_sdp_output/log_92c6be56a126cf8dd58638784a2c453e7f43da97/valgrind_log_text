@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/invert_sdp/invert_sdp_output/92c6be56a126cf8dd58638784a2c453e7f43da97.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/invert_sdp/invert_sdp_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+sdp values: 1452738095 1618366851 1679204877 1586657384 -2073912510 2030347660 720227797 1790569921 1375006897 1782658255 1473698998
+n_str values: 1750343404
+input ends
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  sdp out of range
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/invert_sdp/invert_sdp_output/92c6be56a126cf8dd58638784a2c453e7f43da97.fail failed

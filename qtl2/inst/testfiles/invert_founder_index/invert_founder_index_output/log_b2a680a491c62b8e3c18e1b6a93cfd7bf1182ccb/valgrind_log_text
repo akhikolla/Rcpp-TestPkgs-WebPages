@@ -1,0 +1,15 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/invert_founder_index/invert_founder_index_output/b2a680a491c62b8e3c18e1b6a93cfd7bf1182ccb.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/invert_founder_index/invert_founder_index_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+cross_info values: 1926209628 1434416441 88940557 1485040860 -1728786011 977540242 -1593973169 -66270866 -613823696 -398431762 -1920271387 233292454 -611103979 -681597065 1552795224 -1718565004 -107830046
+input ends
+==2434016==  If you believe this happened as a result of a stack
+==2434016==  overflow in your program's main thread (unlikely but
+==2434016==  possible), you can try to increase the size of the
+==2434016==  main thread stack using the --main-stacksize= flag.
+==2434016==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/invert_founder_index/invert_founder_index_output/b2a680a491c62b8e3c18e1b6a93cfd7bf1182ccb.crash crashed

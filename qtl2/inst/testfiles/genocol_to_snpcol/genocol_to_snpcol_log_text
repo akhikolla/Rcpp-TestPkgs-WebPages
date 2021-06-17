@@ -1,0 +1,53 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+n_str values: 467495432
+sdp values: 1827680409
+input ends
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  SDP out of range
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/genocol_to_snpcol/genocol_to_snpcol_output/b07f6d92f2b3666990ab864a6444ce18f8756075.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+n_str values: -498905818
+sdp values: 569042049
+input ends
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  SDP out of range
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/genocol_to_snpcol/genocol_to_snpcol_output/77a5da1046da15fbe46d14307d83d9250cad6bda.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+n_str values: -293123844
+sdp values: -555281357
+input ends
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  SDP out of range
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/genocol_to_snpcol/genocol_to_snpcol_output/2442d43f4ad58a070aa4509d47ecd1bf5f124418.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+n_str values: -1105761949
+sdp values: 304498753
+input ends
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  SDP out of range
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/genocol_to_snpcol/genocol_to_snpcol_output/6ff61711450841b7c8909ff0ccefd3a32aa31b45.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+n_str values: 954479852
+sdp values: -194229631
+input ends
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  SDP out of range
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/genocol_to_snpcol/genocol_to_snpcol_output/9a65451b48d5290c36dfe2f17bf04fad903d5499.fail`
+INFO: Done fuzzing! Ran 5 tests (2 tests/second) with 5 failed/0 passed/0 abandoned tests

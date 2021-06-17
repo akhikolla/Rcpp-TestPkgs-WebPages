@@ -1,0 +1,21 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/spBFA/inst/testfiles/SpEXP/SpEXP_output/94f12c3a09c9bcca370f1066896aab43f342f7cf.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/spBFA/inst/testfiles/SpEXP/SpEXP_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+Rho values: -1.5615e-299
+SpDist values:   2.7924e-196  1.2638e+187   1.4207e+49
+  2.5804e-206  3.0201e-260  -9.9123e-57
+ -1.6404e-118  1.0539e+182   8.0561e-38
+ -3.8435e+136  2.3608e-100  3.0172e-124
+  9.5730e+229 -7.9981e-243  3.0603e-110
+
+M values: -889123179
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/spBFA/inst/testfiles/SpEXP/SpEXP_output/94f12c3a09c9bcca370f1066896aab43f342f7cf.fail failed

@@ -1,0 +1,52 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+Rho values: -2.43318e-187
+SpDist values:   -1.6667e-49   1.9170e-80  2.9387e+294   6.2389e-80   4.7359e-68  1.9237e+304   5.2228e+77
+
+M values: 2140137874
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/spBFA/inst/testfiles/SpEXP/SpEXP_output/61590bde11dc11240140354e89778cbed08db5bc.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+Rho values: -1.5615e-299
+SpDist values:   2.7924e-196  1.2638e+187   1.4207e+49
+  2.5804e-206  3.0201e-260  -9.9123e-57
+ -1.6404e-118  1.0539e+182   8.0561e-38
+ -3.8435e+136  2.3608e-100  3.0172e-124
+  9.5730e+229 -7.9981e-243  3.0603e-110
+
+M values: -889123179
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/spBFA/inst/testfiles/SpEXP/SpEXP_output/94f12c3a09c9bcca370f1066896aab43f342f7cf.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+Rho values: 1.27048e-62
+SpDist values:   8.1871e+299   4.6819e-03  9.2870e-257 -4.4731e+269 -1.0846e-247 -1.0696e+114 -3.4796e-216
+ -8.9518e+215  1.3835e-136  6.2461e+181  -4.1137e+80          nan  2.7901e+291 -2.4367e+290
+  1.1372e+165  1.2493e+186 -9.0601e-190  1.2437e-163   1.0736e-51 -6.7207e-236  3.9327e-254
+  -3.4557e+99   8.9578e+89 -1.0443e+114   2.7723e+43 -2.1856e+139  -2.6381e-55  -1.7767e-44
+
+M values: -1184194678
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/spBFA/inst/testfiles/SpEXP/SpEXP_output/6497f787f337db02c9b5dac87e594bca051fc97b.fail`
+INFO: Done fuzzing! Ran 3 tests (1 tests/second) with 3 failed/0 passed/0 abandoned tests

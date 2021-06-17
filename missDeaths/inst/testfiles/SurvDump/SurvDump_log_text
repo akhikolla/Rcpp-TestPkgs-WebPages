@@ -1,0 +1,43 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+year values: 467495432
+sex values: 1827680409
+input ends
+terminate called after throwing an instance of 'std::range_error'
+  what():  SurvExpCache is NULL
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/missDeaths/inst/testfiles/SurvDump/SurvDump_output/c8607e52c4bdb3ed23e7737f888ee7faf6a64f81.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+year values: -498905818
+sex values: 569042049
+input ends
+terminate called after throwing an instance of 'std::range_error'
+  what():  SurvExpCache is NULL
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/missDeaths/inst/testfiles/SurvDump/SurvDump_output/8f26653c12d559f3ab771aabc8ccf2d71fd75136.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+year values: -293123844
+sex values: -555281357
+input ends
+terminate called after throwing an instance of 'std::range_error'
+  what():  SurvExpCache is NULL
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/missDeaths/inst/testfiles/SurvDump/SurvDump_output/0f185f16ebf2c70e119e8ac60c42c9ad8b5db639.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+year values: -1105761949
+sex values: 304498753
+input ends
+terminate called after throwing an instance of 'std::range_error'
+  what():  SurvExpCache is NULL
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/missDeaths/inst/testfiles/SurvDump/SurvDump_output/abdcbb886964837353241350365230cdbaa652fb.fail`
+INFO: Done fuzzing! Ran 4 tests (2 tests/second) with 4 failed/0 passed/0 abandoned tests

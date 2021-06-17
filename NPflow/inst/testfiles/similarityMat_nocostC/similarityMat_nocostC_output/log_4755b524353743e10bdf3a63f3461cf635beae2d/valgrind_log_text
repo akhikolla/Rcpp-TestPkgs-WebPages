@@ -1,0 +1,10 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/NPflow/inst/testfiles/similarityMat_nocostC/similarityMat_nocostC_output/4755b524353743e10bdf3a63f3461cf635beae2d.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/NPflow/inst/testfiles/similarityMat_nocostC/similarityMat_nocostC_DeepState_TestHarness.cpp(13)
+input starts
+cc values:  -4.2952e-278   4.2420e+22
+ -1.3485e-218  8.0763e-201
+  9.9636e-247  2.9001e+287
+
+input ends
+TRACE: Passed: _

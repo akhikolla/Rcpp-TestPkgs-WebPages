@@ -1,0 +1,841 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./getGoodnessOMP_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_output/7220da21c3d3af1c70336f6615a3e1e63060a826.pass</line>
+</preamble>
+
+<pid>2480077</pid>
+<ppid>2480076</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_output/log_7220da21c3d3af1c70336f6615a3e1e63060a826/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./getGoodnessOMP_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_output/7220da21c3d3af1c70336f6615a3e1e63060a826.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.042 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>5</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D214DB</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src/rpart.LAD.so</obj>
+      <fn>getGoodnessOMP(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;) [clone ._omp_fn.0]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src</dir>
+      <file>LADsplit.cpp</file>
+      <line>122</line>
+    </frame>
+    <frame>
+      <ip>0x591C77D</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x594D608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x519E292</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x8c38be0 is 0 bytes after a block of size 256 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x40F31D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;::Vector(int const&amp;)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector/Vector.h</file>
+      <line>130</line>
+    </frame>
+    <frame>
+      <ip>0x407D75</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>RcppDeepState_NumericVector()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppDeepState/include/RcppDeepState.h</file>
+      <line>43</line>
+    </frame>
+    <frame>
+      <ip>0x409D34</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CDF8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D099</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D174</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x3</unique>
+  <tid>5</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D214D0</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src/rpart.LAD.so</obj>
+      <fn>getGoodnessOMP(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;) [clone ._omp_fn.0]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src</dir>
+      <file>LADsplit.cpp</file>
+      <line>122</line>
+    </frame>
+    <frame>
+      <ip>0x591C77D</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x594D608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x519E292</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x8c38bf8 is 8 bytes after a block of size 272 in arena "client"</auxwhat>
+</error>
+
+<error>
+  <unique>0xa</unique>
+  <tid>4</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D21403</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src/rpart.LAD.so</obj>
+      <fn>getGoodnessOMP(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;) [clone ._omp_fn.1]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src</dir>
+      <file>LADsplit.cpp</file>
+      <line>132</line>
+    </frame>
+    <frame>
+      <ip>0x591C77D</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x594D608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x519E292</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xa48f410 is 48 bytes inside an unallocated block of size 320 in arena "client"</auxwhat>
+</error>
+
+<error>
+  <unique>0xb</unique>
+  <tid>4</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2142D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src/rpart.LAD.so</obj>
+      <fn>getGoodnessOMP(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;) [clone ._omp_fn.1]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src</dir>
+      <file>LADsplit.cpp</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x591C77D</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x594D608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x519E292</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x8c38be0 is 0 bytes after a block of size 256 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x40F31D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;::Vector(int const&amp;)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector/Vector.h</file>
+      <line>130</line>
+    </frame>
+    <frame>
+      <ip>0x407D75</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>RcppDeepState_NumericVector()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppDeepState/include/RcppDeepState.h</file>
+      <line>43</line>
+    </frame>
+    <frame>
+      <ip>0x409D34</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CDF8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D099</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D174</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4c</unique>
+  <tid>9</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D213ED</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src/rpart.LAD.so</obj>
+      <fn>getGoodnessOMP(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;) [clone ._omp_fn.1]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src</dir>
+      <file>LADsplit.cpp</file>
+      <line>129</line>
+    </frame>
+    <frame>
+      <ip>0x591C77D</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x594D608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x519E292</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x8c38be0 is 0 bytes after a block of size 256 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x40F31D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;::Vector(int const&amp;)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector/Vector.h</file>
+      <line>130</line>
+    </frame>
+    <frame>
+      <ip>0x407D75</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>RcppDeepState_NumericVector()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppDeepState/include/RcppDeepState.h</file>
+      <line>43</line>
+    </frame>
+    <frame>
+      <ip>0x409D34</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CDF8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D099</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D174</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x16a</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2142D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src/rpart.LAD.so</obj>
+      <fn>getGoodnessOMP(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;) [clone ._omp_fn.1]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src</dir>
+      <file>LADsplit.cpp</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x59148E5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+      <fn>GOMP_parallel</fn>
+    </frame>
+    <frame>
+      <ip>0x4D218F3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src/rpart.LAD.so</obj>
+      <fn>getGoodnessOMP(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src</dir>
+      <file>LADsplit.cpp</file>
+      <line>124</line>
+    </frame>
+    <frame>
+      <ip>0x40A0AF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CDF8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D099</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D174</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x8c38be0 is 0 bytes after a block of size 256 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x40F31D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;::Vector(int const&amp;)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector/Vector.h</file>
+      <line>130</line>
+    </frame>
+    <frame>
+      <ip>0x407D75</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>RcppDeepState_NumericVector()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppDeepState/include/RcppDeepState.h</file>
+      <line>43</line>
+    </frame>
+    <frame>
+      <ip>0x409D34</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CDF8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D099</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D174</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x188</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D21403</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src/rpart.LAD.so</obj>
+      <fn>getGoodnessOMP(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;) [clone ._omp_fn.1]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src</dir>
+      <file>LADsplit.cpp</file>
+      <line>132</line>
+    </frame>
+    <frame>
+      <ip>0x59148E5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+      <fn>GOMP_parallel</fn>
+    </frame>
+    <frame>
+      <ip>0x4D218F3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src/rpart.LAD.so</obj>
+      <fn>getGoodnessOMP(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src</dir>
+      <file>LADsplit.cpp</file>
+      <line>124</line>
+    </frame>
+    <frame>
+      <ip>0x40A0AF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CDF8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D099</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D174</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xa48f398 is 0 bytes after a block of size 584 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x40F31D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;::Vector(int const&amp;)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector/Vector.h</file>
+      <line>130</line>
+    </frame>
+    <frame>
+      <ip>0x407D75</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>RcppDeepState_NumericVector()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppDeepState/include/RcppDeepState.h</file>
+      <line>43</line>
+    </frame>
+    <frame>
+      <ip>0x409ED0</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>24</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CDF8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D099</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D174</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.160 </time>
+</status>
+
+<error>
+  <unique>0x3a7</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>3,520 bytes in 11 blocks are possibly lost in loss record 225 of 1,324</text>
+    <leakedbytes>3520</leakedbytes>
+    <leakedblocks>11</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483DD99</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+    </frame>
+    <frame>
+      <ip>0x40149CA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/ld-2.31.so</obj>
+      <fn>allocate_dtv</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/elf/../elf</dir>
+      <file>dl-tls.c</file>
+      <line>286</line>
+    </frame>
+    <frame>
+      <ip>0x40149CA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/ld-2.31.so</obj>
+      <fn>_dl_allocate_tls</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/elf/../elf</dir>
+      <file>dl-tls.c</file>
+      <line>532</line>
+    </frame>
+    <frame>
+      <ip>0x594E322</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>allocate_stack</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>allocatestack.c</file>
+      <line>622</line>
+    </frame>
+    <frame>
+      <ip>0x594E322</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>pthread_create@@GLIBC_2.2.5</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>660</line>
+    </frame>
+    <frame>
+      <ip>0x591CDDA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x59148E0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+      <fn>GOMP_parallel</fn>
+    </frame>
+    <frame>
+      <ip>0x4D218B7</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src/rpart.LAD.so</obj>
+      <fn>getGoodnessOMP(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/src</dir>
+      <file>LADsplit.cpp</file>
+      <line>121</line>
+    </frame>
+    <frame>
+      <ip>0x40A0AF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP</dir>
+      <file>getGoodnessOMP_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CDF8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D099</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D174</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rpart.LAD/inst/testfiles/getGoodnessOMP/getGoodnessOMP_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+  <pair>
+    <count>245</count>
+    <unique>0xb</unique>
+  </pair>
+  <pair>
+    <count>58</count>
+    <unique>0xa</unique>
+  </pair>
+  <pair>
+    <count>335</count>
+    <unique>0x4c</unique>
+  </pair>
+  <pair>
+    <count>60</count>
+    <unique>0x16a</unique>
+  </pair>
+  <pair>
+    <count>3</count>
+    <unique>0x188</unique>
+  </pair>
+  <pair>
+    <count>6</count>
+    <unique>0x0</unique>
+  </pair>
+  <pair>
+    <count>4</count>
+    <unique>0x3</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.870 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

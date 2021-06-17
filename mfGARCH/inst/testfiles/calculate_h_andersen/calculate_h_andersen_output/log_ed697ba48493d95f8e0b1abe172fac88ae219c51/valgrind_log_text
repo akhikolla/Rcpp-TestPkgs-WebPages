@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/calculate_h_andersen/calculate_h_andersen_output/ed697ba48493d95f8e0b1abe172fac88ae219c51.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/calculate_h_andersen/calculate_h_andersen_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+ndays values: -1.5615e-299
+delta values: -1.20777e+13
+mu values: 2.79236e-196
+theta values: 1.26379e+187
+omega values: 1.42068e+49
+lambda values: 2.58036e-206
+Z values: -1.64036e-118 1.05391e+182 8.05607e-38 -3.84354e+136 2.36082e-100 3.01724e-124 9.57301e+229 -7.99809e-243 3.0603e-110 3.27696e-93
+pi values: -2.10374e+36
+h0 values: -5.29515e-20
+input ends
+TRACE: Passed: _

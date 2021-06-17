@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./tplsum_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_output/0af0d8818e79093b17c91edc76a29299c8a912a9.pass</line>
+</preamble>
+
+<pid>2466927</pid>
+<ppid>2466926</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_output/log_0af0d8818e79093b17c91edc76a29299c8a912a9/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./tplsum_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_output/0af0d8818e79093b17c91edc76a29299c8a912a9.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.045 </time>
+</status>
+
+<fatal_signal>
+  <tid>1</tid>
+  <signo>2</signo>
+  <signame>SIGINT</signame>
+  <sicode>128</sicode>
+  <siaddr>0x0</siaddr>
+  <stack>
+    <frame>
+      <ip>0x5183DBA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>wait4</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/posix/../sysdeps/unix/sysv/linux</dir>
+      <file>wait4.c</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x41D6A5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D794</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</fatal_signal>
+
+<fatal_signal>
+  <tid>1</tid>
+  <signo>2</signo>
+  <signame>SIGINT</signame>
+  <sicode>128</sicode>
+  <siaddr>0x0</siaddr>
+  <stack>
+    <frame>
+      <ip>0x4FB6D20</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libm-2.31.so</obj>
+      <fn>__ieee754_exp_fma</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/math/../sysdeps/ieee754/dbl-64</dir>
+      <file>e_exp.c</file>
+      <line>98</line>
+    </frame>
+    <frame>
+      <ip>0x4F772C2</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libm-2.31.so</obj>
+      <fn>exp@@GLIBC_2.29</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/math/.</dir>
+      <file>w_exp_template.c</file>
+      <line>32</line>
+    </frame>
+    <frame>
+      <ip>0x4D37875</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/src/spatialwarnings.so</obj>
+      <fn>tplsum(double, double, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/src</dir>
+      <file>norm_constants.cpp</file>
+      <line>24</line>
+    </frame>
+    <frame>
+      <ip>0x40A3CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum</dir>
+      <file>tplsum_DeepState_TestHarness.cpp</file>
+      <line>37</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum</dir>
+      <file>tplsum_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41D418</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D6B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D794</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/tplsum/tplsum_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</fatal_signal>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:30:50.598 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:30:50.613 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

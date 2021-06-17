@@ -1,0 +1,12 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/segclust2d/inst/testfiles/arma_repmat/arma_repmat_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/segclust2d/inst/testfiles/arma_repmat/arma_repmat_DeepState_TestHarness.cpp(13)
+input starts
+A values:   3.0201e-260  -9.9123e-57
+
+EXTERNAL: qs v0.23.5.
+
+n values: 819746351
+m values: 1283029671
+input ends
+TRACE: Passed: _

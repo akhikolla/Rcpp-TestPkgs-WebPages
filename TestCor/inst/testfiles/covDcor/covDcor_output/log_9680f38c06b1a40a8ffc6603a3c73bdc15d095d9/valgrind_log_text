@@ -1,0 +1,58 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/TestCor/inst/testfiles/covDcor/covDcor_output/9680f38c06b1a40a8ffc6603a3c73bdc15d095d9.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/TestCor/inst/testfiles/covDcor/covDcor_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+r values: 3.60909e+224 9.37481e+280 1.27048e-62 4.71376e-48     nan 7.46115e-258 1.41003e-86
+1.11742e+83 3.07504e-136 2.13410e-145 1.75062e-260 2.90402e-286 5.01413e+184 1.93644e+180
+1.97870e+143 1.01645e-124 2.01769e+47 4.13273e+261 3.56215e-230     nan 1.99326e-62
+    nan 1.00679e-73     nan 7.50348e-71 1.43678e-133 29072.6 1.39816e-16
+
+input ends
+
+valgrind: m_mallocfree.c:305 (get_bszB_as_is): Assertion 'bszB_lo == bszB_hi' failed.
+valgrind: Heap block lo/hi size mismatch: lo = 1264, hi = 334986139308950007.
+This is probably caused by your program erroneously writing past the
+end of a heap block and corrupting heap metadata.  If you fix any
+invalid writes reported by Memcheck, this assertion failure will
+probably go away.  Please try that before reporting this as a bug.
+
+
+host stacktrace:
+==2452204==    at 0x58046FFA: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2452204==    by 0x58047127: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2452204==    by 0x580472CB: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2452204==    by 0x580514B4: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2452204==    by 0x5803DE9A: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2452204==    by 0x5803CD9F: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2452204==    by 0x58041F04: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2452204==    by 0x5803C1D8: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2452204==    by 0x1003B9C680: ???
+==2452204==    by 0x1002DB1F2F: ???
+==2452204==    by 0x1002DB1F17: ???
+==2452204==    by 0x1002DB1F2F: ???
+==2452204==    by 0x1002DB1F3F: ???
+
+sched status:
+  running_tid=1
+
+Thread 1: status = VgTs_Runnable (lwpid 2452204)
+client stack range: [0x1FFEF78000 0x1FFF000FFF] client SP: 0x1FFEFFF9D0
+valgrind stack range: [0x1002CB2000 0x1002DB1FFF] top usage: 14592 of 1048576
+
+
+Note: see also the FAQ in the source distribution.
+It contains workarounds to several common problems.
+In particular, if Valgrind aborted or crashed after
+identifying problems in your program, there's a good chance
+that fixing those problems will prevent Valgrind aborting or
+crashing, especially if it happened in m_mallocfree.c.
+
+If that doesn't help, please report this bug to: www.valgrind.org
+
+In the bug report, send all the above text, the valgrind
+version, and what OS and version you are using.  Thanks.
+
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/TestCor/inst/testfiles/covDcor/covDcor_output/9680f38c06b1a40a8ffc6603a3c73bdc15d095d9.pass failed

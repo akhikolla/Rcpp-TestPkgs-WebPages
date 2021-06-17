@@ -1,0 +1,9 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/RW_Cpp/RW_Cpp_output/029eb1e4e57e8ea15ac7d8e1a210c3ed67b18957.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/RW_Cpp/RW_Cpp_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+X values: 1.36993e-76 3.42032e-93 8.27932e-269 -4.36409e-38 -4.27191e+09 7.90884e+272
+input ends
+TRACE: Passed: _

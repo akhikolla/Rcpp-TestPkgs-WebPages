@@ -1,0 +1,12 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/spaMM/inst/testfiles/Rcpp_COMP_Z/Rcpp_COMP_Z_output/be005949e54485ba79a86f2c5996b6a64a6a3a31.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/spaMM/inst/testfiles/Rcpp_COMP_Z/Rcpp_COMP_Z_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+moment values: -293123844
+nu values: -2.57108e+123
+lambda values: 2.98766e-188
+maxn values: 1854878590
+input ends
+TRACE: Passed: _

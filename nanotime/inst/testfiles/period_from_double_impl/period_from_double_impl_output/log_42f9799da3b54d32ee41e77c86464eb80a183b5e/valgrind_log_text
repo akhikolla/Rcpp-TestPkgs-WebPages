@@ -1,0 +1,10 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/nanotime/inst/testfiles/period_from_double_impl/period_from_double_impl_output/42f9799da3b54d32ee41e77c86464eb80a183b5e.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/nanotime/inst/testfiles/period_from_double_impl/period_from_double_impl_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+dbl values: 1.27891e-188 7.52749e+12 -2.14488e+105 inf -2.02048e-44 nan 3.42032e-93 8.27932e-269 -4.36409e-38 inf 0
+input ends
+TRACE: Passed: _

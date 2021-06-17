@@ -1,0 +1,22 @@
+h1 {
+  font-size:160%;
+  font-weight:bold;
+  color: #000000;
+}
+
+h2 {
+  font-size:140%;
+  font-weight:bold;
+  color: #204a87;
+}
+
+h3 {
+  font-size:120%;
+  font-weight:bold;
+  color: #a40000;
+}
+
+a {
+  color: #204a87;
+  font-weight:bold;
+}

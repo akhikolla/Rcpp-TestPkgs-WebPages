@@ -1,0 +1,23 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+mat values:  -1.6458e+174  -1.6667e-49   1.9170e-80  2.9387e+294   6.2389e-80   4.7359e-68  1.9237e+304   5.2228e+77 -2.9793e-194 -2.6816e-130
+ -2.8444e-188 -1.3783e-303  9.4614e+185   3.4351e-26 -2.8041e+194 -2.6932e-264   8.8838e+93 -1.2815e+192 -1.0538e+270  9.9349e-272
+ -4.4967e-166  1.0879e-197 -1.2041e+269  5.6944e+304 -4.3128e+297 -8.5076e-293  8.1098e+266  5.7915e-162 -1.5284e+202  1.0840e-287
+
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/shuffle_matrix/shuffle_matrix_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash`
+input starts
+mat values:   3.0201e-260  -9.9123e-57
+
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/shuffle_matrix/shuffle_matrix_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash`
+input starts
+mat values:   6.2461e+181  -4.1137e+80          nan  2.7901e+291 -2.4367e+290  1.1372e+165  1.2493e+186 -9.0601e-190  1.2437e-163   1.0736e-51
+
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/shuffle_matrix/shuffle_matrix_output/f97703d88b5f44f18c8a5478e4cc2152bc9b0638.crash`
+INFO: Done fuzzing! Ran 3 tests (1 tests/second) with 3 failed/0 passed/0 abandoned tests

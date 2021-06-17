@@ -1,0 +1,19 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_output/13e69fefe69a72c7d194b4967845ce1d1f4be2ac.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+num_samples values: -293123844
+burn_in values: -555281357
+init_y values: 0.00468189 9.28697e-257
+A values: 3.07504e-136 1.01645e-124 1.00679e-73 1.72389e-189 2.13410e-145 2.01769e+47 5.91096e+64 4.71376e-48 1.75062e-260
+
+b values: 1.73105e-152 -4.43406e+267 -1.32396e-49 -1.28038e-25 2.06308e+285 1.47411e+187 1.02108e-250 -5.07224e+195 1.27789e-261 3.11495e+30 2.03377e-295 -1.63466e-257 5.55857e-198 4.71098e+56 -9.58604e-76 -6.403e+218 -6.90567e-18 -1.09625e-166 7.89394e+85 -1.48913e+39 2.63725e+261 4.51946e+163 -7.62766e-53 2.09617e+257
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_output/13e69fefe69a72c7d194b4967845ce1d1f4be2ac.fail failed

@@ -1,0 +1,19 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/mgss/inst/testfiles/MVP_normalfactor_rcpp/MVP_normalfactor_rcpp_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/mgss/inst/testfiles/MVP_normalfactor_rcpp/MVP_normalfactor_rcpp_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+A values: 1.05415e-68 1.86447e-211 4.49059e+17 2.72551e-214 6.53679e-70 2.42643e+241 1.65687e+24
+
+left values: 644268439
+right values: 123721430
+x values: -1.50153e+251 1.57867e-307 -7.00762e-50 -6.99566e-60 2.58197e-253 -2.63239e-196 9.32252e-200 1.66712e-146 2.4867e+34 4.39319e-139 -1.36007e+107 2.86379e-96 3.02278e-165 1.34862e-57 5.86822e+165 -4.91144e+258 -5.33605e+203 -6.88846e+106 -3.43788e-268 8.94805e+170
+input ends
+==2375349==  If you believe this happened as a result of a stack
+==2375349==  overflow in your program's main thread (unlikely but
+==2375349==  possible), you can try to increase the size of the
+==2375349==  main thread stack using the --main-stacksize= flag.
+==2375349==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/mgss/inst/testfiles/MVP_normalfactor_rcpp/MVP_normalfactor_rcpp_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash crashed

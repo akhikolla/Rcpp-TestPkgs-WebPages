@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/GiniDistance/inst/testfiles/rcpp_Eu_distance/rcpp_Eu_distance_output/350ad9c1bd14c7834b8514e9e415902c6363c247.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/GiniDistance/inst/testfiles/rcpp_Eu_distance/rcpp_Eu_distance_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+mat values: 1.37787e+242
+    nan
+    inf
+
+input ends
+TRACE: Passed: _

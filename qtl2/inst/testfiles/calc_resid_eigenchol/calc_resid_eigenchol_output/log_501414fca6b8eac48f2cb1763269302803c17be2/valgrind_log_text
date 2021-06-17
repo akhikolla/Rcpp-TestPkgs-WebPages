@@ -1,0 +1,14 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/calc_resid_eigenchol/calc_resid_eigenchol_output/501414fca6b8eac48f2cb1763269302803c17be2.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/calc_resid_eigenchol/calc_resid_eigenchol_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+X values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+Missing value
+Y values: 4.19790e+140    -inf     inf 2.00396e-158 2.91601e+272     inf     nan     nan
+
+input ends
+TRACE: Passed: _

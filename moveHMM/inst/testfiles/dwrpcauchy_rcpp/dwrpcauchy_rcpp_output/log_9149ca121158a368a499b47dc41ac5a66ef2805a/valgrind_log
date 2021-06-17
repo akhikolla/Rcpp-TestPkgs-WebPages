@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./dwrpcauchy_rcpp_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_output/9149ca121158a368a499b47dc41ac5a66ef2805a.pass</line>
+</preamble>
+
+<pid>2379785</pid>
+<ppid>2379784</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_output/log_9149ca121158a368a499b47dc41ac5a66ef2805a/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./dwrpcauchy_rcpp_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_output/9149ca121158a368a499b47dc41ac5a66ef2805a.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.048 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x40F7B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>arma::Mat&lt;double&gt;::~Mat()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/Mat_meat.hpp</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x410467</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>arma::Col&lt;double&gt;::~Col()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/arma_forward.hpp</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40A1CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp</dir>
+      <file>dwrpcauchy_rcpp_DeepState_TestHarness.cpp</file>
+      <line>32</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp</dir>
+      <file>dwrpcauchy_rcpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41D008</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D2A9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D384</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x40F7E8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>release&lt;const double&gt;</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/memory.hpp</file>
+      <line>108</line>
+    </frame>
+    <frame>
+      <ip>0x40F7E8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>arma::Mat&lt;double&gt;::~Mat()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/Mat_meat.hpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x410467</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>arma::Col&lt;double&gt;::~Col()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/arma_forward.hpp</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40A1CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp</dir>
+      <file>dwrpcauchy_rcpp_DeepState_TestHarness.cpp</file>
+      <line>32</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp</dir>
+      <file>dwrpcauchy_rcpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41D008</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D2A9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D384</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:15.467 </time>
+</status>
+
+<error>
+  <unique>0x4b</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>224 bytes in 1 blocks are definitely lost in loss record 74 of 1,318</text>
+    <leakedbytes>224</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x4D3657B</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/src/moveHMM.so</obj>
+      <fn>acquire&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>memory.hpp</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x4D3657B</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/src/moveHMM.so</obj>
+      <fn>init_cold</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>225</line>
+    </frame>
+    <frame>
+      <ip>0x4D3657B</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/src/moveHMM.so</obj>
+      <fn>Mat</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>168</line>
+    </frame>
+    <frame>
+      <ip>0x4D3657B</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/src/moveHMM.so</obj>
+      <fn>Col</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Col_meat.hpp</file>
+      <line>48</line>
+    </frame>
+    <frame>
+      <ip>0x4D3657B</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/src/moveHMM.so</obj>
+      <fn>dwrpcauchy_rcpp(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/src</dir>
+      <file>densities.h</file>
+      <line>148</line>
+    </frame>
+    <frame>
+      <ip>0x40A1BB</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp</dir>
+      <file>dwrpcauchy_rcpp_DeepState_TestHarness.cpp</file>
+      <line>32</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp</dir>
+      <file>dwrpcauchy_rcpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41D008</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41D2A9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D384</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/dwrpcauchy_rcpp/dwrpcauchy_rcpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x1</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:16.524 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

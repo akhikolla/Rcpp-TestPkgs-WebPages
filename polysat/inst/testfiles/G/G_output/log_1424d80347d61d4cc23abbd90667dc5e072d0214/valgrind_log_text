@@ -1,0 +1,10 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/polysat/inst/testfiles/G/G_output/1424d80347d61d4cc23abbd90667dc5e072d0214.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/polysat/inst/testfiles/G/G_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+q values: 467495432
+n values: 1827680409
+input ends
+TRACE: Passed: _

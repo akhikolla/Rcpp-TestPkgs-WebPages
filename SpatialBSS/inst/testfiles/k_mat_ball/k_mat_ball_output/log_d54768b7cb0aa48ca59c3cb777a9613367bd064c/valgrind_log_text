@@ -1,0 +1,11 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/SpatialBSS/inst/testfiles/k_mat_ball/k_mat_ball_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/SpatialBSS/inst/testfiles/k_mat_ball/k_mat_ball_DeepState_TestHarness.cpp(13)
+input starts
+coords values:   3.0201e-260  -9.9123e-57
+
+EXTERNAL: qs v0.23.5.
+
+h values: -1.64036e-118
+input ends
+TRACE: Passed: _

@@ -1,0 +1,11 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/fill_find_groups/fill_find_groups_output/65231babe1251db169f3a88570ec49fae2e0d8bc.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/fill_find_groups/fill_find_groups_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+max_z_matrix values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+input ends
+TRACE: Passed: _

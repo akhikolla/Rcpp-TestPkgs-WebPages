@@ -1,0 +1,15 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+bsize values: 467495432
+tr_num values: 1827680409
+input ends
+
+error: Mat::operator(): index out of bounds
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::operator(): index out of bounds
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/carat/inst/testfiles/Bpert/Bpert_output/75bc0453becda4aca7b53d4c014c97b0c6dcb206.fail`
+INFO: Done fuzzing! Ran 1 tests (0 tests/second) with 1 failed/0 passed/0 abandoned tests

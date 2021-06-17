@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/cubic_interpolate/cubic_interpolate_output/641d80def0275fa5e7569acefc5a1637a4534213.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/cubic_interpolate/cubic_interpolate_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+p0 values: -1.92672e-302
+p1 values: -4.2952e-278
+p2 values: 4.24195e+22
+p3 values: -1.34847e-218
+x values: 8.07634e-201
+input ends
+TRACE: Passed: _

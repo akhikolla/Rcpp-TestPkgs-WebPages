@@ -1,0 +1,41 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/UPG/inst/testfiles/sample_binom/sample_binom_output/b2a680a491c62b8e3c18e1b6a93cfd7bf1182ccb.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/UPG/inst/testfiles/sample_binom/sample_binom_DeepState_TestHarness.cpp(13)
+input starts
+y_matrix values:   1.5640e+138  1.8651e-245 -1.6578e-126   8.3192e+76   1.2121e-73 -1.8285e+183
+  4.2949e-206  4.5496e+119 -1.5165e+167 -3.7500e-129  3.6939e+234  5.5012e+234
+ -5.8565e+106  2.3360e+187  -2.6101e-89  5.3980e+140   4.3495e-92  4.4304e-127
+  3.4402e-175  5.9791e+292 -2.9147e-218 -1.6507e-137  -2.2394e+46  8.1101e+134
+
+Ni values:   1.0715e+139 -1.3283e+231  4.8805e-239 -5.2607e+264
+
+X values:  -9.9465e+188  -1.4992e+56  1.8131e-164  7.2643e+160   3.9789e-75  -3.6310e+53
+  1.3110e+226  -8.0193e-77 -2.7156e+194  2.0929e+260   7.6069e-29  4.5936e+258
+ -1.0211e+209  -1.6623e+71  -1.0038e-02  2.3419e+295 -9.2050e-170 -3.3931e+131
+  9.8823e-105 -1.7159e-172  5.9368e-148  3.2541e+150  9.0621e-102   5.2196e-76
+ -2.4354e-299 -8.4645e+109  1.7831e+123  9.0688e-199 -5.0885e-155  4.4837e-181
+
+beta_old values:   3.8250e+232   1.3785e+44  9.9619e+126   1.1130e-94   3.1705e+35   6.0961e+76  -1.9591e+49  4.3397e+132 -1.8797e+245
+  3.3880e+182  -2.5146e-47  1.1930e+229 -1.5248e+200 -5.5045e-100   6.0491e+74   2.3832e-73   8.8351e-40  1.1023e-152
+ -5.7723e-192   5.8592e+57   8.2540e-84   5.3719e+86 -7.1065e+237 -1.5007e+222 -2.5508e-191  2.5082e+123  5.9609e+179
+  -1.8827e+86   1.3539e+31   1.3716e+99  -3.0612e-70  6.9640e+169   1.4143e-85  -3.4543e+04   3.2600e+10 -8.5372e+155
+
+EXTERNAL: qs v0.23.5.
+
+nsave values: 142601366
+nburn values: 339592311
+A0 values: 1.50973e+230
+d0 values: -4.83349e+265
+D0 values: -2.04214e-189
+G0 values: -1.84913e+295
+BOOST values: 289469708
+verbose values: 632126350
+prior_ig values: 1096246065
+input ends
+==2359322==  If you believe this happened as a result of a stack
+==2359322==  overflow in your program's main thread (unlikely but
+==2359322==  possible), you can try to increase the size of the
+==2359322==  main thread stack using the --main-stacksize= flag.
+==2359322==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/UPG/inst/testfiles/sample_binom/sample_binom_output/b2a680a491c62b8e3c18e1b6a93cfd7bf1182ccb.crash crashed

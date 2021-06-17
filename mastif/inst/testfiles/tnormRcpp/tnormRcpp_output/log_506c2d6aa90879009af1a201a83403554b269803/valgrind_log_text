@@ -1,0 +1,12 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/mastif/inst/testfiles/tnormRcpp/tnormRcpp_output/506c2d6aa90879009af1a201a83403554b269803.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/mastif/inst/testfiles/tnormRcpp/tnormRcpp_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+lo values: -1.92672e-302
+hi values: -4.2952e-278
+mu values: 4.24195e+22
+sig values: -1.34847e-218
+input ends
+TRACE: Passed: _

@@ -1,0 +1,15 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/BGGM/inst/testfiles/find_ids/find_ids_output/2e76f92f9d5ce4ee4f39bd120f085f97d0ec90b3.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/BGGM/inst/testfiles/find_ids/find_ids_DeepState_TestHarness.cpp(13)
+input starts
+x values:  -4.2952e-278   4.2420e+22
+ -1.3485e-218  8.0763e-201
+  9.9636e-247  2.9001e+287
+
+input ends
+
+error: trimatu(): given matrix must be square sized
+terminate called after throwing an instance of 'std::logic_error'
+  what():  trimatu(): given matrix must be square sized
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/BGGM/inst/testfiles/find_ids/find_ids_output/2e76f92f9d5ce4ee4f39bd120f085f97d0ec90b3.fail failed

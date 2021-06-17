@@ -1,0 +1,48 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+sizehex values: -2.43318e-187
+positionx values: -1.64581e+174
+positiony values: -1.66668e-49
+sinval values: 1.91698e-80
+cosval values: 2.93871e+294
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+sizehex values: -1.5615e-299
+positionx values: -1.20777e+13
+positiony values: 2.79236e-196
+sinval values: 1.26379e+187
+cosval values: 1.42068e+49
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+sizehex values: 1.27048e-62
+positionx values: -2.88162e-134
+positiony values: 8.18711e+299
+sinval values: 0.00468189
+cosval values: 9.28697e-257
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+sizehex values: 3.16522e+06
+positionx values: 3.72126e-82
+positiony values: 5.29799e-243
+sinval values: 7.52749e+12
+cosval values: -2.14488e+105
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+sizehex values: -1.92672e-302
+positionx values: -4.2952e-278
+positiony values: 4.24195e+22
+sinval values: -1.34847e-218
+cosval values: 8.07634e-201
+input ends
+INFO: Done fuzzing! Ran 5 tests (2 tests/second) with 0 failed/5 passed/0 abandoned tests

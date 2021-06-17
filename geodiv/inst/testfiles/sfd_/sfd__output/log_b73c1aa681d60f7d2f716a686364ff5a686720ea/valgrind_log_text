@@ -1,0 +1,12 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/geodiv/inst/testfiles/sfd_/sfd__output/b73c1aa681d60f7d2f716a686364ff5a686720ea.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/geodiv/inst/testfiles/sfd_/sfd__DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+mat values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+input ends
+Error: Matrix is too small: Input/output error
+TRACE: Passed: _

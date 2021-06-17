@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./inv_hfunc_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_output/48828c53aa7ab869e0b42aceb0dbb04f8c208733.pass</line>
+</preamble>
+
+<pid>2370037</pid>
+<ppid>2370036</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_output/log_48828c53aa7ab869e0b42aceb0dbb04f8c208733/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./inv_hfunc_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_output/48828c53aa7ab869e0b42aceb0dbb04f8c208733.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.030 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4D3F7C2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/src/kdecopula.so</obj>
+      <fn>inv_hfunc(Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, int const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/src</dir>
+      <file>hfunc.cpp</file>
+      <line>102</line>
+    </frame>
+    <frame>
+      <ip>0x40A30A</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc</dir>
+      <file>inv_hfunc_DeepState_TestHarness.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc</dir>
+      <file>inv_hfunc_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DD58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DFF9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E0D4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4D3F7F7</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/src/kdecopula.so</obj>
+      <fn>inv_hfunc(Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, int const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/src</dir>
+      <file>hfunc.cpp</file>
+      <line>105</line>
+    </frame>
+    <frame>
+      <ip>0x40A30A</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc</dir>
+      <file>inv_hfunc_DeepState_TestHarness.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc</dir>
+      <file>inv_hfunc_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DD58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DFF9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E0D4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x2</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4D3F97C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/src/kdecopula.so</obj>
+      <fn>inv_hfunc(Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, int const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/src</dir>
+      <file>hfunc.cpp</file>
+      <line>131</line>
+    </frame>
+    <frame>
+      <ip>0x40A30A</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc</dir>
+      <file>inv_hfunc_DeepState_TestHarness.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc</dir>
+      <file>inv_hfunc_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DD58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DFF9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E0D4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x3</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4D3F83C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/src/kdecopula.so</obj>
+      <fn>inv_hfunc(Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, int const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/src</dir>
+      <file>hfunc.cpp</file>
+      <line>132</line>
+    </frame>
+    <frame>
+      <ip>0x40A30A</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc</dir>
+      <file>inv_hfunc_DeepState_TestHarness.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc</dir>
+      <file>inv_hfunc_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DD58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DFF9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E0D4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/inv_hfunc/inv_hfunc_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.578 </time>
+</status>
+
+<errorcounts>
+  <pair>
+    <count>60</count>
+    <unique>0x3</unique>
+  </pair>
+  <pair>
+    <count>60</count>
+    <unique>0x2</unique>
+  </pair>
+  <pair>
+    <count>4</count>
+    <unique>0x1</unique>
+  </pair>
+  <pair>
+    <count>4</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:10.139 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

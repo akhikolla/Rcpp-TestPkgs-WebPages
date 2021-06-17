@@ -1,0 +1,21 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/social/inst/testfiles/allpaths/allpaths_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/social/inst/testfiles/allpaths/allpaths_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+adjMatrix values: 1.05415e-68 1.86447e-211 4.49059e+17 2.72551e-214 6.53679e-70 2.42643e+241 1.65687e+24
+
+startNode values: 644268439
+endNode values: 123721430
+maxDepth values: -859175003
+nPilot values: 246583936
+nEstimation values: -1079050344
+input ends
+==2463801==  If you believe this happened as a result of a stack
+==2463801==  overflow in your program's main thread (unlikely but
+==2463801==  possible), you can try to increase the size of the
+==2463801==  main thread stack using the --main-stacksize= flag.
+==2463801==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/social/inst/testfiles/allpaths/allpaths_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash crashed

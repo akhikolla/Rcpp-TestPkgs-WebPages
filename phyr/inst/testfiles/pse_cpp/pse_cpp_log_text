@@ -1,0 +1,89 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+comm values: 1.05415e-68 1.86447e-211 4.49059e+17 2.72551e-214 6.53679e-70 2.42643e+241 1.65687e+24
+
+Cmatrix values:  -6.6558e-306
+  -3.4884e-09
+ -1.5015e+251
+  1.5787e-307
+  -7.0076e-50
+  -6.9957e-60
+  2.5820e-253
+ -2.6324e-196
+  9.3225e-200
+  1.6671e-146
+
+input ends
+
+error: Mat::elem(): index out of bounds
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::elem(): index out of bounds
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/phyr/inst/testfiles/pse_cpp/pse_cpp_output/01a9d22edf52fb122869d916d9e3616620ff21df.fail`
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+comm values: 1.02532e+261 1.12756e-57     nan
+1.46340e+288     inf 4.12846e-51
+5.67165e-306 4.85713e-272     inf
+    nan     inf 61.3403
+5.43908e-105 3.30698e+94 6.30847e-13
+
+Cmatrix values:  -8.9592e-135 -6.0625e-109
+  2.1244e-244  2.7088e-266
+  4.3063e-136 -1.0242e+174
+  3.5872e-115 -4.0720e+259
+   7.9603e+55 -1.5203e+179
+  2.1142e-279 -3.3306e+212
+ -1.3341e+176   1.2859e-74
+ -1.9060e+273 -1.1032e-225
+ -1.8933e+185  3.3553e-161
+ -6.4805e-229  2.7835e-180
+
+input ends
+EXTERNAL: Error: negative length vectors are not allowed
+
+EXTERNAL: Execution halted
+
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+comm values: 3.60909e+224 9.37481e+280 1.27048e-62 4.71376e-48     nan 7.46115e-258 1.41003e-86
+1.11742e+83 3.07504e-136 2.13410e-145 1.75062e-260 2.90402e-286 5.01413e+184 1.93644e+180
+1.97870e+143 1.01645e-124 2.01769e+47 4.13273e+261 3.56215e-230     nan 1.99326e-62
+    nan 1.00679e-73     nan 7.50348e-71 1.43678e-133 29072.6 1.39816e-16
+
+Cmatrix values:    7.8939e+85  -1.4891e+39  2.6373e+261  4.5195e+163
+  -7.6277e-53  2.0962e+257 -4.6883e-154  1.1190e+232
+   3.2629e-84   3.9669e-30  1.3095e+193  2.8117e+284
+   7.8134e-69   8.0644e-68 -2.4343e-282  -8.6608e-93
+ -4.4412e-236   8.7984e-85   1.1876e+27 -1.9396e+293
+  -1.4798e+74   1.0829e-20  3.1889e-291   1.8941e+44
+ -3.2523e-308  4.1622e+189 -3.4719e+104 -9.6168e+161
+  9.7180e-239  1.2619e+215  2.1730e+107  2.2690e+150
+ -8.4010e+307  1.1376e+200  -2.0431e-81  -5.9623e+47
+
+input ends
+EXTERNAL: Error: negative length vectors are not allowed
+
+EXTERNAL: Execution halted
+
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+comm values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+Cmatrix values:   5.5064e+255 -5.0229e+117 -5.7294e+144  3.5716e+306   5.1075e-90  -2.6061e-23 -1.0132e-174  1.2321e-272
+
+input ends
+EXTERNAL: Error: negative length vectors are not allowed
+
+EXTERNAL: Execution halted
+
+INFO: Done fuzzing! Ran 4 tests (2 tests/second) with 4 failed/0 passed/0 abandoned tests

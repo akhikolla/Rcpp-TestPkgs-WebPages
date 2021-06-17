@@ -1,0 +1,15 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/calculate_g/calculate_g_output/02912e09ad80be6113271ce546ee74d76688482f.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/calculate_g/calculate_g_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+omega values: 3.16522e+06
+alpha values: 3.72126e-82
+beta values: 5.29799e-243
+gamma values: 7.52749e+12
+Missing value
+returns values: inf nan -3.98953e+09 8.27932e-269 -4.36409e-38 inf 7.90884e+272 -3.98953e+09
+g0 values: -2.83919e+230
+input ends
+TRACE: Passed: _

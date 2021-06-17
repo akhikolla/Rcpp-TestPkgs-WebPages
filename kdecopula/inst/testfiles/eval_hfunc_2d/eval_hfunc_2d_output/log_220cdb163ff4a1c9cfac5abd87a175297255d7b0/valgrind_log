@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./eval_hfunc_2d_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/eval_hfunc_2d/eval_hfunc_2d_output/220cdb163ff4a1c9cfac5abd87a175297255d7b0.pass</line>
+</preamble>
+
+<pid>2369909</pid>
+<ppid>2369908</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/eval_hfunc_2d/eval_hfunc_2d_output/log_220cdb163ff4a1c9cfac5abd87a175297255d7b0/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./eval_hfunc_2d_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/kdecopula/inst/testfiles/eval_hfunc_2d/eval_hfunc_2d_output/220cdb163ff4a1c9cfac5abd87a175297255d7b0.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.030 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.244 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.798 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

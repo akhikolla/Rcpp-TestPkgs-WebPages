@@ -1,0 +1,18 @@
+citHeader("To cite precrec in publications use:")
+
+citEntry(entry = "Article",
+  title        = "Precrec: fast and accurate precision-recall and ROC curve calculations in R",
+  author       = personList(as.person("Takaya Saito"),
+                   as.person("Marc Rehmsmeier")),
+  journal      = "Bioinformatics",
+  year         = "2017",
+  volume       = "33 (1)",
+  pages        = "145-147",
+  doi          = "10.1093/bioinformatics/btw570",
+
+  textVersion  =
+  paste("Takaya Saito and Marc Rehmsmeier (2017).",
+        "Precrec: fast and accurate precision-recall and ROC curve calculations in R.",
+        "Bioinformatics (2017) 33 (1): 145-147.",
+        "doi: 10.1093/bioinformatics/btw570")
+)

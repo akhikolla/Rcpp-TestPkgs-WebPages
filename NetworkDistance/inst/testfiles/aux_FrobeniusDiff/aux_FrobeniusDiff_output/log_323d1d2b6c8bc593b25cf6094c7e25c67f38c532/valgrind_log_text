@@ -1,0 +1,20 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_output/323d1d2b6c8bc593b25cf6094c7e25c67f38c532.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness.cpp(13)
+input starts
+A values:   -2.0449e-51   1.0935e+01  4.1314e+182 -8.4039e-124  -1.7193e-91
+
+B values:  -1.7212e+187  -2.2886e-42 -3.1753e+212   2.4667e-86
+   2.2839e-55  2.5944e+241 -7.2258e-217  1.1933e+132
+  -7.2798e+99  4.5428e-241  2.4025e-278  -3.6097e+55
+  5.5050e+287  9.2566e+260  1.0461e+288 -4.4695e+285
+ -3.8085e+121   4.0382e+81  2.2493e-239 -5.2946e-202
+  -2.9565e+65  -7.3054e+59  -1.5453e+76   6.6372e+22
+
+input ends
+
+error: subtraction: incompatible matrix dimensions: 1x0 and 6x0
+terminate called after throwing an instance of 'std::logic_error'
+  what():  subtraction: incompatible matrix dimensions: 1x0 and 6x0
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_output/323d1d2b6c8bc593b25cf6094c7e25c67f38c532.fail failed

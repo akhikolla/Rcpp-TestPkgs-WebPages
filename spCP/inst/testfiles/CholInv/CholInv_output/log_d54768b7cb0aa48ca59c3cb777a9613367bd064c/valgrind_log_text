@@ -1,0 +1,14 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/spCP/inst/testfiles/CholInv/CholInv_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/spCP/inst/testfiles/CholInv/CholInv_DeepState_TestHarness.cpp(13)
+input starts
+Cov values:   3.0201e-260  -9.9123e-57
+
+input ends
+==2463241==  If you believe this happened as a result of a stack
+==2463241==  overflow in your program's main thread (unlikely but
+==2463241==  possible), you can try to increase the size of the
+==2463241==  main thread stack using the --main-stacksize= flag.
+==2463241==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/spCP/inst/testfiles/CholInv/CholInv_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash crashed

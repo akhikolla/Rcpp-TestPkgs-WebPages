@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./calc_fitted_linreg_eigenqr_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/calc_fitted_linreg_eigenqr/calc_fitted_linreg_eigenqr_output/96abb77c1020a974e2a1e2433585267bc1679d4a.pass</line>
+</preamble>
+
+<pid>2433155</pid>
+<ppid>2433154</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/calc_fitted_linreg_eigenqr/calc_fitted_linreg_eigenqr_output/log_96abb77c1020a974e2a1e2433585267bc1679d4a/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./calc_fitted_linreg_eigenqr_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/calc_fitted_linreg_eigenqr/calc_fitted_linreg_eigenqr_output/96abb77c1020a974e2a1e2433585267bc1679d4a.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.027 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:08.979 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.519 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

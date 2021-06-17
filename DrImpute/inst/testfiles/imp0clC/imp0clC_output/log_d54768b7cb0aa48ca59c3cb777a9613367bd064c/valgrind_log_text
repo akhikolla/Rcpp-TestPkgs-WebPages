@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/DrImpute/inst/testfiles/imp0clC/imp0clC_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/DrImpute/inst/testfiles/imp0clC/imp0clC_DeepState_TestHarness.cpp(13)
+input starts
+X values:   3.0201e-260  -9.9123e-57
+
+cls values:   1.0539e+182   8.0561e-38
+ -3.8435e+136  2.3608e-100
+
+input ends
+==2344991==  If you believe this happened as a result of a stack
+==2344991==  overflow in your program's main thread (unlikely but
+==2344991==  possible), you can try to increase the size of the
+==2344991==  main thread stack using the --main-stacksize= flag.
+==2344991==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/DrImpute/inst/testfiles/imp0clC/imp0clC_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash crashed

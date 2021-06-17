@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/plyr/inst/testfiles/split_indices/split_indices_output/e7932681bdc8676f0613462de28842b2945cadd5.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/plyr/inst/testfiles/split_indices/split_indices_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+group values: -621726556 -1331494887 1854878590 314985932 1361933119 -1262797933 -1571830262 -555281357 1176038391 -1125445590 2051319948 -555281357 600611799 -2015925719 640758675 -2045256755 818332908 -1294723540 415152419 -1290633258 -568676763 -250049000 1237429200 -645489399 1298265599 889924430 -907775620 -152022060
+n values: 828412518
+input ends
+==2420889==  If you believe this happened as a result of a stack
+==2420889==  overflow in your program's main thread (unlikely but
+==2420889==  possible), you can try to increase the size of the
+==2420889==  main thread stack using the --main-stacksize= flag.
+==2420889==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/plyr/inst/testfiles/split_indices/split_indices_output/e7932681bdc8676f0613462de28842b2945cadd5.crash crashed

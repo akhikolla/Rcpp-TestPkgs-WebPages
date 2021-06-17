@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/partition/inst/testfiles/corr_c_mat/corr_c_mat_output/45cb170a86b4fbc8f18b362444c05c291e4364de.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/partition/inst/testfiles/corr_c_mat/corr_c_mat_DeepState_TestHarness.cpp(13)
+input starts
+x values:   3.0201e-260  -9.9123e-57
+
+input ends
+
+error: each_row(): incompatible size; expected 1x1, got 0x1
+terminate called after throwing an instance of 'std::logic_error'
+  what():  each_row(): incompatible size; expected 1x1, got 0x1
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/partition/inst/testfiles/corr_c_mat/corr_c_mat_output/45cb170a86b4fbc8f18b362444c05c291e4364de.fail failed

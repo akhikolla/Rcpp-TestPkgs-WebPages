@@ -1,0 +1,20 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/NPflow/inst/testfiles/NuMatParC/NuMatParC_output/1d8b6a8d85ee077a239e457f9ca0c87e5f9b9191.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/NPflow/inst/testfiles/NuMatParC/NuMatParC_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+c values: 2.79236e-196 1.26379e+187 1.42068e+49 2.58036e-206 3.02006e-260 -9.91228e-57 -1.64036e-118 1.05391e+182 8.05607e-38 -3.84354e+136 2.36082e-100 3.01724e-124 9.57301e+229 -7.99809e-243 3.0603e-110 3.27696e-93 -2.10374e+36 -5.29515e-20 9.81127e+30 -3403.88 -364840 -8.45394e+179 -4.53552e+269 3.95635e-268 8.724e-16 7.84869e-78 7.10346e+183 6.87083e-155 -6.90559e+64 1.10258e+184 1.69525e-11 -3.22009e+207 1.87679e-179 7.60266e-52 -3.18941e-67 -4.07828e-125 1.24681e+68 -2.7582e-295 5.67557e+224 -3.54965e-194 1.60096e-198 4.16403e-243 1.67598e+109 -2.35868e+145 4.45587e-209 3.27437e+270 1.99018e+90 7.37432e-288 3.21585e+236 -4.62773e+76 5.0002e+07 -6.90296e+295 -6.94997e+150 -6.24894e+226 -5.38464e+306 9.2239e-177 -5.22812e-276
+d values:   3.3784e-275 -3.1987e-152  9.0176e+269  1.3813e+189  4.8753e-255  6.4659e+299  7.9541e+131 -1.0007e+287
+  -3.6541e+16 -5.0822e+282  5.2411e-118  -3.0883e+19  2.0132e-209 -7.1892e-155  8.0358e-241  -1.3382e+63
+ -5.4156e+156 -2.3075e+261   3.1542e+84 -3.7218e-129   6.5417e+73  3.7366e+138 -5.7121e+187 -1.2957e+212
+  -2.7706e-29  8.6219e-194 -5.0904e-110  -3.4519e+44  -2.1145e-76 -7.9521e-143 -1.1554e+112  1.1294e-169
+   1.8293e-65  1.6328e+135  1.4161e-276  -3.8109e+65  1.3660e+281 -1.0679e+197  1.2569e-144  2.9498e+178
+
+input ends
+
+error: Mat::operator(): index out of bounds
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::operator(): index out of bounds
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/NPflow/inst/testfiles/NuMatParC/NuMatParC_output/1d8b6a8d85ee077a239e457f9ca0c87e5f9b9191.fail failed

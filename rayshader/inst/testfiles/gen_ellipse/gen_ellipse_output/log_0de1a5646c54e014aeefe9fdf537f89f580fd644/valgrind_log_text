@@ -1,0 +1,11 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/gen_ellipse/gen_ellipse_output/0de1a5646c54e014aeefe9fdf537f89f580fd644.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/gen_ellipse/gen_ellipse_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+intensity values: -2.43318e-187
+width values: -1.64581e+174
+height values: -1.66668e-49
+input ends
+TRACE: Passed: _

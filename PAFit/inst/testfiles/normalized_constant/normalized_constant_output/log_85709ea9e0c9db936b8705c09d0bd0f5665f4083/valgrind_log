@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./normalized_constant_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_output/85709ea9e0c9db936b8705c09d0bd0f5665f4083.pass</line>
+</preamble>
+
+<pid>2353866</pid>
+<ppid>2353865</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_output/log_85709ea9e0c9db936b8705c09d0bd0f5665f4083/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./normalized_constant_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_output/85709ea9e0c9db936b8705c09d0bd0f5665f4083.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.041 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>7</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2967E</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/src/PAFit.so</obj>
+      <fn>normalized_constant(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, double const&amp;) [clone ._omp_fn.0]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/src</dir>
+      <file>Cpp_code.cpp</file>
+      <line>33</line>
+    </frame>
+    <frame>
+      <ip>0x593377D</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x5964608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x51B5292</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xa794188 is 0 bytes after a block of size 216 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x41876F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;::Vector(Rcpp::Dimension const&amp;)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector/Vector.h</file>
+      <line>135</line>
+    </frame>
+    <frame>
+      <ip>0x40FC16</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt;::Matrix(int const&amp;, int const&amp;)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector/Matrix.h</file>
+      <line>59</line>
+    </frame>
+    <frame>
+      <ip>0x408BAF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>RcppDeepState_NumericMatrix()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppDeepState/include/RcppDeepState.h</file>
+      <line>137</line>
+    </frame>
+    <frame>
+      <ip>0x40A258</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant</dir>
+      <file>normalized_constant_DeepState_TestHarness.cpp</file>
+      <line>32</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant</dir>
+      <file>normalized_constant_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41E058</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2F9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E3D4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:10.030 </time>
+</status>
+
+<error>
+  <unique>0xe5</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>3,520 bytes in 11 blocks are possibly lost in loss record 225 of 1,324</text>
+    <leakedbytes>3520</leakedbytes>
+    <leakedblocks>11</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483DD99</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+    </frame>
+    <frame>
+      <ip>0x40149CA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/ld-2.31.so</obj>
+      <fn>allocate_dtv</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/elf/../elf</dir>
+      <file>dl-tls.c</file>
+      <line>286</line>
+    </frame>
+    <frame>
+      <ip>0x40149CA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/ld-2.31.so</obj>
+      <fn>_dl_allocate_tls</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/elf/../elf</dir>
+      <file>dl-tls.c</file>
+      <line>532</line>
+    </frame>
+    <frame>
+      <ip>0x5965322</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>allocate_stack</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>allocatestack.c</file>
+      <line>622</line>
+    </frame>
+    <frame>
+      <ip>0x5965322</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>pthread_create@@GLIBC_2.2.5</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>660</line>
+    </frame>
+    <frame>
+      <ip>0x5933DDA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+    </frame>
+    <frame>
+      <ip>0x592B8E0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0</obj>
+      <fn>GOMP_parallel</fn>
+    </frame>
+    <frame>
+      <ip>0x4D271D3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/src/PAFit.so</obj>
+      <fn>normalized_constant(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, double const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/src</dir>
+      <file>Cpp_code.cpp</file>
+      <line>24</line>
+    </frame>
+    <frame>
+      <ip>0x40A64F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant</dir>
+      <file>normalized_constant_DeepState_TestHarness.cpp</file>
+      <line>43</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant</dir>
+      <file>normalized_constant_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41E058</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2F9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E3D4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/PAFit/inst/testfiles/normalized_constant/normalized_constant_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+  <pair>
+    <count>5</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:10.798 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

@@ -1,0 +1,18 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/cusum/inst/testfiles/ragscusum/ragscusum_output/3baa286de21ac4ea3a5ea8ce8524e7412ec46215.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/cusum/inst/testfiles/ragscusum/ragscusum_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+input_ra_outcomes values: 3.60909e+224 9.37481e+280 1.27048e-62 4.71376e-48     nan 7.46115e-258 1.41003e-86
+1.11742e+83 3.07504e-136 2.13410e-145 1.75062e-260 2.90402e-286 5.01413e+184 1.93644e+180
+1.97870e+143 1.01645e-124 2.01769e+47 4.13273e+261 3.56215e-230     nan 1.99326e-62
+    nan 1.00679e-73     nan 7.50348e-71 1.43678e-133 29072.6 1.39816e-16
+
+limit values: -1.09625e-166
+quantiles values: 2.63725e+261 4.51946e+163 -7.62766e-53 2.09617e+257 -4.68831e-154 1.11903e+232 3.26286e-84 3.96693e-30 1.30945e+193 2.81167e+284 7.81345e-69 8.06438e-68 -2.43433e-282 -8.66083e-93 -4.44117e-236 8.79839e-85 1.18757e+27 -1.93959e+293 -1.47979e+74 1.08295e-20 3.18894e-291
+max_num_shuffles values: 1916545315
+seed values: -1409540023
+input ends
+TRACE: Passed: _

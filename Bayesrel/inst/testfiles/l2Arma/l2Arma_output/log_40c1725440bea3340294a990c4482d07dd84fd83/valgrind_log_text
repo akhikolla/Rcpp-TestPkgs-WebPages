@@ -1,0 +1,8 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/Bayesrel/inst/testfiles/l2Arma/l2Arma_output/40c1725440bea3340294a990c4482d07dd84fd83.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/Bayesrel/inst/testfiles/l2Arma/l2Arma_DeepState_TestHarness.cpp(13)
+input starts
+X values:   3.0201e-260  -9.9123e-57
+
+input ends
+TRACE: Passed: _

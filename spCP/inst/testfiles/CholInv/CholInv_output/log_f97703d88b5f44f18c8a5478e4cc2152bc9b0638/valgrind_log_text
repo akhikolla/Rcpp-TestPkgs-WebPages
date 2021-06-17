@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/spCP/inst/testfiles/CholInv/CholInv_output/f97703d88b5f44f18c8a5478e4cc2152bc9b0638.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/spCP/inst/testfiles/CholInv/CholInv_DeepState_TestHarness.cpp(13)
+input starts
+Cov values:   6.2461e+181  -4.1137e+80          nan  2.7901e+291 -2.4367e+290  1.1372e+165  1.2493e+186 -9.0601e-190  1.2437e-163   1.0736e-51
+
+input ends
+
+error: inv_sympd(): given matrix must be square sized
+terminate called after throwing an instance of 'std::logic_error'
+  what():  inv_sympd(): given matrix must be square sized
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/spCP/inst/testfiles/CholInv/CholInv_output/f97703d88b5f44f18c8a5478e4cc2152bc9b0638.crash failed

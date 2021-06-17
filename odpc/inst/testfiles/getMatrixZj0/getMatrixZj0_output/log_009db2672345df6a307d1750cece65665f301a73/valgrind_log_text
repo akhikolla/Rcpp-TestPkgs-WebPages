@@ -1,0 +1,21 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/odpc/inst/testfiles/getMatrixZj0/getMatrixZj0_output/009db2672345df6a307d1750cece65665f301a73.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/odpc/inst/testfiles/getMatrixZj0/getMatrixZj0_DeepState_TestHarness.cpp(13)
+input starts
+Z values:  -1.0846e-247 -1.0696e+114
+ -3.4796e-216 -8.9518e+215
+  1.3835e-136  6.2461e+181
+  -4.1137e+80          nan
+
+EXTERNAL: qs v0.23.5.
+
+k1 values: 889924430
+k_tot values: -907775620
+j values: -152022060
+input ends
+
+error: Mat::rows(): indices out of bounds or incorrectly used
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::rows(): indices out of bounds or incorrectly used
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/odpc/inst/testfiles/getMatrixZj0/getMatrixZj0_output/009db2672345df6a307d1750cece65665f301a73.fail failed

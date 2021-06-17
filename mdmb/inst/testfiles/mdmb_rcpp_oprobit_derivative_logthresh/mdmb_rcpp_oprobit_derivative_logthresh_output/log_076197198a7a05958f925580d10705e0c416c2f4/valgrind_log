@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./mdmb_rcpp_oprobit_derivative_logthresh_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/mdmb/inst/testfiles/mdmb_rcpp_oprobit_derivative_logthresh/mdmb_rcpp_oprobit_derivative_logthresh_output/076197198a7a05958f925580d10705e0c416c2f4.pass</line>
+</preamble>
+
+<pid>2375731</pid>
+<ppid>2375730</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/mdmb/inst/testfiles/mdmb_rcpp_oprobit_derivative_logthresh/mdmb_rcpp_oprobit_derivative_logthresh_output/log_076197198a7a05958f925580d10705e0c416c2f4/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./mdmb_rcpp_oprobit_derivative_logthresh_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/mdmb/inst/testfiles/mdmb_rcpp_oprobit_derivative_logthresh/mdmb_rcpp_oprobit_derivative_logthresh_output/076197198a7a05958f925580d10705e0c416c2f4.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.106 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:15.837 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:16.831 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

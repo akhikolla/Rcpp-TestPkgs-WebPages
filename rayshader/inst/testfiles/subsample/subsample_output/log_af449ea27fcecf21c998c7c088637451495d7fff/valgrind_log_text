@@ -1,0 +1,18 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/subsample/subsample_output/af449ea27fcecf21c998c7c088637451495d7fff.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/subsample/subsample_DeepState_TestHarness.cpp(13)
+input starts
+circle values:  -4.2952e-278   4.2420e+22
+ -1.3485e-218  8.0763e-201
+  9.9636e-247  2.9001e+287
+
+EXTERNAL: qs v0.23.5.
+
+size values: -1848040725
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/subsample/subsample_output/af449ea27fcecf21c998c7c088637451495d7fff.fail failed

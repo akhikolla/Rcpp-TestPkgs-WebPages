@@ -1,0 +1,12 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/raceland/inst/testfiles/motifel_sums/motifel_sums_output/3ce92115ffe3568b3e41833ee0bb34e70c02e18d.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/raceland/inst/testfiles/motifel_sums/motifel_sums_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+x values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+size values: 1649522050
+input ends
+TRACE: Passed: _

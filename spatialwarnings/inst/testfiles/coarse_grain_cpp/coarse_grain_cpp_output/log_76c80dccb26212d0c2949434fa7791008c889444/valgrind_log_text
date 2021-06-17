@@ -1,0 +1,12 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/coarse_grain_cpp/coarse_grain_cpp_output/76c80dccb26212d0c2949434fa7791008c889444.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/coarse_grain_cpp/coarse_grain_cpp_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+mat values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+subsize values: 1649522050
+input ends
+TRACE: Passed: _

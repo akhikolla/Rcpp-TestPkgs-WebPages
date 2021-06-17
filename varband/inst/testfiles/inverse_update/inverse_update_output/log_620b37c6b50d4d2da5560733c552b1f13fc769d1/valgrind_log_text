@@ -1,0 +1,24 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/varband/inst/testfiles/inverse_update/inverse_update_output/620b37c6b50d4d2da5560733c552b1f13fc769d1.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/varband/inst/testfiles/inverse_update/inverse_update_DeepState_TestHarness.cpp(13)
+input starts
+S values:   4.5428e-241
+  2.4025e-278
+  -3.6097e+55
+
+EXTERNAL: qs v0.23.5.
+
+rho values: 5.50504e+287
+S_inv values:   1.0461e+288 -4.4695e+285 -3.8085e+121   4.0382e+81  2.2493e-239 -5.2946e-202  -2.9565e+65  -7.3054e+59  -1.5453e+76
+   6.6372e+22  2.3812e-167  -3.3071e+68  1.4961e-304  5.9276e-300  7.3864e-168 -1.5036e+120   7.7919e-90 -7.8650e+286
+  4.5176e+123   1.3469e-60  -1.8721e-60  3.6399e-237  5.7201e-299  2.8895e+251  1.6393e+214  8.4144e-249  3.0867e+146
+  -3.4284e+16  8.0233e-162 -9.8112e+249  1.6586e+214  6.4499e+171  2.5375e+224 -5.2051e+113  8.4350e-163   1.5071e-55
+
+input ends
+==2467119==  If you believe this happened as a result of a stack
+==2467119==  overflow in your program's main thread (unlikely but
+==2467119==  possible), you can try to increase the size of the
+==2467119==  main thread stack using the --main-stacksize= flag.
+==2467119==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/varband/inst/testfiles/inverse_update/inverse_update_output/620b37c6b50d4d2da5560733c552b1f13fc769d1.crash crashed

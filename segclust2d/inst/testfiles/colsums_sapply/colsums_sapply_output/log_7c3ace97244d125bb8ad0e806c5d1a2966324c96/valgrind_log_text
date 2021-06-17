@@ -1,0 +1,37 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/segclust2d/inst/testfiles/colsums_sapply/colsums_sapply_output/7c3ace97244d125bb8ad0e806c5d1a2966324c96.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/segclust2d/inst/testfiles/colsums_sapply/colsums_sapply_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+i values: -293123844
+rupt values:   2.9877e-188  -3.7379e+59 -5.0281e-216   2.1622e+38
+  4.6111e-106  7.5467e+136  3.5716e-109  -1.1412e+67
+   2.6722e-96 -4.5610e+108  2.1110e-190  2.3442e-262
+   3.6455e+68  -1.7038e+98  1.9604e+169 -4.0341e-215
+   8.4584e-55  1.7311e-152 -4.4341e+267  -1.3240e-49
+  -1.2804e-25  2.0631e+285  1.4741e+187  1.0211e-250
+ -5.0722e+195  1.2779e-261   3.1149e+30  2.0338e-295
+ -1.6347e-257  5.5586e-198   4.7110e+56  -9.5860e-76
+
+x values:   -6.9057e-18 -1.0963e-166   7.8939e+85  -1.4891e+39  2.6373e+261  4.5195e+163  -7.6277e-53  2.0962e+257
+ -4.6883e-154  1.1190e+232   3.2629e-84   3.9669e-30  1.3095e+193  2.8117e+284   7.8134e-69   8.0644e-68
+
+mu values:   -8.6608e-93 -4.4412e-236
+   8.7984e-85   1.1876e+27
+
+tau values:   -1.4798e+74
+   1.0829e-20
+  3.1889e-291
+   1.8941e+44
+ -3.2523e-308
+  4.1622e+189
+ -3.4719e+104
+
+input ends
+
+error: element-wise multiplication: incompatible matrix dimensions: 8x0 and 7x0
+terminate called after throwing an instance of 'std::logic_error'
+  what():  element-wise multiplication: incompatible matrix dimensions: 8x0 and 7x0
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/segclust2d/inst/testfiles/colsums_sapply/colsums_sapply_output/7c3ace97244d125bb8ad0e806c5d1a2966324c96.fail failed

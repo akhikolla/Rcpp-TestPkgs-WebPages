@@ -1,0 +1,26 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/phyr/inst/testfiles/pse_cpp/pse_cpp_output/01a9d22edf52fb122869d916d9e3616620ff21df.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/phyr/inst/testfiles/pse_cpp/pse_cpp_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+comm values: 1.05415e-68 1.86447e-211 4.49059e+17 2.72551e-214 6.53679e-70 2.42643e+241 1.65687e+24
+
+Cmatrix values:  -6.6558e-306
+  -3.4884e-09
+ -1.5015e+251
+  1.5787e-307
+  -7.0076e-50
+  -6.9957e-60
+  2.5820e-253
+ -2.6324e-196
+  9.3225e-200
+  1.6671e-146
+
+input ends
+
+error: Mat::elem(): index out of bounds
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::elem(): index out of bounds
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/phyr/inst/testfiles/pse_cpp/pse_cpp_output/01a9d22edf52fb122869d916d9e3616620ff21df.fail failed

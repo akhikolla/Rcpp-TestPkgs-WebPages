@@ -1,0 +1,10 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/maxnodf/inst/testfiles/computeMT0/computeMT0_output/fe98c62cb374f61bcbbadfb69ef6b89a622385f4.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/maxnodf/inst/testfiles/computeMT0/computeMT0_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+mtx values: 1.05415e-68 1.86447e-211 4.49059e+17 2.72551e-214 6.53679e-70 2.42643e+241 1.65687e+24
+
+input ends
+TRACE: Passed: _

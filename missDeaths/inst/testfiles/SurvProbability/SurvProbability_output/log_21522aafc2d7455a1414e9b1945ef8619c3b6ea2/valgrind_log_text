@@ -1,0 +1,12 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/missDeaths/inst/testfiles/SurvProbability/SurvProbability_output/21522aafc2d7455a1414e9b1945ef8619c3b6ea2.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/missDeaths/inst/testfiles/SurvProbability/SurvProbability_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+birthyear values: -5.84486e+130
+age values: 7.96752e+95
+time values: -4.40542e-65
+sex values: 1898225516
+input ends
+TRACE: Passed: _

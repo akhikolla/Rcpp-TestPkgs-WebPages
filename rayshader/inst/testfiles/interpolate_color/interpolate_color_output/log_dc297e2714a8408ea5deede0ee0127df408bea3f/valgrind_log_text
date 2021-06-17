@@ -1,0 +1,12 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/interpolate_color/interpolate_color_output/dc297e2714a8408ea5deede0ee0127df408bea3f.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/interpolate_color/interpolate_color_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+color_nw values: -2.43318e-187
+color_ne values: -1.64581e+174
+color_se values: -1.66668e-49
+color_sw values: 1.91698e-80
+input ends
+TRACE: Passed: _

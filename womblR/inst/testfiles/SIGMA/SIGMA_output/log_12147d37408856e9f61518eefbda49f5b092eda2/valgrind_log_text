@@ -1,0 +1,27 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/womblR/inst/testfiles/SIGMA/SIGMA_output/12147d37408856e9f61518eefbda49f5b092eda2.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/womblR/inst/testfiles/SIGMA/SIGMA_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+Phi values: 7.56776e+303
+TempCorInd values: -1208387770
+TimeDist values:    6.8659e-86  5.1881e-198  4.4855e+211  1.5568e-244  2.0459e-264  8.3826e+191  3.4065e+139  -1.9127e+34 -2.5895e-238
+   3.0919e-84  8.1872e+241   3.2280e+20 -4.2625e-149  -8.9375e+40 -2.4590e-140  -2.0126e-91 -1.2125e+269  9.7241e-237
+   1.4142e+63 -2.7628e-258 -6.3141e+108  2.9343e-105   3.7222e-87 -9.0635e-258 -4.5931e+207  2.2662e+173  -4.9428e+89
+  2.3662e-226  1.6827e-128 -9.9502e+205  4.6912e-288   3.6609e-08  1.8311e+129 -2.8266e+122 -4.4168e+173  3.7200e-258
+ -9.9535e+272  -1.4574e+41  6.3415e-247 -3.1129e+171  -2.3849e+11 -1.4413e+171   7.7523e-10  6.9592e-202  3.8940e-155
+  -5.9214e+37 -3.5781e+162   2.6184e-90 -5.4833e+153  8.5950e+213  4.6331e-216  8.5220e+148  -2.0140e+18  1.9505e-135
+  2.8941e+129   5.1703e-67  -2.3458e+92 -9.0584e+223  -8.7056e-59  -4.9477e+70  -3.9674e-10  -7.9538e+85 -3.7933e-257
+  -1.0661e+76 -1.6301e+113  2.4547e+100  3.0497e+276  9.4736e-189  1.7267e-188 -1.1179e+241 -8.3580e-257   9.8553e-28
+  6.9834e-240  5.3373e-179  1.5897e-174  2.8982e+153   8.3718e+87 -1.3507e-229   1.3543e+47 -5.4561e-306  5.9718e-181
+ -6.7957e+177 -1.5229e-140   3.7823e-75 -4.3291e-123  3.4854e+205 -1.1428e-204   3.2833e+06   7.9876e+03 -7.6310e+290
+
+Nu values: -1369772032
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/womblR/inst/testfiles/SIGMA/SIGMA_output/12147d37408856e9f61518eefbda49f5b092eda2.fail failed

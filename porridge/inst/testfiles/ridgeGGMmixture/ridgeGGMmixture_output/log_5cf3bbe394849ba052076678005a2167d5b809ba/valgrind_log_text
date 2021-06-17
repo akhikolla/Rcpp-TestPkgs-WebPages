@@ -1,0 +1,27 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgeGGMmixture/ridgeGGMmixture_output/5cf3bbe394849ba052076678005a2167d5b809ba.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgeGGMmixture/ridgeGGMmixture_DeepState_TestHarness.cpp(13)
+input starts
+Y values:  -1.0846e-247 -1.0696e+114
+ -3.4796e-216 -8.9518e+215
+  1.3835e-136  6.2461e+181
+  -4.1137e+80          nan
+
+EXTERNAL: qs v0.23.5.
+
+K values: 889924430
+lambda values: -1.70377e+98
+target values:  -4.0341e-215   8.4584e-55  1.7311e-152 -4.4341e+267
+
+iWeights values:   -1.2804e-25  2.0631e+285  1.4741e+187  1.0211e-250 -5.0722e+195  1.2779e-261   3.1149e+30  2.0338e-295
+ -1.6347e-257  5.5586e-198   4.7110e+56  -9.5860e-76 -6.4030e+218  -6.9057e-18 -1.0963e-166   7.8939e+85
+  -1.4891e+39  2.6373e+261  4.5195e+163  -7.6277e-53  2.0962e+257 -4.6883e-154  1.1190e+232   3.2629e-84
+   3.9669e-30  1.3095e+193  2.8117e+284   7.8134e-69   8.0644e-68 -2.4343e-282  -8.6608e-93 -4.4412e-236
+   8.7984e-85   1.1876e+27 -1.9396e+293  -1.4798e+74   1.0829e-20  3.1889e-291   1.8941e+44 -3.2523e-308
+  4.1622e+189 -3.4719e+104 -9.6168e+161  9.7180e-239  1.2619e+215  2.1730e+107  2.2690e+150 -8.4010e+307
+
+nInit values: -2013450485
+minSuccDiff values: -3.63794e+124
+minMixProp values: 1.26699e+289
+input ends
+TRACE: Passed: _

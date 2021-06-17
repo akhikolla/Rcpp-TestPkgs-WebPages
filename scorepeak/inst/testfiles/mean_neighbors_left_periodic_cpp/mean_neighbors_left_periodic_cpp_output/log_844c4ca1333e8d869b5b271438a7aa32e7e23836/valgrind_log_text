@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/scorepeak/inst/testfiles/mean_neighbors_left_periodic_cpp/mean_neighbors_left_periodic_cpp_output/844c4ca1333e8d869b5b271438a7aa32e7e23836.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/scorepeak/inst/testfiles/mean_neighbors_left_periodic_cpp/mean_neighbors_left_periodic_cpp_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+data values: 1.27891e-188 7.52749e+12 -2.14488e+105 inf -2.02048e-44 nan 3.42032e-93 8.27932e-269 -4.36409e-38 inf 0
+windowsize values: 2069757405
+input ends
+==2484496==  If you believe this happened as a result of a stack
+==2484496==  overflow in your program's main thread (unlikely but
+==2484496==  possible), you can try to increase the size of the
+==2484496==  main thread stack using the --main-stacksize= flag.
+==2484496==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/scorepeak/inst/testfiles/mean_neighbors_left_periodic_cpp/mean_neighbors_left_periodic_cpp_output/844c4ca1333e8d869b5b271438a7aa32e7e23836.crash crashed

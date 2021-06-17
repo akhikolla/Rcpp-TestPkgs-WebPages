@@ -1,0 +1,31 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/geoFKF/inst/testfiles/logLikMultiNorm/logLikMultiNorm_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/geoFKF/inst/testfiles/logLikMultiNorm/logLikMultiNorm_DeepState_TestHarness.cpp(13)
+input starts
+mCoef values:  -1.6458e+174  -1.6667e-49   1.9170e-80  2.9387e+294   6.2389e-80   4.7359e-68  1.9237e+304   5.2228e+77 -2.9793e-194 -2.6816e-130
+ -2.8444e-188 -1.3783e-303  9.4614e+185   3.4351e-26 -2.8041e+194 -2.6932e-264   8.8838e+93 -1.2815e+192 -1.0538e+270  9.9349e-272
+ -4.4967e-166  1.0879e-197 -1.2041e+269  5.6944e+304 -4.3128e+297 -8.5076e-293  8.1098e+266  5.7915e-162 -1.5284e+202  1.0840e-287
+
+mDist values:  -5.6876e-181 -1.1384e-199  1.9626e-252
+  5.3341e-300   2.5921e-42  -9.9731e-54
+ -2.7216e-171 -3.6255e+168 -1.0588e+151
+  2.4272e-180  2.7138e-129 -2.9957e+172
+ -3.9222e+180   3.8764e+40   2.8753e-21
+  2.1614e-216  -1.2427e+93  1.1296e-232
+   3.9216e-79  -1.5667e+04   4.5708e-49
+  -1.2576e+73 -8.7937e+217 -9.7794e+240
+ -6.9190e+224 -1.1680e+232 -1.9655e+138
+
+EXTERNAL: qs v0.23.5.
+
+s2 values: -2.97634e-92
+phi values: -2.12535e-12
+p values: 3.06887e+143
+input ends
+==2366751==  If you believe this happened as a result of a stack
+==2366751==  overflow in your program's main thread (unlikely but
+==2366751==  possible), you can try to increase the size of the
+==2366751==  main thread stack using the --main-stacksize= flag.
+==2366751==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/geoFKF/inst/testfiles/logLikMultiNorm/logLikMultiNorm_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash crashed

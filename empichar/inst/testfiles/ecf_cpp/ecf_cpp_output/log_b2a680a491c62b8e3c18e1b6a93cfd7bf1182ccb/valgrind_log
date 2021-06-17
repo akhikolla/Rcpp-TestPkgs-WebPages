@@ -1,0 +1,768 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./ecf_cpp_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_output/b2a680a491c62b8e3c18e1b6a93cfd7bf1182ccb.crash</line>
+</preamble>
+
+<pid>2362666</pid>
+<ppid>2362665</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_output/log_b2a680a491c62b8e3c18e1b6a93cfd7bf1182ccb/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./ecf_cpp_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_output/b2a680a491c62b8e3c18e1b6a93cfd7bf1182ccb.crash</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.023 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4FA3D52</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libm-2.31.so</obj>
+      <fn>__cos_fma</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/math/../sysdeps/ieee754/dbl-64</dir>
+      <file>s_sin.c</file>
+      <line>280</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B404</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>cos&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eop_aux.hpp</file>
+      <line>67</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B404</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>process&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eop_core_meat.hpp</file>
+      <line>1078</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B404</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>at</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eOp_meat.hpp</file>
+      <line>133</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B404</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>at</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Proxy.hpp</file>
+      <line>470</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B404</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply_noalias_proxy&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_cos&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>190</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B404</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply_noalias&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_cos&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>65</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B404</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_cos&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>38</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B404</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>operator=&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_cos&gt;, arma::op_mean&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>4815</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B404</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>operator=&lt;arma::Op&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_cos&gt;, arma::op_mean&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Col_meat.hpp</file>
+      <line>370</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B404</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>ecf_cpp(arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src</dir>
+      <file>functions.cpp</file>
+      <line>102</line>
+    </frame>
+    <frame>
+      <ip>0x407ACB</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x4145F8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x414899</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4FA351F</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libm-2.31.so</obj>
+      <fn>__sin_fma</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/math/../sysdeps/ieee754/dbl-64</dir>
+      <file>s_sin.c</file>
+      <line>213</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>sin&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eop_aux.hpp</file>
+      <line>68</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>process&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eop_core_meat.hpp</file>
+      <line>1081</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>at</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eOp_meat.hpp</file>
+      <line>133</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>at</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Proxy.hpp</file>
+      <line>470</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply_noalias_proxy&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>190</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply_noalias&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>65</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>38</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>operator=&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt;, arma::op_mean&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>4815</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>operator=&lt;arma::Op&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt;, arma::op_mean&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Col_meat.hpp</file>
+      <line>370</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>ecf_cpp(arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src</dir>
+      <file>functions.cpp</file>
+      <line>103</line>
+    </frame>
+    <frame>
+      <ip>0x407ACB</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x4145F8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x414899</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x5</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4FA3539</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libm-2.31.so</obj>
+      <fn>__sin_fma</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/math/../sysdeps/ieee754/dbl-64</dir>
+      <file>s_sin.c</file>
+      <line>215</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>sin&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eop_aux.hpp</file>
+      <line>68</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>process&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eop_core_meat.hpp</file>
+      <line>1081</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>at</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eOp_meat.hpp</file>
+      <line>133</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>at</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Proxy.hpp</file>
+      <line>470</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply_noalias_proxy&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>190</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply_noalias&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>65</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>38</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>operator=&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt;, arma::op_mean&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>4815</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>operator=&lt;arma::Op&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt;, arma::op_mean&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Col_meat.hpp</file>
+      <line>370</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B6CC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>ecf_cpp(arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src</dir>
+      <file>functions.cpp</file>
+      <line>103</line>
+    </frame>
+    <frame>
+      <ip>0x407ACB</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x4145F8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x414899</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xc</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4D2B7CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>is_finite&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>arrayops_meat.hpp</file>
+      <line>1089</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>is_finite</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>6097</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply_noalias_proxy&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>196</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply_noalias&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>65</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>38</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>operator=&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt;, arma::op_mean&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>4815</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>operator=&lt;arma::Op&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt;, arma::op_mean&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Col_meat.hpp</file>
+      <line>370</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>ecf_cpp(arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src</dir>
+      <file>functions.cpp</file>
+      <line>103</line>
+    </frame>
+    <frame>
+      <ip>0x407ACB</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x4145F8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x414899</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xd</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4D2B7A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>is_finite&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>arrayops_meat.hpp</file>
+      <line>1089</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>is_finite</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>6097</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply_noalias_proxy&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>196</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply_noalias&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>65</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>apply&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>op_mean_meat.hpp</file>
+      <line>38</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>operator=&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt;, arma::op_mean&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>4815</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>operator=&lt;arma::Op&lt;arma::eOp&lt;arma::Mat&lt;double&gt;, arma::eop_sin&gt;, arma::op_mean&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Col_meat.hpp</file>
+      <line>370</line>
+    </frame>
+    <frame>
+      <ip>0x4D2B7A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src/empichar.so</obj>
+      <fn>ecf_cpp(arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/src</dir>
+      <file>functions.cpp</file>
+      <line>103</line>
+    </frame>
+    <frame>
+      <ip>0x407ACB</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x4145F8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x414899</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x10</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x40DD59</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>arma::Mat&lt;std::complex&lt;double&gt; &gt;::~Mat()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/Mat_meat.hpp</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x40CDB7</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>arma::Col&lt;std::complex&lt;double&gt; &gt;::~Col()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/arma_forward.hpp</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x407ADC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp</dir>
+      <file>ecf_cpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x4145F8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x414899</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/empichar/inst/testfiles/ecf_cpp/ecf_cpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:06.883 </time>
+</status>
+
+<errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x10</unique>
+  </pair>
+  <pair>
+    <count>2</count>
+    <unique>0xd</unique>
+  </pair>
+  <pair>
+    <count>2</count>
+    <unique>0xc</unique>
+  </pair>
+  <pair>
+    <count>4</count>
+    <unique>0x5</unique>
+  </pair>
+  <pair>
+    <count>4</count>
+    <unique>0x4</unique>
+  </pair>
+  <pair>
+    <count>4</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:07.337 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

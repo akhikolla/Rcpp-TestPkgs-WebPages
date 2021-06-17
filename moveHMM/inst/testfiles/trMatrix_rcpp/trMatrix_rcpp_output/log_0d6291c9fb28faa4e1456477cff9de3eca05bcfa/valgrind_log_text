@@ -1,0 +1,36 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/trMatrix_rcpp/trMatrix_rcpp_output/0d6291c9fb28faa4e1456477cff9de3eca05bcfa.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/trMatrix_rcpp/trMatrix_rcpp_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+nbStates values: -498905818
+beta values:    2.3019e+66   7.9847e+52 -4.3921e-147  2.4515e+303 -1.9644e+262
+ -2.5081e+199   1.2050e-80 -2.2462e-139   6.1377e-71 -6.8384e-207
+ -5.1399e-188 -3.8494e+177  7.6249e+266  -7.0140e+67  3.2809e-274
+ -2.9208e-207  1.9849e-257  8.2897e+166   9.6678e-50  1.2183e+303
+   2.4699e+76 -1.0160e-235 -8.9592e-135 -6.0625e-109  2.1244e-244
+  2.7088e-266  4.3063e-136 -1.0242e+174  3.5872e-115 -4.0720e+259
+   7.9603e+55 -1.5203e+179  2.1142e-279 -3.3306e+212 -1.3341e+176
+   1.2859e-74 -1.9060e+273 -1.1032e-225 -1.8933e+185  3.3553e-161
+ -6.4805e-229  2.7835e-180   1.5661e-82 -9.3504e-273 -8.2092e-196
+  8.0809e-255  1.1119e+119  1.1249e+250 -3.4533e+258  3.9671e+161
+
+covs values:   4.7861e+109  -1.4451e+77
+   2.2901e-47  5.0440e+140
+  1.3823e+180 -2.4607e+197
+   2.1088e-35 -2.6548e+246
+  4.4651e+151  1.4652e+258
+  2.1447e+273  4.4147e-172
+ -3.1857e-239 -1.3664e+130
+  5.1571e-165  8.7057e+101
+  1.4944e-138   2.6598e-25
+ -1.7086e+300 -3.6183e+111
+
+input ends
+
+error: Cube::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Cube::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/trMatrix_rcpp/trMatrix_rcpp_output/0d6291c9fb28faa4e1456477cff9de3eca05bcfa.fail failed

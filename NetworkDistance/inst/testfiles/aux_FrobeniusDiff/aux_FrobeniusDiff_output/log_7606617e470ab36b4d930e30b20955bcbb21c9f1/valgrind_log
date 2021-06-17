@@ -1,0 +1,626 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./aux_FrobeniusDiff_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_output/7606617e470ab36b4d930e30b20955bcbb21c9f1.fail</line>
+</preamble>
+
+<pid>2353140</pid>
+<ppid>2353139</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_output/log_7606617e470ab36b4d930e30b20955bcbb21c9f1/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./aux_FrobeniusDiff_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_output/7606617e470ab36b4d930e30b20955bcbb21c9f1.fail</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.039 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:12.115 </time>
+</status>
+
+<error>
+  <unique>0x9</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8 bytes in 1 blocks are definitely lost in loss record 10 of 1,287</text>
+    <leakedbytes>8</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D060F7</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::initialize(int, char const* const*, bool, bool, bool)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>198</line>
+    </frame>
+    <frame>
+      <ip>0x4D06483</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::RInside()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>61</line>
+    </frame>
+    <frame>
+      <ip>0x4078E3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>14</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x414518</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x4147B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414894</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1b</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>57 bytes in 1 blocks are definitely lost in loss record 28 of 1,287</text>
+    <leakedbytes>57</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E88E7D</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_mutate(unsigned long, unsigned long, char const*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E89DB5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_replace(unsigned long, unsigned long, char const*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E7E76E</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_stringbuf&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::str() const</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2382B</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>str</fn>
+      <dir>/usr/include/c++/9</dir>
+      <file>sstream</file>
+      <line>678</line>
+    </frame>
+    <frame>
+      <ip>0x4D2382B</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>arma::arma_incompat_size_string(unsigned int, unsigned int, unsigned int, unsigned int, char const*) [clone .constprop.0]</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>439</line>
+    </frame>
+    <frame>
+      <ip>0x4D23884</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>arma_assert_same_size</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>495</line>
+    </frame>
+    <frame>
+      <ip>0x4D23884</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>eGlue</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eGlue_meat.hpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x4D23884</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>operator-&lt;arma::Mat&lt;double&gt;, arma::Mat&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>operator_minus.hpp</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4D23884</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>aux_FrobeniusDiff(arma::Mat&lt;double&gt;&amp;, arma::Mat&lt;double&gt;&amp;) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src</dir>
+      <file>auxiliary_NetworkDistance.cpp</file>
+      <line>15</line>
+    </frame>
+    <frame>
+      <ip>0x407AC4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x414518</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x4147B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414894</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x26</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>81 bytes in 1 blocks are possibly lost in loss record 39 of 1,287</text>
+    <leakedbytes>81</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E34308</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E35FB8</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E36055</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E17331</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+    </frame>
+    <frame>
+      <ip>0x4E276D5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::logic_error::logic_error(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D23438</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>void arma::arma_stop_logic_error&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>144</line>
+    </frame>
+    <frame>
+      <ip>0x4D2388C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>arma_assert_same_size</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>495</line>
+    </frame>
+    <frame>
+      <ip>0x4D2388C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>eGlue</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eGlue_meat.hpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x4D2388C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>operator-&lt;arma::Mat&lt;double&gt;, arma::Mat&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>operator_minus.hpp</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4D2388C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>aux_FrobeniusDiff(arma::Mat&lt;double&gt;&amp;, arma::Mat&lt;double&gt;&amp;) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src</dir>
+      <file>auxiliary_NetworkDistance.cpp</file>
+      <line>15</line>
+    </frame>
+    <frame>
+      <ip>0x407AC4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x414518</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x4147B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x30</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 49 of 1,287</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4DEF2E3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>__cxa_allocate_exception</fn>
+    </frame>
+    <frame>
+      <ip>0x4D233A2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>void arma::arma_stop_logic_error&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>144</line>
+    </frame>
+    <frame>
+      <ip>0x4D2388C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>arma_assert_same_size</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>495</line>
+    </frame>
+    <frame>
+      <ip>0x4D2388C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>eGlue</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eGlue_meat.hpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x4D2388C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>operator-&lt;arma::Mat&lt;double&gt;, arma::Mat&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>operator_minus.hpp</file>
+      <line>134</line>
+    </frame>
+    <frame>
+      <ip>0x4D2388C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src/NetworkDistance.so</obj>
+      <fn>aux_FrobeniusDiff(arma::Mat&lt;double&gt;&amp;, arma::Mat&lt;double&gt;&amp;) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/src</dir>
+      <file>auxiliary_NetworkDistance.cpp</file>
+      <line>15</line>
+    </frame>
+    <frame>
+      <ip>0x407AC4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x414518</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x4147B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414894</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x84</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>504 bytes in 1 blocks are definitely lost in loss record 133 of 1,287</text>
+    <leakedbytes>504</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x410315</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>double* arma::memory::acquire&lt;double&gt;(unsigned long long)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/memory.hpp</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x4101A7</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>arma::Mat&lt;double&gt;::init_cold()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/Mat_meat.hpp</file>
+      <line>225</line>
+    </frame>
+    <frame>
+      <ip>0x40C869</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>arma::Mat&lt;double&gt;::Mat(unsigned long long, unsigned long long)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/Mat_meat.hpp</file>
+      <line>71</line>
+    </frame>
+    <frame>
+      <ip>0x407517</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>RcppDeepState_mat()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppDeepState/include/RcppDeepState.h</file>
+      <line>214</line>
+    </frame>
+    <frame>
+      <ip>0x407931</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>17</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x414518</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x4147B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414894</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xa3</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,025 bytes in 1 blocks are definitely lost in loss record 164 of 1,287</text>
+    <leakedbytes>1025</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E893AF</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::reserve(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D04C55</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>MemBuf::MemBuf(int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>MemBuf.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x4D06467</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::RInside()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>56</line>
+    </frame>
+    <frame>
+      <ip>0x4078E3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>14</line>
+    </frame>
+    <frame>
+      <ip>0x4078C8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff</dir>
+      <file>aux_FrobeniusDiff_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x414518</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x4147B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x414894</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4053D5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:12.986 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

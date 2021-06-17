@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/carat/inst/testfiles/AdjBCD_RT_In/AdjBCD_RT_In_output/3964236bdf7a2336c73f7c6e08130a433a75ed1b.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/carat/inst/testfiles/AdjBCD_RT_In/AdjBCD_RT_In_DeepState_TestHarness.cpp(13)
+input starts
+data values:  -5.4812e-145  4.7921e-250  9.6064e+283  5.0046e-274  7.5238e-133  -2.0449e-51   1.0935e+01
+
+EXTERNAL: qs v0.23.5.
+
+Reps values: 4.13144e+182
+a values: -8.40393e-124
+input ends
+
+error: Mat::rows(): indices out of bounds or incorrectly used
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::rows(): indices out of bounds or incorrectly used
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/carat/inst/testfiles/AdjBCD_RT_In/AdjBCD_RT_In_output/3964236bdf7a2336c73f7c6e08130a433a75ed1b.fail failed

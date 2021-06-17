@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./MOK_Cpp_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_output/3d4e33665a3511ce8e81ec894a55631916749dae.pass</line>
+</preamble>
+
+<pid>2466568</pid>
+<ppid>2466567</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_output/log_3d4e33665a3511ce8e81ec894a55631916749dae/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./MOK_Cpp_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_output/3d4e33665a3511ce8e81ec894a55631916749dae.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.045 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4D43EB8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/src/symmetry.so</obj>
+      <fn>operator Rcpp::sugar::Max&lt;14, true, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; &gt;::STORAGE</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/sugar/functions</dir>
+      <file>max.h</file>
+      <line>40</line>
+    </frame>
+    <frame>
+      <ip>0x4D43EB8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/src/symmetry.so</obj>
+      <fn>MOK_Cpp(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/src</dir>
+      <file>MOK.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x409F77</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp</dir>
+      <file>MOK_Cpp_DeepState_TestHarness.cpp</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp</dir>
+      <file>MOK_Cpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CC18</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41CEB9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41CF94</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4D43F04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/src/symmetry.so</obj>
+      <fn>operator Rcpp::sugar::Max&lt;14, true, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; &gt;::STORAGE</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/traits</dir>
+      <file>is_na.h</file>
+      <line>43</line>
+    </frame>
+    <frame>
+      <ip>0x4D43F04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/src/symmetry.so</obj>
+      <fn>MOK_Cpp(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/src</dir>
+      <file>MOK.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x409F77</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp</dir>
+      <file>MOK_Cpp_DeepState_TestHarness.cpp</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp</dir>
+      <file>MOK_Cpp_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CC18</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41CEB9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41CF94</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/symmetry/inst/testfiles/MOK_Cpp/MOK_Cpp_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:13.776 </time>
+</status>
+
+<errorcounts>
+  <pair>
+    <count>5</count>
+    <unique>0x1</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:14.757 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

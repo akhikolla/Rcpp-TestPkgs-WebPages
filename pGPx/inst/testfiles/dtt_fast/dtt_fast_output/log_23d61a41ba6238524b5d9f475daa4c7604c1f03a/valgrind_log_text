@@ -1,0 +1,10 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/pGPx/inst/testfiles/dtt_fast/dtt_fast_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/pGPx/inst/testfiles/dtt_fast/dtt_fast_DeepState_TestHarness.cpp(13)
+input starts
+x values:  -1.6458e+174  -1.6667e-49   1.9170e-80  2.9387e+294   6.2389e-80   4.7359e-68  1.9237e+304   5.2228e+77 -2.9793e-194 -2.6816e-130
+ -2.8444e-188 -1.3783e-303  9.4614e+185   3.4351e-26 -2.8041e+194 -2.6932e-264   8.8838e+93 -1.2815e+192 -1.0538e+270  9.9349e-272
+ -4.4967e-166  1.0879e-197 -1.2041e+269  5.6944e+304 -4.3128e+297 -8.5076e-293  8.1098e+266  5.7915e-162 -1.5284e+202  1.0840e-287
+
+input ends
+TRACE: Passed: _

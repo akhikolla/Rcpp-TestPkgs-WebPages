@@ -1,0 +1,29 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/SurrogateRegression/inst/testfiles/SchurC/SchurC_output/f97703d88b5f44f18c8a5478e4cc2152bc9b0638.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/SurrogateRegression/inst/testfiles/SchurC/SchurC_DeepState_TestHarness.cpp(13)
+input starts
+Ibb values:   6.2461e+181  -4.1137e+80          nan  2.7901e+291 -2.4367e+290  1.1372e+165  1.2493e+186 -9.0601e-190  1.2437e-163   1.0736e-51
+
+Iaa values:   3.9327e-254  -3.4557e+99
+   8.9578e+89 -1.0443e+114
+   2.7723e+43 -2.1856e+139
+  -2.6381e-55  -1.7767e-44
+ -2.0391e+240  6.8406e+216
+  5.0511e+120  -5.7894e+93
+   6.8941e+47   2.4454e-86
+  1.0935e-207  1.3872e-134
+
+Iba values:    2.4974e+56  -2.1968e+60
+ -4.8744e-213 -1.9960e-140
+  -4.6994e-20 -1.1159e+170
+  1.8280e+153  3.1284e+187
+ -2.3968e-245 -4.7279e-172
+
+input ends
+==2452614==  If you believe this happened as a result of a stack
+==2452614==  overflow in your program's main thread (unlikely but
+==2452614==  possible), you can try to increase the size of the
+==2452614==  main thread stack using the --main-stacksize= flag.
+==2452614==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/SurrogateRegression/inst/testfiles/SchurC/SchurC_output/f97703d88b5f44f18c8a5478e4cc2152bc9b0638.crash crashed

@@ -1,0 +1,382 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./W_delta_Cpp_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/LambertW/inst/testfiles/W_delta_Cpp/W_delta_Cpp_output/cca1fda21f77908af2b5cce5a244c5281c90943a.pass</line>
+</preamble>
+
+<pid>2346580</pid>
+<ppid>2346579</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/LambertW/inst/testfiles/W_delta_Cpp/W_delta_Cpp_output/log_cca1fda21f77908af2b5cce5a244c5281c90943a/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./W_delta_Cpp_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/LambertW/inst/testfiles/W_delta_Cpp/W_delta_Cpp_output/cca1fda21f77908af2b5cce5a244c5281c90943a.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.042 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.326 </time>
+</status>
+
+<error>
+  <unique>0x99</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>640 bytes in 2 blocks are possibly lost in loss record 154 of 1,332</text>
+    <leakedbytes>640</leakedbytes>
+    <leakedblocks>2</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483DD99</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+    </frame>
+    <frame>
+      <ip>0x40149CA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/ld-2.31.so</obj>
+      <fn>allocate_dtv</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/elf/../elf</dir>
+      <file>dl-tls.c</file>
+      <line>286</line>
+    </frame>
+    <frame>
+      <ip>0x40149CA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/ld-2.31.so</obj>
+      <fn>_dl_allocate_tls</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/elf/../elf</dir>
+      <file>dl-tls.c</file>
+      <line>532</line>
+    </frame>
+    <frame>
+      <ip>0x595C322</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>allocate_stack</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>allocatestack.c</file>
+      <line>622</line>
+    </frame>
+    <frame>
+      <ip>0x595C322</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>pthread_create@@GLIBC_2.2.5</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>660</line>
+    </frame>
+    <frame>
+      <ip>0xC9D49AE</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>launch</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/rml/include/../server</dir>
+      <file>thread_monitor.h</file>
+      <line>221</line>
+    </frame>
+    <frame>
+      <ip>0xC9D49AE</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>wake_or_launch</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/tbb</dir>
+      <file>private_server.cpp</file>
+      <line>300</line>
+    </frame>
+    <frame>
+      <ip>0xC9D49AE</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>tbb::internal::rml::private_server::wake_some(int)</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/tbb</dir>
+      <file>private_server.cpp</file>
+      <line>394</line>
+    </frame>
+    <frame>
+      <ip>0xC9DD06E</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>tbb::internal::generic_scheduler::local_spawn(tbb::task*, tbb::task*&amp;)</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/tbb</dir>
+      <file>scheduler.cpp</file>
+      <line>648</line>
+    </frame>
+    <frame>
+      <ip>0xD07E7BA</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>spawn</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/include/tbb</dir>
+      <file>task.h</file>
+      <line>989</line>
+    </frame>
+    <frame>
+      <ip>0xD07E7BA</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>offer_work</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/include/tbb</dir>
+      <file>parallel_for.h</file>
+      <line>106</line>
+    </frame>
+    <frame>
+      <ip>0xD07E7BA</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>execute&lt;tbb::interface9::internal::start_for&lt;tbb::blocked_range&lt;long unsigned int&gt;, RcppParallel::(anonymous namespace)::TBBWorker, const tbb::auto_partitioner&gt;, tbb::blocked_range&lt;long unsigned int&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/include/tbb</dir>
+      <file>partitioner.h</file>
+      <line>251</line>
+    </frame>
+    <frame>
+      <ip>0xD07E7BA</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>tbb::interface9::internal::start_for&lt;tbb::blocked_range&lt;unsigned long&gt;, RcppParallel::(anonymous namespace)::TBBWorker, tbb::auto_partitioner const&gt;::execute()</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/include/tbb</dir>
+      <file>parallel_for.h</file>
+      <line>127</line>
+    </frame>
+    <frame>
+      <ip>0xC9E0294</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>tbb::internal::custom_scheduler&lt;tbb::internal::IntelSchedulerTraits&gt;::local_wait_for_all(tbb::task&amp;, tbb::task*)</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/tbb</dir>
+      <file>custom_scheduler.h</file>
+      <line>509</line>
+    </frame>
+    <frame>
+      <ip>0xC9DD687</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>tbb::internal::generic_scheduler::local_spawn_root_and_wait(tbb::task*, tbb::task*&amp;)</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/tbb</dir>
+      <file>scheduler.cpp</file>
+      <line>670</line>
+    </frame>
+    <frame>
+      <ip>0xD07F8C4</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>spawn_root_and_wait</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/include/tbb</dir>
+      <file>task.h</file>
+      <line>749</line>
+    </frame>
+    <frame>
+      <ip>0xD07F8C4</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>run</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/include/tbb</dir>
+      <file>parallel_for.h</file>
+      <line>90</line>
+    </frame>
+    <frame>
+      <ip>0xD07F8C4</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>parallel_for&lt;tbb::blocked_range&lt;long unsigned int&gt;, RcppParallel::(anonymous namespace)::TBBWorker&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/include/tbb</dir>
+      <file>parallel_for.h</file>
+      <line>186</line>
+    </frame>
+    <frame>
+      <ip>0xD07F8C4</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>tbbParallelFor</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/include/RcppParallel</dir>
+      <file>TBB.h</file>
+      <line>62</line>
+    </frame>
+    <frame>
+      <ip>0xD07F8C4</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>parallelFor</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/include</dir>
+      <file>RcppParallel.h</file>
+      <line>38</line>
+    </frame>
+    <frame>
+      <ip>0xD07F8C4</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>lambertW0_C(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/lamW/src</dir>
+      <file>lambertW.cpp</file>
+      <line>205</line>
+    </frame>
+    <frame>
+      <ip>0xD07AF36</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/libs/lamW.so</obj>
+      <fn>_lamW_lambertW0_C_try(SEXPREC*)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/lamW/src</dir>
+      <file>RcppExports.cpp</file>
+      <line>17</line>
+    </frame>
+    <frame>
+      <ip>0x4D2E843</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/LambertW/src/LambertW.so</obj>
+      <fn>lamW::lambertW0_C(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;)</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/lamW/include</dir>
+      <file>lamW_RcppExports.h</file>
+      <line>37</line>
+    </frame>
+    <frame>
+      <ip>0x4D2D2C6</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/LambertW/src/LambertW.so</obj>
+      <fn>W_Cpp(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/LambertW/src</dir>
+      <file>W_Cpp.cpp</file>
+      <line>12</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xd3</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>2,240 bytes in 7 blocks are possibly lost in loss record 212 of 1,332</text>
+    <leakedbytes>2240</leakedbytes>
+    <leakedblocks>7</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483DD99</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+    </frame>
+    <frame>
+      <ip>0x40149CA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/ld-2.31.so</obj>
+      <fn>allocate_dtv</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/elf/../elf</dir>
+      <file>dl-tls.c</file>
+      <line>286</line>
+    </frame>
+    <frame>
+      <ip>0x40149CA</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/ld-2.31.so</obj>
+      <fn>_dl_allocate_tls</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/elf/../elf</dir>
+      <file>dl-tls.c</file>
+      <line>532</line>
+    </frame>
+    <frame>
+      <ip>0x595C322</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>allocate_stack</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>allocatestack.c</file>
+      <line>622</line>
+    </frame>
+    <frame>
+      <ip>0x595C322</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>pthread_create@@GLIBC_2.2.5</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>660</line>
+    </frame>
+    <frame>
+      <ip>0xC9D49AE</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>launch</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/rml/include/../server</dir>
+      <file>thread_monitor.h</file>
+      <line>221</line>
+    </frame>
+    <frame>
+      <ip>0xC9D49AE</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>wake_or_launch</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/tbb</dir>
+      <file>private_server.cpp</file>
+      <line>300</line>
+    </frame>
+    <frame>
+      <ip>0xC9D49AE</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>tbb::internal::rml::private_server::wake_some(int)</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/tbb</dir>
+      <file>private_server.cpp</file>
+      <line>394</line>
+    </frame>
+    <frame>
+      <ip>0xC9D4CC6</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>propagate_chain_reaction</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/tbb</dir>
+      <file>private_server.cpp</file>
+      <line>161</line>
+    </frame>
+    <frame>
+      <ip>0xC9D4CC6</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>tbb::internal::rml::private_worker::run()</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/tbb</dir>
+      <file>private_server.cpp</file>
+      <line>261</line>
+    </frame>
+    <frame>
+      <ip>0xC9D4D3C</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppParallel/lib/libtbb.so.2</obj>
+      <fn>tbb::internal::rml::private_worker::thread_routine(void*)</fn>
+      <dir>/tmp/Rtmpf7bZzZ/R.INSTALL2c6258556fa4b6/RcppParallel/src/tbb/build/lib_release/../../src/tbb</dir>
+      <file>private_server.cpp</file>
+      <line>223</line>
+    </frame>
+    <frame>
+      <ip>0x595B608</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libpthread-2.31.so</obj>
+      <fn>start_thread</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/nptl</dir>
+      <file>pthread_create.c</file>
+      <line>477</line>
+    </frame>
+    <frame>
+      <ip>0x51AC292</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libc-2.31.so</obj>
+      <fn>clone</fn>
+      <dir>/build/glibc-ZN95T4/glibc-2.31/misc/../sysdeps/unix/sysv/linux/x86_64</dir>
+      <file>clone.S</file>
+      <line>95</line>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.944 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

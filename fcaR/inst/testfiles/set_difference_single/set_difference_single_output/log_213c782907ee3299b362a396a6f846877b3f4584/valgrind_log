@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./set_difference_single_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_output/213c782907ee3299b362a396a6f846877b3f4584.crash</line>
+</preamble>
+
+<pid>2368274</pid>
+<ppid>2368273</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_output/log_213c782907ee3299b362a396a6f846877b3f4584/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./set_difference_single_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_output/213c782907ee3299b362a396a6f846877b3f4584.crash</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.029 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x4D3B664</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src/fcaR.so</obj>
+      <fn>insertArray(IntArray*, int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src</dir>
+      <file>vector_operations.cpp</file>
+      <line>49</line>
+    </frame>
+    <frame>
+      <ip>0x4D3C326</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src/fcaR.so</obj>
+      <fn>set_difference_sparse1(Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src</dir>
+      <file>vector_operations.cpp</file>
+      <line>526</line>
+    </frame>
+    <frame>
+      <ip>0x4D3E1CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src/fcaR.so</obj>
+      <fn>set_difference_single(Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src</dir>
+      <file>vector_operations.cpp</file>
+      <line>589</line>
+    </frame>
+    <frame>
+      <ip>0x40A83E</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single</dir>
+      <file>set_difference_single_DeepState_TestHarness.cpp</file>
+      <line>47</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single</dir>
+      <file>set_difference_single_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DC38</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DED9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DFB4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x0 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+<fatal_signal>
+  <tid>1</tid>
+  <signo>11</signo>
+  <signame>SIGSEGV</signame>
+  <sicode>1</sicode>
+  <event>Access not within mapped region</event>
+  <siaddr>0x0</siaddr>
+  <stack>
+    <frame>
+      <ip>0x4D3B664</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src/fcaR.so</obj>
+      <fn>insertArray(IntArray*, int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src</dir>
+      <file>vector_operations.cpp</file>
+      <line>49</line>
+    </frame>
+    <frame>
+      <ip>0x4D3C326</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src/fcaR.so</obj>
+      <fn>set_difference_sparse1(Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src</dir>
+      <file>vector_operations.cpp</file>
+      <line>526</line>
+    </frame>
+    <frame>
+      <ip>0x4D3E1CF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src/fcaR.so</obj>
+      <fn>set_difference_single(Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/src</dir>
+      <file>vector_operations.cpp</file>
+      <line>589</line>
+    </frame>
+    <frame>
+      <ip>0x40A83E</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single</dir>
+      <file>set_difference_single_DeepState_TestHarness.cpp</file>
+      <line>47</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single</dir>
+      <file>set_difference_single_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DC38</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DED9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DFB4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/fcaR/inst/testfiles/set_difference_single/set_difference_single_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</fatal_signal>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:10.386 </time>
+</status>
+
+<errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:10.970 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

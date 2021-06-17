@@ -1,0 +1,29 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+radius values: -2.43318e-187
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+radius values: -1.5615e-299
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+radius values: 1.27048e-62
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+radius values: 3.16522e+06
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/gen_circle_psf/gen_circle_psf_output/1e59ab0487766cb27d4477fe9a56ce4ec97658ad.fail`
+INFO: Done fuzzing! Ran 4 tests (2 tests/second) with 1 failed/3 passed/0 abandoned tests

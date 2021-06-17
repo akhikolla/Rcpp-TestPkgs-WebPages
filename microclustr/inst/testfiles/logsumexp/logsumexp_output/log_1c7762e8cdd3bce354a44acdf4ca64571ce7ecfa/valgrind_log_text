@@ -1,0 +1,10 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/microclustr/inst/testfiles/logsumexp/logsumexp_output/1c7762e8cdd3bce354a44acdf4ca64571ce7ecfa.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/microclustr/inst/testfiles/logsumexp/logsumexp_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: -2.43318e-187
+b values: -1.64581e+174
+input ends
+TRACE: Passed: _

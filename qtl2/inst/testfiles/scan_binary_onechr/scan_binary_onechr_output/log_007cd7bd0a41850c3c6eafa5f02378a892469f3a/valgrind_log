@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./scan_binary_onechr_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_output/007cd7bd0a41850c3c6eafa5f02378a892469f3a.fail</line>
+</preamble>
+
+<pid>2434240</pid>
+<ppid>2434239</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_output/log_007cd7bd0a41850c3c6eafa5f02378a892469f3a/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./scan_binary_onechr_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_output/007cd7bd0a41850c3c6eafa5f02378a892469f3a.fail</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.027 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.140 </time>
+</status>
+
+<error>
+  <unique>0x9</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8 bytes in 1 blocks are definitely lost in loss record 10 of 1,323</text>
+    <leakedbytes>8</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D060F7</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::initialize(int, char const* const*, bool, bool, bool)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>198</line>
+    </frame>
+    <frame>
+      <ip>0x4D06483</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::RInside()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>61</line>
+    </frame>
+    <frame>
+      <ip>0x40ABC3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr</dir>
+      <file>scan_binary_onechr_DeepState_TestHarness.cpp</file>
+      <line>14</line>
+    </frame>
+    <frame>
+      <ip>0x40ABA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr</dir>
+      <file>scan_binary_onechr_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41F5A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41F849</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41F924</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4086B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x28</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>80 bytes in 1 blocks are possibly lost in loss record 41 of 1,323</text>
+    <leakedbytes>80</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4F96308</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4F97FB8</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4F98484</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4F79188</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::logic_error::logic_error(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x4F791EC</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::invalid_argument::invalid_argument(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D6DDBE</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/src/qtl2.so</obj>
+      <fn>scan_binary_onechr(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, int, double, double, double) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/src</dir>
+      <file>scan1_binary.cpp</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x40B97A</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr</dir>
+      <file>scan_binary_onechr_DeepState_TestHarness.cpp</file>
+      <line>50</line>
+    </frame>
+    <frame>
+      <ip>0x40ABA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr</dir>
+      <file>scan_binary_onechr_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41F5A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41F849</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41F924</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x33</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 52 of 1,323</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4F512E3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>__cxa_allocate_exception</fn>
+    </frame>
+    <frame>
+      <ip>0x4D6DDAC</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/src/qtl2.so</obj>
+      <fn>scan_binary_onechr(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, int, double, double, double) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/src</dir>
+      <file>scan1_binary.cpp</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x40B97A</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr</dir>
+      <file>scan_binary_onechr_DeepState_TestHarness.cpp</file>
+      <line>50</line>
+    </frame>
+    <frame>
+      <ip>0x40ABA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr</dir>
+      <file>scan_binary_onechr_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41F5A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41F849</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41F924</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4086B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xb3</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,025 bytes in 1 blocks are definitely lost in loss record 180 of 1,323</text>
+    <leakedbytes>1025</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4FEB3AF</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::reserve(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D04C55</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>MemBuf::MemBuf(int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>MemBuf.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x4D06467</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::RInside()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>56</line>
+    </frame>
+    <frame>
+      <ip>0x40ABC3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr</dir>
+      <file>scan_binary_onechr_DeepState_TestHarness.cpp</file>
+      <line>14</line>
+    </frame>
+    <frame>
+      <ip>0x40ABA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr</dir>
+      <file>scan_binary_onechr_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41F5A8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41F849</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41F924</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4086B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_binary_onechr/scan_binary_onechr_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.683 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

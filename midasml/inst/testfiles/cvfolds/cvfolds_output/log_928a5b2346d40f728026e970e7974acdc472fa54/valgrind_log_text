@@ -1,0 +1,15 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/midasml/inst/testfiles/cvfolds/cvfolds_output/928a5b2346d40f728026e970e7974acdc472fa54.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/midasml/inst/testfiles/cvfolds/cvfolds_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+nfolds values: 1.27048e-62
+nrow values: -2.88162e-134
+input ends
+
+error: Col::subvec(): indices out of bounds or incorrectly used
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Col::subvec(): indices out of bounds or incorrectly used
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/midasml/inst/testfiles/cvfolds/cvfolds_output/928a5b2346d40f728026e970e7974acdc472fa54.fail failed

@@ -1,0 +1,49 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+n values: -2.43318e-187
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+n values: -1.5615e-299
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+n values: 1.27048e-62
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+n values: 3.16522e+06
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/scoringRules/inst/testfiles/meye/meye_output/0020d5755d98702b392b2976a4b648848a45fba4.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+n values: -1.92672e-302
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+n values: -8.5119e-07
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+n values: -5.84486e+130
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+n values: -3.59873e+296
+input ends
+INFO: Done fuzzing! Ran 8 tests (4 tests/second) with 1 failed/7 passed/0 abandoned tests

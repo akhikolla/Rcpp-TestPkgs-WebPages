@@ -1,0 +1,21 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/cusum/inst/testfiles/gscusum/gscusum_output/c97d914bd3d4315fab4609f40c84218fafc301fd.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/cusum/inst/testfiles/gscusum/gscusum_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+input_outcomes values: 1.02532e+261 1.12756e-57     nan
+1.46340e+288     inf 4.12846e-51
+5.67165e-306 4.85713e-272     inf
+    nan     inf 61.3403
+5.43908e-105 3.30698e+94 6.30847e-13
+
+failure_probability values: -1.016e-235
+odds_multiplier values: -8.95918e-135
+limit values: -6.0625e-109
+quantiles values: 4.30627e-136 -1.02423e+174 3.58716e-115 -4.07203e+259 7.96035e+55 -1.5203e+179 2.11423e-279 -3.33059e+212 -1.33409e+176 1.28592e-74 -1.90603e+273 -1.10316e-225 -1.89331e+185 3.35532e-161 -6.48053e-229 2.78354e-180 1.56605e-82 -9.35042e-273 -8.20919e-196 8.08085e-255 1.11189e+119 1.12491e+250 -3.45329e+258 3.96709e+161 1.27909e-52 4.78605e+109 -1.44507e+77 2.29014e-47 5.04401e+140
+max_num_shuffles values: 78421759
+seed values: 223499621
+input ends
+TRACE: Passed: _

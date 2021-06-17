@@ -1,0 +1,29 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_output/a97902ba2c9dac3a3c8ee5a128d3ea083813acdc.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+num_samples values: 467495432
+burn_in values: 1827680409
+Missing value
+init_y values: 1.91698e-80 2.93871e+294 6.2389e-80 4.73594e-68 1.92375e+304 5.22278e+77 -2.97932e-194 -2.68155e-130 -2.84435e-188 -1.3783e-303 9.46139e+185 3.43512e-26 -2.80408e+194 -2.69316e-264 8.88375e+93 -1.2815e+192 -1.05379e+270 9.93485e-272 -4.49673e-166 1.0879e-197 -1.2041e+269 5.69436e+304 -4.3128e+297 -8.50762e-293 8.10981e+266 5.79155e-162 -1.52842e+202 1.08405e-287 6.87024e+274 -5.68765e-181 -1.13845e-199 1.96261e-252 5.33405e-300 3.76873e+222 -9.97307e-54 -2.72163e-171 nan -1.05877e+151 2.42724e-180 2.71379e-129 inf -3.92218e+180 3.87645e+40 3.76873e+222 2.16137e-216 -1.24268e+93 -inf 3.9216e-79 -15667.2 4.57085e-49 -1.25757e+73 0
+A values: 4.26919e+206 1.50783e+156 1.22850e-284 7.70357e-264 1.07087e+72 1.05429e+296 1.61699e+196 1.32662e-151
+4.46775e-52 3.86714e-132 5.30334e+19 5.56176e-172 3.33572e+279 1.77768e-59 1.42171e+273 1.36586e-300
+2.34419e+41 9.05954e+263 7.46476e-56 8.87578e-75 6.58512e-144 1.93866e+145 6.28514e+245 8.90337e+96
+1.96571e-10 315.198 3.50142e-279 3.26908e-298 3.40235e+246 8.10853e-265 1.27338e-62 7.26364e-306
+1.01312e-25 9.02784e+97 4.14584e-207 4.04055e+34 2.84215e-109 6.27060e+208 2.73136e-304 1.30461e-251
+9.04432e-111 2.00090e-202 2.81606e-168 1.53353e-49 2.46097e+195 3.34206e-230 8.19746e+46 3.11899e+247
+1.64494e-31 5.48911e+71 1.04199e+234 5.96020e+121 2.27638e-120 199691. 7.07941e-152 1.98957e+202
+3.84221e+137 4.37835e+175 1.65120e-167 1.54477e-275 2.98276e-199 1.80863e-211 2.20447e-291 1.44853e+185
+156.239 8.67785e+237 3.08099e-37 4.90960e+81 3.78931e-281 1.13937e+164 1.52528e-159 1.61069e+222
+4.09313e-190 2.40437e+187 8.58457e-200 2.24542e+300 1.31808e+303 7.79333e+105 3.05896e-217 6.85709e+252
+
+b values: 8.25307e-62 -4.21455e-226 -3.16154e-198 -2.68447e+281 5.14964e+238 2.16874e-129 -2.36579e+225 3.11994e+25 2.56877e-244 1.82866e+247 -1.91576e+117 1.41023e+195 -2.04572e-76 1.34637e+129 1.05166e-191 -1.22785e-170 -1.20861e-137 3.05825e+140 -2.9007e-300 1.19552e+288 3.62025e+215 3.58923e+81 7.18065e-71 -4.12629e+197
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_generate_hit_and_run_samples/rcpp_generate_hit_and_run_samples_output/a97902ba2c9dac3a3c8ee5a128d3ea083813acdc.fail failed

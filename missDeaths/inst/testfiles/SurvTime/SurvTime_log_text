@@ -1,0 +1,35 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+birthyear values: -2.43318e-187
+age values: -1.64581e+174
+probability values: -1.66668e-49
+sex values: 1668042617
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+birthyear values: -1.5615e-299
+age values: -1.20777e+13
+probability values: 2.79236e-196
+sex values: 900590154
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+birthyear values: 1.27048e-62
+age values: -2.88162e-134
+probability values: 8.18711e+299
+sex values: 314985932
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+birthyear values: 3.16522e+06
+age values: 3.72126e-82
+probability values: 5.29799e-243
+sex values: 1586657384
+input ends
+INFO: Done fuzzing! Ran 4 tests (2 tests/second) with 0 failed/4 passed/0 abandoned tests

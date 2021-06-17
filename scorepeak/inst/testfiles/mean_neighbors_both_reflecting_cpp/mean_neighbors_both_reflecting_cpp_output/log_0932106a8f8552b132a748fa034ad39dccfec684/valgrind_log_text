@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/scorepeak/inst/testfiles/mean_neighbors_both_reflecting_cpp/mean_neighbors_both_reflecting_cpp_output/0932106a8f8552b132a748fa034ad39dccfec684.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/scorepeak/inst/testfiles/mean_neighbors_both_reflecting_cpp/mean_neighbors_both_reflecting_cpp_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+data values: 3.61891e+92 nan -7.37943e+302 2.55506e+42 inf -8.92402e+167 1.1248e+240 inf -4.75606e-23 -2.50112e-218 1.79289e+115 -3.44321e-95 -4.57e+135 -6.98865e-259 6.34152e-247 -1.13833e+63 1.0092e+121 7.39254e+59 -1.03187e-271 1.06003e+205 3.00386e-115 -4.43514e+101 -2.68108e+305 -2.47342e+202 -3.62685e-63 -7.0808e+258 -4.80186e+59 7.46857e-201 8.80123e-175 -2.18842e-125 7.18544e+56 1.71035e-21 6.34152e-247 -1.80206e+278 3.06161e+74 -3.79473e-225 3.08873e-142 6.45917e+78 -2.00971e-174 3.65034e-78 1.31216e-69 3.13433e+50 -1.34501e-166 -2.70415e+288 1.15236e+214 -3.11143e-39 -8.27216e+250 1.60007e-185 5.45422e-185 -3.02312e+202 3.72627e-304 -1.10313e-62 0
+windowsize values: 111990508
+input ends
+==2484420==  If you believe this happened as a result of a stack
+==2484420==  overflow in your program's main thread (unlikely but
+==2484420==  possible), you can try to increase the size of the
+==2484420==  main thread stack using the --main-stacksize= flag.
+==2484420==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/scorepeak/inst/testfiles/mean_neighbors_both_reflecting_cpp/mean_neighbors_both_reflecting_cpp_output/0932106a8f8552b132a748fa034ad39dccfec684.crash crashed

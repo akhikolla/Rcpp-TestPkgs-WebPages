@@ -1,0 +1,44 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/mastif/inst/testfiles/byRcpp/byRcpp_output/6cb0c614c30c5b850b9b7e50fc30f485036ca716.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/mastif/inst/testfiles/byRcpp/byRcpp_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+nr values: -62487468
+frommat values:  -1.2104e+208  5.0280e-233  2.8739e-308  2.8531e-279  7.5201e+254  3.4215e-206 -5.7036e-167  -5.8104e-30  1.9007e+290
+  1.2961e+300  -2.7761e+87  7.0760e-189 -3.1168e+151  7.3053e+228  2.6092e+280   6.6244e-32 -4.2444e+139 -1.4017e-221
+  4.6363e+225 -7.3028e+223 -5.7189e-122  2.4118e+268  3.4553e+254  3.3641e+153 -1.2369e-244   2.3720e+91   1.9695e-39
+   2.8876e-81  1.1254e-183  -8.8127e-44  1.0045e-151   7.0731e+59  5.8016e-269  4.6824e+124 -3.9694e-190  1.2029e+173
+  1.0183e+254  1.8183e+256  5.9740e-150  6.5112e-110  5.7309e-141  2.3049e-186  1.0560e-283 -1.7703e-192   1.0810e-11
+ -1.6838e-260 -5.9493e+278  -9.5284e+75 -1.5442e-204   1.9085e+18  -2.0653e+23  -1.9394e+06  1.2060e-167   1.7811e-81
+ -4.2830e-110 -4.8927e+250  1.5545e+210   1.8645e+15   5.6001e+50  -2.9734e+61 -6.5302e+211  5.0778e+235 -3.7975e-197
+
+totmat values:   -4.8604e+07   2.3567e+99  -1.3370e+53  -3.0257e-63  -1.9698e+72  1.2682e+168  3.6218e+128
+ -1.6784e-149  1.6820e+173 -9.0657e-121 -1.1733e-301  5.8716e-141  1.0882e+274   1.6034e-58
+   1.0461e-10 -1.8883e+146 -2.7629e-194  -6.9721e+79   2.7568e+53 -3.0627e-211 -5.5108e-282
+
+summat values:   2.9729e-135 -5.6407e-246 -8.9741e+223  -1.4906e-04  4.0001e+209 -1.5486e+206  -4.7664e-43
+ -4.1449e+211  -1.3338e-19  7.5029e+275  -3.5492e+86  -8.4682e-38  -4.6931e+27   3.7433e-85
+   7.1808e-13   5.4393e+77 -2.6395e+203  -8.0352e+62   4.5279e-99  1.6259e-175  1.5559e+162
+  8.6303e-255 -3.6076e-249  1.6109e+221 -3.2420e+210 -2.9782e-198 -2.0267e+265 -4.0967e+105
+
+minmat values:   -1.9151e+25  3.0393e-246   8.7572e-71  -5.9539e+28
+   9.7055e+22  1.7151e+109  -3.8282e+11  -1.6954e+47
+  2.6430e-111  8.4610e+100  -1.1973e+90  5.3811e+282
+  9.3072e-143 -3.5192e+251  -7.0926e-09   2.4654e-70
+   3.1670e-46  7.1854e-176  -3.7706e-05  6.2889e+190
+  6.0873e-232 -1.6112e+300  3.6102e+131  8.0411e-159
+
+maxmat values:  -9.6094e+153   2.7613e+80 -1.1803e+188  1.5533e+109 -3.0238e+224   7.5016e-87   4.2051e-74  -2.8472e-06
+  4.5055e+266 -1.9260e-262 -3.2812e-305  1.2297e-265  3.1154e-114  5.2233e-106  4.7795e+115  1.6253e+122
+ -1.9003e-201  -2.3681e+49  -1.6024e-75   1.5849e-43  5.9591e-174 -1.2755e+189  -6.5849e-43  6.1921e+187
+   6.5907e-16  1.0769e+222 -2.0995e-103   3.5369e+00  7.5047e+195  2.4726e+112 -2.1910e-291  -5.7695e+46
+
+input ends
+==2503985==  If you believe this happened as a result of a stack
+==2503985==  overflow in your program's main thread (unlikely but
+==2503985==  possible), you can try to increase the size of the
+==2503985==  main thread stack using the --main-stacksize= flag.
+==2503985==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/mastif/inst/testfiles/byRcpp/byRcpp_output/6cb0c614c30c5b850b9b7e50fc30f485036ca716.crash crashed

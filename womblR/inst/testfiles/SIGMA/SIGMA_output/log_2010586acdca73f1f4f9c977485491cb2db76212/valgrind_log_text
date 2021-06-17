@@ -1,0 +1,26 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/womblR/inst/testfiles/SIGMA/SIGMA_output/2010586acdca73f1f4f9c977485491cb2db76212.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/womblR/inst/testfiles/SIGMA/SIGMA_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+Phi values: -1.92672e-302
+TempCorInd values: -1020009618
+TimeDist values:  -1.0106e-119 -2.8476e+166   1.3860e+99  4.1700e+129 -1.2104e+208  5.0280e-233  2.8739e-308  2.8531e-279
+  7.5201e+254  3.4215e-206 -5.7036e-167  -5.8104e-30  1.9007e+290  1.2961e+300  -2.7761e+87  7.0760e-189
+ -3.1168e+151  7.3053e+228  2.6092e+280   6.6244e-32 -4.2444e+139 -1.4017e-221  4.6363e+225 -7.3028e+223
+ -5.7189e-122  2.4118e+268  3.4553e+254  3.3641e+153 -1.2369e-244   2.3720e+91   1.9695e-39   2.8876e-81
+  1.1254e-183  -8.8127e-44  1.0045e-151   7.0731e+59  5.8016e-269  4.6824e+124 -3.9694e-190  1.2029e+173
+  1.0183e+254  1.8183e+256  5.9740e-150  6.5112e-110  5.7309e-141  2.3049e-186  1.0560e-283 -1.7703e-192
+   1.0810e-11 -1.6838e-260 -5.9493e+278  -9.5284e+75 -1.5442e-204   1.9085e+18  -2.0653e+23  -1.9394e+06
+  1.2060e-167   1.7811e-81 -4.2830e-110 -4.8927e+250  1.5545e+210   1.8645e+15   5.6001e+50  -2.9734e+61
+ -6.5302e+211  5.0778e+235 -3.7975e-197  -3.0708e+43  -4.8604e+07   2.3567e+99  -1.3370e+53  -3.0257e-63
+
+Nu values: 590892592
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/womblR/inst/testfiles/SIGMA/SIGMA_output/2010586acdca73f1f4f9c977485491cb2db76212.fail failed

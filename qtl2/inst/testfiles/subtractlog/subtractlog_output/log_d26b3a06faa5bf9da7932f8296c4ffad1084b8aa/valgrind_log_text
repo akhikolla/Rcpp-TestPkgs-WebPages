@@ -1,0 +1,10 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/subtractlog/subtractlog_output/d26b3a06faa5bf9da7932f8296c4ffad1084b8aa.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/subtractlog/subtractlog_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: -2.43318e-187
+b values: -1.64581e+174
+input ends
+TRACE: Passed: _

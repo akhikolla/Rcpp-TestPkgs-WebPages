@@ -1,0 +1,18 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_hk_onechr_nocovar/scan_hk_onechr_nocovar_output/81d1ca8b71b95a3cf6bb160b6a48f0072d8e709e.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_hk_onechr_nocovar/scan_hk_onechr_nocovar_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+genoprobs values: 1.27891e-188 7.52749e+12 -2.14488e+105 inf -2.02048e-44 nan 3.42032e-93 8.27932e-269 -4.36409e-38 inf 0
+Missing value
+pheno values:     nan 4.59987e+18 6.61249e-257    -inf
+    inf 1.51667e-225     nan 1.01363e+74
+
+tol values: 1.49439e+214
+input ends
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  genoprobs should be a 3d array but has no dim attribute
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_hk_onechr_nocovar/scan_hk_onechr_nocovar_output/81d1ca8b71b95a3cf6bb160b6a48f0072d8e709e.fail failed

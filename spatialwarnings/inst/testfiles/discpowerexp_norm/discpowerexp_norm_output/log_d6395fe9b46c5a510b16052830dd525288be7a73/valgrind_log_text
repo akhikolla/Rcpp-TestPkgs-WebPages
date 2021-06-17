@@ -1,0 +1,11 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/discpowerexp_norm/discpowerexp_norm_output/d6395fe9b46c5a510b16052830dd525288be7a73.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/spatialwarnings/inst/testfiles/discpowerexp_norm/discpowerexp_norm_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+expo values: -2.43318e-187
+rate values: -1.64581e+174
+xmin values: 484058222
+input ends
+TRACE: Passed: _

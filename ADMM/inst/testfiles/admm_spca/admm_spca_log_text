@@ -1,0 +1,22 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+Sigma values:  -1.6458e+174  -1.6667e-49   1.9170e-80  2.9387e+294   6.2389e-80   4.7359e-68  1.9237e+304   5.2228e+77 -2.9793e-194 -2.6816e-130
+ -2.8444e-188 -1.3783e-303  9.4614e+185   3.4351e-26 -2.8041e+194 -2.6932e-264   8.8838e+93 -1.2815e+192 -1.0538e+270  9.9349e-272
+ -4.4967e-166  1.0879e-197 -1.2041e+269  5.6944e+304 -4.3128e+297 -8.5076e-293  8.1098e+266  5.7915e-162 -1.5284e+202  1.0840e-287
+
+EXTERNAL: qs v0.23.5.
+
+reltol values: 6.87024e+274
+abstol values: -5.68765e-181
+maxiter values: 482182584
+mu values: -6.03987e-114
+rho values: 2.60723e+99
+input ends
+
+error: addition: incompatible matrix dimensions: 0x0 and 3x0
+terminate called after throwing an instance of 'std::logic_error'
+  what():  addition: incompatible matrix dimensions: 0x0 and 3x0
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ADMM/inst/testfiles/admm_spca/admm_spca_output/734e223f98453c3c5532fcf2a9ce3f8b2c94ec38.fail`
+INFO: Done fuzzing! Ran 1 tests (0 tests/second) with 1 failed/0 passed/0 abandoned tests

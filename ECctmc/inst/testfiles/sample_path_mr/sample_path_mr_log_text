@@ -1,0 +1,98 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: 467495432
+b values: 1827680409
+t0 values: -1.64581e+174
+t1 values: -1.66668e-49
+Missing value
+Q values: 2.72551e-214 6.88708e+148 2.44558e-65 8.06612e+173 2.67214e-07     nan 3.24698e+214 4.26919e+206
+6.53679e-70 1.83947e-95 1.91698e-80 4.93011e-61 1.02194e-144 1.53011e-264 7.32531e-236 4.46775e-52
+2.42643e+241 6.23171e-187 7.10517e+225 2.88568e-129 7.71811e+97 814198. 3.17221e-22 2.34419e+41
+1.65687e+24 9.88409e+20 5.60404e+114 5.33256e+288 4.21050e-25 4.50973e+130 9.46237e+259 1.96571e-10
+    inf 5.52275e-164 3.18818e-55 7.37938e+60 1.91698e-80 7.87120e+214 2.28479e-39 1.01312e-25
+5.34064e-62 4.15792e-241 7.76075e-247 2.01589e-107 5.13051e-260 3.24121e-117 6.88541e-24 9.04432e-111
+68.0063 6.68484e+28 4.44503e+129 4.53678e-85 2.24644e-212 5.30849e+199 7.13669e-20    -inf
+7.41992e-298 5.48714e+129 6.08700e-59 2.94365e-174 7.64098e-62 5.46061e+306 5.49819e-129 3.84221e+137
+
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_mr/sample_path_mr_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash`
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: 1520036990
+b values: -1852751851
+t0 values: 3.02006e-260
+t1 values: -9.91228e-57
+Missing value
+Q values:    -inf 6.30847e-13
+3.30698e+94 2.50412e+268
+1.02276e-185 6.39540e+128
+    nan 1.87086e-59
+1.79343e-238 1.30150e+289
+-1.64036e-118 1.61022e-22
+
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_mr/sample_path_mr_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash`
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: -1294723540
+b values: 415152419
+t0 values: 6.24605e+181
+t1 values: -4.11368e+80
+Q values: 1.75062e-260
+
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_mr/sample_path_mr_output/f97703d88b5f44f18c8a5478e4cc2152bc9b0638.crash`
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: 1903691637
+b values: 1291204341
+t0 values: 5.14867e+83
+t1 values: 4.38983e+276
+Missing value
+Q values: 5.24924e+272 -2.83919e+230 2.62736e-264 1.01363e+74 1.56356e-81 4.33714e-104 -2.83919e+230 1.83374e-104 1088.08 5.10578e-14
+4.59987e+18 6.61249e-257 8.62422e-89 2.14829e+78    -inf 8.95062e-07     inf    -inf 8.88077e+282 9.71140e-241
+
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_mr/sample_path_mr_output/213c782907ee3299b362a396a6f846877b3f4584.crash`
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: 205943663
+b values: 1482483795
+t0 values: 1.56396e+138
+t1 values: 1.86511e-245
+Q values: 1.95532e-132 6.92527e+137 2.15561e+185 6.79398e+55 1.33550e+204 1.98743e+154 3.02439e+234 1.95817e-131 6.71963e-160 1.92200e-190
+2.24216e+243 1.03502e-277 1.75933e-114 7.20263e+40 2.62539e+129 1.51886e-282 1.08708e+120 1.17533e-122 1.66250e-250 4.96534e+107
+3.15962e-133 1.44330e+189 8.24222e-287 3.80927e-156 6.85769e-16 9.00123e+84 2.96592e-146 1.09362e-194 7.25181e-123 1.35722e-292
+
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_mr/sample_path_mr_output/b2a680a491c62b8e3c18e1b6a93cfd7bf1182ccb.crash`
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: 1842876943
+b values: 320478838
+t0 values: 1.04605e+288
+t1 values: -4.46946e+285
+Missing value
+Q values:     inf 7.35556e-289 1.49057e-39 5.89190e+51 7.66405e-113     inf 4.07599e+266
+2.38724e-271 1.11643e+200 5.08475e-225 9.20244e-140     inf 6.63215e+17 5.26815e+89
+4.23654e+262 9.84998e+122 1.38425e+117 1.65509e-37 1.99643e-141 5.74928e-103     nan
+7.49286e+260 1.08068e-237 5.95893e+31 9.11589e+29 1.75410e-70 1.43850e-250 2.61627e+47
+2.65866e-149 1.27446e-225 4.01407e-209 0.294650 1.78770e+280 4.86864e-227 5.02837e-217
+
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_mr/sample_path_mr_output/edf2b1f564b6bf974f9f08137dad67f45e70f655.crash`
+INFO: Done fuzzing! Ran 6 tests (3 tests/second) with 6 failed/0 passed/0 abandoned tests

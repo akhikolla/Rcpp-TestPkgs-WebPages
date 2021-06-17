@@ -1,0 +1,20 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/GiniDistance/inst/testfiles/Rcpp_KgCov_Alpha/Rcpp_KgCov_Alpha_output/751a8aab7a1ffbd61eb828ef81ae68adeb86621d.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/GiniDistance/inst/testfiles/Rcpp_KgCov_Alpha/Rcpp_KgCov_Alpha_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+x values: 1.02532e+261 1.12756e-57     nan
+1.46340e+288     inf 4.12846e-51
+5.67165e-306 4.85713e-272     inf
+    nan     inf 61.3403
+5.43908e-105 3.30698e+94 6.30847e-13
+
+alpha values: -1.016e-235
+sigma values: -8.95918e-135
+input ends
+terminate called after throwing an instance of 'std::range_error'
+  what():  upper value must be greater than lower value
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/GiniDistance/inst/testfiles/Rcpp_KgCov_Alpha/Rcpp_KgCov_Alpha_output/751a8aab7a1ffbd61eb828ef81ae68adeb86621d.fail failed

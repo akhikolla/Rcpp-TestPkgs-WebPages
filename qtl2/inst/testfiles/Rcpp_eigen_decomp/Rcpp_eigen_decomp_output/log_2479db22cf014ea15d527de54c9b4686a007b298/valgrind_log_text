@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/Rcpp_eigen_decomp/Rcpp_eigen_decomp_output/2479db22cf014ea15d527de54c9b4686a007b298.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/Rcpp_eigen_decomp/Rcpp_eigen_decomp_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+A values: 1.05415e-68 1.86447e-211 4.49059e+17 2.72551e-214 6.53679e-70 2.42643e+241 1.65687e+24
+
+input ends
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  A must be a square matrix
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/Rcpp_eigen_decomp/Rcpp_eigen_decomp_output/2479db22cf014ea15d527de54c9b4686a007b298.fail failed

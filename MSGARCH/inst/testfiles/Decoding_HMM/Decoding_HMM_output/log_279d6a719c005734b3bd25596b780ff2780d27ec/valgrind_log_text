@@ -1,0 +1,25 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/MSGARCH/inst/testfiles/Decoding_HMM/Decoding_HMM_output/279d6a719c005734b3bd25596b780ff2780d27ec.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/MSGARCH/inst/testfiles/Decoding_HMM/Decoding_HMM_DeepState_TestHarness.cpp(13)
+input starts
+allprobs values:  -5.4812e-145  4.7921e-250  9.6064e+283  5.0046e-274  7.5238e-133  -2.0449e-51   1.0935e+01
+
+mGamma values:  -8.4039e-124  -1.7193e-91
+ -3.9883e+298 -1.7212e+187
+  -2.2886e-42 -3.1753e+212
+   2.4667e-86   2.2839e-55
+  2.5944e+241 -7.2258e-217
+  1.1933e+132  -7.2798e+99
+  4.5428e-241  2.4025e-278
+
+EXTERNAL: qs v0.23.5.
+
+T values: -368495844
+K values: -275941429
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/MSGARCH/inst/testfiles/Decoding_HMM/Decoding_HMM_output/279d6a719c005734b3bd25596b780ff2780d27ec.fail failed

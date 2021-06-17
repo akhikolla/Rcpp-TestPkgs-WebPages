@@ -1,0 +1,39 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_pg_onechr_intcovar_highmem/scan_pg_onechr_intcovar_highmem_output/2e8d2811762da40b64c6a95c97cbc24f1dc35e4c.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_pg_onechr_intcovar_highmem/scan_pg_onechr_intcovar_highmem_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+genoprobs values: 1.27891e-188 7.52749e+12 -2.14488e+105 inf -2.02048e-44 nan 3.42032e-93 8.27932e-269 -4.36409e-38 inf 0
+Missing value
+pheno values:     nan 4.59987e+18 6.61249e-257    -inf
+    inf 1.51667e-225     nan 1.01363e+74
+
+Missing value
+addcovar values: 1.13642e-254     inf 3.95243e+238 3.29012e-153 3.55170e-298 7.31743e-133 2.99183e+54 1.77522e-19 1.07466e+137
+1.67168e-228 3.93460e+258 117959. 2.12153e+263 9.67985e+33 2.94086e+191 1.49439e+214 2.88318e-150 1.00290e-175
+2.30721e+157 5.96093e-289 4.27711e+20 3.59700e-121 3.82729e+304 6.95893e+233 2.00758e+28     nan 2.07832e-289
+    nan 1.05475e-84 6.22170e+88     nan 7.68486e-73 3.02573e+155 9.88060e+145 5.91405e+225 2.16217e-95
+
+Missing value
+intcovar values:     nan
+    nan
+    nan
+3.16067e+263
+
+Missing value
+eigenvec values: 6.55160e+148 3.98660e-123     nan 2.72594e-127 5.16968e+132
+    nan 6.98635e-152 6.99912e+226 1.70213e-294 2.58980e+103
+    nan 2.69480e-277 1.61071e-259 1.53635e+73 4.67768e+204
+1.35824e+206     nan 1.71451e+148 3.64158e+76 2.44511e+102
+0.00262451 1.36892e-160 7.63235e+17 5.96397e+152 5.21157e-161
+8.92101e-120 1.04260e+173 5.81875e+271 6.76004e-54 2.42182e-150
+
+weights values: -3.30076e-47 7.69574e-24 -2.5991e+272 -1.25426e-99 -2.73128e+126 7.04771e-119 -8.70419e-200 -3.29073e-118 4.53742e+27 1.83022e-288 7.0988e+239 -1.80471e-217 -9.8769e+14 -3.35262e+233 -7.52335e-175 5.26801e-74 -1.73243e-255 1.89046e-83 4.62993e+141 -2.96832e+248 2.26229e-308 -1.28463e+49 4.45232e+103 -2.17954e-274 -2.80374e-33 2.75943e-307 -6.2609e+56 0.00033692 -5.29721e-305 -4.18413e-91 3.657e+41 2.41732e-265 -3.0444e-172 -6.07483e-96 1.02116e-61 -1.60521e+131 9.32367e+86 -1.55862e+210 -4.79269e-244 -2.02123e-93 -2.02552e-94 4.25899e+233
+tol values: -1.98454e+254
+input ends
+terminate called after throwing an instance of 'std::range_error'
+  what():  ncol(pheno) != 1
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/qtl2/inst/testfiles/scan_pg_onechr_intcovar_highmem/scan_pg_onechr_intcovar_highmem_output/2e8d2811762da40b64c6a95c97cbc24f1dc35e4c.fail failed

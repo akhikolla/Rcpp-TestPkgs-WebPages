@@ -1,0 +1,24 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/filling/inst/testfiles/cpp_nSVD/cpp_nSVD_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/filling/inst/testfiles/cpp_nSVD/cpp_nSVD_DeepState_TestHarness.cpp(13)
+input starts
+X values:   3.0201e-260  -9.9123e-57
+
+idmat values:   1.0539e+182   8.0561e-38
+ -3.8435e+136  2.3608e-100
+
+Minit values:   9.5730e+229 -7.9981e-243  3.0603e-110   3.2770e-93  -2.1037e+36  -5.2951e-20   9.8113e+30  -3.4039e+03  -3.6484e+05
+
+EXTERNAL: qs v0.23.5.
+
+lambda values: -8.45394e+179
+tol values: -4.53552e+269
+maxiter values: -439912791
+input ends
+==2365766==  If you believe this happened as a result of a stack
+==2365766==  overflow in your program's main thread (unlikely but
+==2365766==  possible), you can try to increase the size of the
+==2365766==  main thread stack using the --main-stacksize= flag.
+==2365766==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/filling/inst/testfiles/cpp_nSVD/cpp_nSVD_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash crashed

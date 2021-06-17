@@ -1,0 +1,14 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+phaseSpace values: 1.05415e-68 1.86447e-211 4.49059e+17 2.72551e-214 6.53679e-70 2.42643e+241 1.65687e+24
+
+vectorIndex values: 644268439
+radius values: -2.68155e-130
+numberBoxes values: 246583936
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/nonlinearTseries/inst/testfiles/getVectorNeighbours/getVectorNeighbours_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash`
+INFO: Done fuzzing! Ran 1 tests (0 tests/second) with 1 failed/0 passed/0 abandoned tests

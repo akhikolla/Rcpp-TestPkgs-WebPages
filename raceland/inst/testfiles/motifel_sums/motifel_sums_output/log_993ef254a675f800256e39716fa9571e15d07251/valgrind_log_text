@@ -1,0 +1,19 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/raceland/inst/testfiles/motifel_sums/motifel_sums_output/993ef254a675f800256e39716fa9571e15d07251.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/raceland/inst/testfiles/motifel_sums/motifel_sums_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+x values: 1.02532e+261 1.12756e-57     nan
+1.46340e+288     inf 4.12846e-51
+5.67165e-306 4.85713e-272     inf
+    nan     inf 61.3403
+5.43908e-105 3.30698e+94 6.30847e-13
+
+size values: -1622927679
+input ends
+terminate called after throwing an instance of 'std::range_error'
+  what():  upper value must be greater than lower value
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/raceland/inst/testfiles/motifel_sums/motifel_sums_output/993ef254a675f800256e39716fa9571e15d07251.fail failed

@@ -1,0 +1,18 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/lazygreedy/inst/testfiles/lazyGreedy/lazyGreedy_output/53e01161bc3f28783e76a4536f37e2f36d37ea99.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/lazygreedy/inst/testfiles/lazyGreedy/lazyGreedy_DeepState_TestHarness.cpp(13)
+input starts
+V values:  -4.2952e-278   4.2420e+22
+ -1.3485e-218  8.0763e-201
+  9.9636e-247  2.9001e+287
+
+EXTERNAL: qs v0.23.5.
+
+t values: -3.62253e+84
+input ends
+
+error: Mat::operator(): index out of bounds
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::operator(): index out of bounds
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/lazygreedy/inst/testfiles/lazyGreedy/lazyGreedy_output/53e01161bc3f28783e76a4536f37e2f36d37ea99.fail failed

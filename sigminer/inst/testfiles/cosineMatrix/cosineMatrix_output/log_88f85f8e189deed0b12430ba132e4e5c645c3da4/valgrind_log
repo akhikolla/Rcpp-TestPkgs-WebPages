@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./cosineMatrix_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/sigminer/inst/testfiles/cosineMatrix/cosineMatrix_output/88f85f8e189deed0b12430ba132e4e5c645c3da4.pass</line>
+</preamble>
+
+<pid>2459874</pid>
+<ppid>2459873</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/sigminer/inst/testfiles/cosineMatrix/cosineMatrix_output/log_88f85f8e189deed0b12430ba132e4e5c645c3da4/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./cosineMatrix_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/sigminer/inst/testfiles/cosineMatrix/cosineMatrix_output/88f85f8e189deed0b12430ba132e4e5c645c3da4.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.123 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:17.644 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:18.735 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

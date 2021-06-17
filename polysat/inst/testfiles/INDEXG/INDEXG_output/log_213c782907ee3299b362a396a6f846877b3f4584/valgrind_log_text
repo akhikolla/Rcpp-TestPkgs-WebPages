@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/polysat/inst/testfiles/INDEXG/INDEXG_output/213c782907ee3299b362a396a6f846877b3f4584.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/polysat/inst/testfiles/INDEXG/INDEXG_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+ag1 values: 1123438673 2069757405 -1364041863 1062769791 2120796143
+na1 values: -523344851
+m2 values: -996531609
+input ends
+==2421056==  If you believe this happened as a result of a stack
+==2421056==  overflow in your program's main thread (unlikely but
+==2421056==  possible), you can try to increase the size of the
+==2421056==  main thread stack using the --main-stacksize= flag.
+==2421056==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/polysat/inst/testfiles/INDEXG/INDEXG_output/213c782907ee3299b362a396a6f846877b3f4584.crash crashed

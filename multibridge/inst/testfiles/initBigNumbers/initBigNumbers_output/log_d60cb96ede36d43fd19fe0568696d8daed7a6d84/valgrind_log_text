@@ -1,0 +1,14 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/multibridge/inst/testfiles/initBigNumbers/initBigNumbers_output/d60cb96ede36d43fd19fe0568696d8daed7a6d84.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/multibridge/inst/testfiles/initBigNumbers/initBigNumbers_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+bitsPrecision values: -1105761949
+input ends
+EXTERNAL: ../../src/init2.c:
+EXTERNAL: 52: 
+EXTERNAL: MPFR assertion failed: ((p) >= 1 && (p) <= ((mpfr_prec_t) ((((mpfr_uprec_t) -1) >> 1) - 256)))
+
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/multibridge/inst/testfiles/initBigNumbers/initBigNumbers_output/d60cb96ede36d43fd19fe0568696d8daed7a6d84.fail failed

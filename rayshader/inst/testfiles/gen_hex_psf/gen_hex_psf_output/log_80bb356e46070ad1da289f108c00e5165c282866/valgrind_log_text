@@ -1,0 +1,10 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/gen_hex_psf/gen_hex_psf_output/80bb356e46070ad1da289f108c00e5165c282866.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/gen_hex_psf/gen_hex_psf_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+radius values: -2.43318e-187
+rotation values: -1.64581e+174
+input ends
+TRACE: Passed: _

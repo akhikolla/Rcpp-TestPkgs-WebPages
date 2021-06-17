@@ -1,0 +1,125 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: 467495432
+b values: 1827680409
+t0 values: -1.64581e+174
+t1 values: -1.66668e-49
+Q values:   2.9387e+294   6.2389e-80   4.7359e-68  1.9237e+304   5.2228e+77 -2.9793e-194 -2.6816e-130 -2.8444e-188
+ -1.3783e-303  9.4614e+185   3.4351e-26 -2.8041e+194 -2.6932e-264   8.8838e+93 -1.2815e+192 -1.0538e+270
+  9.9349e-272 -4.4967e-166  1.0879e-197 -1.2041e+269  5.6944e+304 -4.3128e+297 -8.5076e-293  8.1098e+266
+  5.7915e-162 -1.5284e+202  1.0840e-287  6.8702e+274 -5.6876e-181 -1.1384e-199  1.9626e-252  5.3341e-300
+   2.5921e-42  -9.9731e-54 -2.7216e-171 -3.6255e+168 -1.0588e+151  2.4272e-180  2.7138e-129 -2.9957e+172
+ -3.9222e+180   3.8764e+40   2.8753e-21  2.1614e-216  -1.2427e+93  1.1296e-232   3.9216e-79  -1.5667e+04
+   4.5708e-49  -1.2576e+73 -8.7937e+217 -9.7794e+240 -6.9190e+224 -1.1680e+232 -1.9655e+138  -2.9763e-92
+  -2.1253e-12  3.0689e+143 -3.9147e-243 -5.4828e+103   9.2899e-15  -3.8010e-13   4.6605e-69   1.5295e-61
+
+input ends
+
+error: max(): object has no elements
+terminate called after throwing an instance of 'std::logic_error'
+  what():  max(): object has no elements
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_unif/sample_path_unif_output/963fc92525d3c9bc740564c12e2cd3769a6538b6.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: -498905818
+b values: 569042049
+t0 values: -1.20777e+13
+t1 values: 2.79236e-196
+Q values:    1.4207e+49  2.5804e-206  3.0201e-260  -9.9123e-57 -1.6404e-118  1.0539e+182   8.0561e-38 -3.8435e+136  2.3608e-100
+  3.0172e-124  9.5730e+229 -7.9981e-243  3.0603e-110   3.2770e-93  -2.1037e+36  -5.2951e-20   9.8113e+30  -3.4039e+03
+  -3.6484e+05 -8.4539e+179 -4.5355e+269  3.9563e-268   8.7240e-16   7.8487e-78  7.1035e+183  6.8708e-155  -6.9056e+64
+  1.1026e+184   1.6953e-11 -3.2201e+207  1.8768e-179   7.6027e-52  -3.1894e-67 -4.0783e-125   1.2468e+68 -2.7582e-295
+  5.6756e+224 -3.5496e-194  1.6010e-198  4.1640e-243  1.6760e+109 -2.3587e+145  4.4559e-209  3.2744e+270   1.9902e+90
+
+input ends
+
+error: max(): object has no elements
+terminate called after throwing an instance of 'std::logic_error'
+  what():  max(): object has no elements
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_unif/sample_path_unif_output/1014595f10c14e5b5242f6535562d82e832dc7cd.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: -293123844
+b values: -555281357
+t0 values: -2.88162e-134
+t1 values: 8.18711e+299
+Q values:   9.2870e-257 -4.4731e+269 -1.0846e-247 -1.0696e+114 -3.4796e-216 -8.9518e+215  1.3835e-136  6.2461e+181  -4.1137e+80          nan
+  2.7901e+291 -2.4367e+290  1.1372e+165  1.2493e+186 -9.0601e-190  1.2437e-163   1.0736e-51 -6.7207e-236  3.9327e-254  -3.4557e+99
+   8.9578e+89 -1.0443e+114   2.7723e+43 -2.1856e+139  -2.6381e-55  -1.7767e-44 -2.0391e+240  6.8406e+216  5.0511e+120  -5.7894e+93
+
+input ends
+
+error: max(): object has no elements
+terminate called after throwing an instance of 'std::logic_error'
+  what():  max(): object has no elements
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_unif/sample_path_unif_output/0c74fb0c4e2f6ce4727d4e01c0ebe20ee83d33a7.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: -1105761949
+b values: 304498753
+t0 values: 3.72126e-82
+t1 values: 5.29799e-243
+Q values:  -2.1449e+105
+  -3.9305e-68
+  -2.0205e-44
+   1.3699e-76
+   3.4203e-93
+
+input ends
+
+error: max(): object has no elements
+terminate called after throwing an instance of 'std::logic_error'
+  what():  max(): object has no elements
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_unif/sample_path_unif_output/52f6887c4ddf03bcd81df31f9c398d9d09381b55.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: 954479852
+b values: -194229631
+t0 values: -4.2952e-278
+t1 values: 4.24195e+22
+Q values:   8.0763e-201
+  9.9636e-247
+  2.9001e+287
+  -3.6225e+84
+  -1.6853e-04
+  -5.5190e-05
+ -2.0497e+224
+   2.9200e-47
+  4.0971e+206
+ -1.0814e+108
+
+input ends
+
+error: max(): object has no elements
+terminate called after throwing an instance of 'std::logic_error'
+  what():  max(): object has no elements
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_unif/sample_path_unif_output/c16884b793c6cedefd3c7ad0551daa36b9f3daa6.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: 1344097580
+b values: -1433424706
+t0 values: -5.48117e-145
+t1 values: 4.79212e-250
+Q values:   5.0046e-274  7.5238e-133  -2.0449e-51   1.0935e+01  4.1314e+182
+
+input ends
+
+error: max(): object has no elements
+terminate called after throwing an instance of 'std::logic_error'
+  what():  max(): object has no elements
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_unif/sample_path_unif_output/2a04a4ca2b790184fa4f66a3bc35826ac6f6ab0c.fail`
+INFO: Done fuzzing! Ran 6 tests (3 tests/second) with 6 failed/0 passed/0 abandoned tests

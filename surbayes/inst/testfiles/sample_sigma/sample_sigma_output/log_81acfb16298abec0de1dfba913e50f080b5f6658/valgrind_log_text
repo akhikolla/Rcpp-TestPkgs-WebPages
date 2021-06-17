@@ -1,0 +1,22 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_output/81acfb16298abec0de1dfba913e50f080b5f6658.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+nu values: -3.59873e+296
+V values:   -2.9403e-89 -1.1077e+218 -5.7726e+206 -6.1187e+278  -5.2229e+91
+  -3.3894e+82  1.7635e+157   2.2918e-39  -2.8717e-18  -4.6343e+27
+ -8.6559e-103 -2.1313e-216   7.1551e+47 -1.6136e+274 -1.8813e-107
+  3.9077e+175  9.4400e-247  2.7268e-290   9.2057e-33  1.1680e-262
+ -1.7803e-146  5.7577e-158 -4.4680e-203   3.1035e-12  1.0815e-243
+  -3.6415e-47 -1.2775e+231  4.6956e+110 -2.1876e-107  -4.8053e-07
+
+p values: 638128690
+input ends
+
+error: Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Mat::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/surbayes/inst/testfiles/sample_sigma/sample_sigma_output/81acfb16298abec0de1dfba913e50f080b5f6658.fail failed

@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/phyr/inst/testfiles/cov2cor_cpp/cov2cor_cpp_output/8cf617b9f85d6c47023a84f5e63c542e024190a8.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/phyr/inst/testfiles/cov2cor_cpp/cov2cor_cpp_DeepState_TestHarness.cpp(13)
+input starts
+vcv values:  -5.4812e-145  4.7921e-250  9.6064e+283  5.0046e-274  7.5238e-133  -2.0449e-51   1.0935e+01
+
+input ends
+
+error: each_col(): incompatible size; expected 1x1, got 0x1
+terminate called after throwing an instance of 'std::logic_error'
+  what():  each_col(): incompatible size; expected 1x1, got 0x1
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/phyr/inst/testfiles/cov2cor_cpp/cov2cor_cpp_output/8cf617b9f85d6c47023a84f5e63c542e024190a8.fail failed

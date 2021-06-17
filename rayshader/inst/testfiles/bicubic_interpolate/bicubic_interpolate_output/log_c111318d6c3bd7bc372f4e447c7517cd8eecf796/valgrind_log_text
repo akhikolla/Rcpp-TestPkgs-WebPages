@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/bicubic_interpolate/bicubic_interpolate_output/c111318d6c3bd7bc372f4e447c7517cd8eecf796.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/rayshader/inst/testfiles/bicubic_interpolate/bicubic_interpolate_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+p values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+x values: 6.45644e-174
+y values: 5.50641e+255
+input ends
+TRACE: Passed: _

@@ -1,0 +1,15 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/HTLR/inst/testfiles/log_normcons/log_normcons_output/41459b1d6465ad2e9e8db2dd77c6954d693f44ca.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/HTLR/inst/testfiles/log_normcons/log_normcons_DeepState_TestHarness.cpp(13)
+input starts
+A values:    7.9675e+95  -4.4054e-65
+  9.9377e+292   2.3200e+83
+
+input ends
+==2348137==  If you believe this happened as a result of a stack
+==2348137==  overflow in your program's main thread (unlikely but
+==2348137==  possible), you can try to increase the size of the
+==2348137==  main thread stack using the --main-stacksize= flag.
+==2348137==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/HTLR/inst/testfiles/log_normcons/log_normcons_output/41459b1d6465ad2e9e8db2dd77c6954d693f44ca.crash crashed

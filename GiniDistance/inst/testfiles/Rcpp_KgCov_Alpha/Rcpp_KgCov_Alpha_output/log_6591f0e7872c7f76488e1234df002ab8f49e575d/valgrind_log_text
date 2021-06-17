@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/GiniDistance/inst/testfiles/Rcpp_KgCov_Alpha/Rcpp_KgCov_Alpha_output/6591f0e7872c7f76488e1234df002ab8f49e575d.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/GiniDistance/inst/testfiles/Rcpp_KgCov_Alpha/Rcpp_KgCov_Alpha_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+x values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+alpha values: 6.45644e-174
+sigma values: 5.50641e+255
+input ends
+TRACE: Passed: _

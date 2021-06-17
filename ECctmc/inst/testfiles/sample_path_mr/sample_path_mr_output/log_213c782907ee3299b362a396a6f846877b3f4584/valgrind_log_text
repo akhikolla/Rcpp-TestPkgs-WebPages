@@ -1,0 +1,22 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_mr/sample_path_mr_output/213c782907ee3299b362a396a6f846877b3f4584.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_mr/sample_path_mr_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+a values: 1903691637
+b values: 1291204341
+t0 values: 5.14867e+83
+t1 values: 4.38983e+276
+Missing value
+Q values: 5.24924e+272 -2.83919e+230 2.62736e-264 1.01363e+74 1.56356e-81 4.33714e-104 -2.83919e+230 1.83374e-104 1088.08 5.10578e-14
+4.59987e+18 6.61249e-257 8.62422e-89 2.14829e+78    -inf 8.95062e-07     inf    -inf 8.88077e+282 9.71140e-241
+
+input ends
+==2442283==  If you believe this happened as a result of a stack
+==2442283==  overflow in your program's main thread (unlikely but
+==2442283==  possible), you can try to increase the size of the
+==2442283==  main thread stack using the --main-stacksize= flag.
+==2442283==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/ECctmc/inst/testfiles/sample_path_mr/sample_path_mr_output/213c782907ee3299b362a396a6f846877b3f4584.crash crashed

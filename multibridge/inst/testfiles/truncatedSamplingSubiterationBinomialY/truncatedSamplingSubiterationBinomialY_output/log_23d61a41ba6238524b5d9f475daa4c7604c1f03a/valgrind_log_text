@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/multibridge/inst/testfiles/truncatedSamplingSubiterationBinomialY/truncatedSamplingSubiterationBinomialY_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/multibridge/inst/testfiles/truncatedSamplingSubiterationBinomialY/truncatedSamplingSubiterationBinomialY_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+uniformSample values: -2.43318e-187
+theta values: -1.64581e+174
+betaMinusOne values: -1.66668e-49
+input ends
+==2409026==  If you believe this happened as a result of a stack
+==2409026==  overflow in your program's main thread (unlikely but
+==2409026==  possible), you can try to increase the size of the
+==2409026==  main thread stack using the --main-stacksize= flag.
+==2409026==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/multibridge/inst/testfiles/truncatedSamplingSubiterationBinomialY/truncatedSamplingSubiterationBinomialY_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash crashed

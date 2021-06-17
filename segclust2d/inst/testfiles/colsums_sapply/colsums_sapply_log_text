@@ -1,0 +1,123 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+i values: 467495432
+rupt values:   3.7687e+222
+  2.1759e+276
+  8.2391e+275
+ -6.7706e-186
+   2.8936e-02
+ -1.9249e+220
+ -7.7605e-203
+ -1.4482e-217
+ -2.1016e+110
+ -6.6558e-306
+
+x values:  -1.5015e+251  1.5787e-307  -7.0076e-50  -6.9957e-60  2.5820e-253
+ -2.6324e-196  9.3225e-200  1.6671e-146   2.4867e+34  4.3932e-139
+ -1.3601e+107   2.8638e-96  3.0228e-165   1.3486e-57  5.8682e+165
+ -4.9114e+258 -5.3360e+203 -6.8885e+106 -3.4379e-268  8.9481e+170
+  -2.0443e-36 -6.0399e-114   2.6072e+99  -6.2978e-66  3.9179e+115
+
+mu values:  -3.8619e+221  3.5991e-219 -3.4505e+232 -6.2583e-147 -2.1655e+140 -8.5851e-232   9.9583e+13 -3.7102e-280   1.7409e+15  1.1042e+143
+
+tau values:   1.1144e+215  -2.4815e-22  3.1069e-226  1.1118e-242  1.5402e-307   1.4140e-40
+  1.0882e+193   1.9766e+77  -2.0885e-34 -2.0199e+299 -9.4938e-217  -1.2118e+39
+  -1.2611e-09  -5.5592e+60   1.0612e+36 -1.7615e+294   1.0671e-60  4.1545e+279
+   9.9535e-08  -4.6596e+48 -2.8955e+293  -1.0631e-80 -1.3013e+303  8.5220e-173
+ -1.7838e+117   8.7420e-11 -1.8116e+241 -8.3757e-193  -3.1050e-44   3.6347e+55
+  1.0290e-113  -3.6227e-43  -9.3761e+29   3.3105e-86   4.0411e-05   4.7037e+10
+
+input ends
+
+error: element-wise multiplication: incompatible matrix dimensions: 10x0 and 6x0
+terminate called after throwing an instance of 'std::logic_error'
+  what():  element-wise multiplication: incompatible matrix dimensions: 10x0 and 6x0
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/segclust2d/inst/testfiles/colsums_sapply/colsums_sapply_output/df9bb864fd54c960bc635f383318219f03acb00a.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+i values: -498905818
+rupt values:    2.3019e+66   7.9847e+52 -4.3921e-147  2.4515e+303 -1.9644e+262
+ -2.5081e+199   1.2050e-80 -2.2462e-139   6.1377e-71 -6.8384e-207
+ -5.1399e-188 -3.8494e+177  7.6249e+266  -7.0140e+67  3.2809e-274
+ -2.9208e-207  1.9849e-257  8.2897e+166   9.6678e-50  1.2183e+303
+   2.4699e+76 -1.0160e-235 -8.9592e-135 -6.0625e-109  2.1244e-244
+  2.7088e-266  4.3063e-136 -1.0242e+174  3.5872e-115 -4.0720e+259
+   7.9603e+55 -1.5203e+179  2.1142e-279 -3.3306e+212 -1.3341e+176
+   1.2859e-74 -1.9060e+273 -1.1032e-225 -1.8933e+185  3.3553e-161
+ -6.4805e-229  2.7835e-180   1.5661e-82 -9.3504e-273 -8.2092e-196
+  8.0809e-255  1.1119e+119  1.1249e+250 -3.4533e+258  3.9671e+161
+
+x values:   4.7861e+109  -1.4451e+77
+   2.2901e-47  5.0440e+140
+  1.3823e+180 -2.4607e+197
+   2.1088e-35 -2.6548e+246
+  4.4651e+151  1.4652e+258
+  2.1447e+273  4.4147e-172
+ -3.1857e-239 -1.3664e+130
+  5.1571e-165  8.7057e+101
+  1.4944e-138   2.6598e-25
+ -1.7086e+300 -3.6183e+111
+
+mu values:  -9.5348e+225   1.8403e+34  4.1780e+181
+ -3.8416e-213  5.2720e+211  1.2653e+268
+  1.9370e+164  -8.6244e-06 -1.7352e-184
+   3.9777e+93  -3.2838e-71  2.5434e+296
+  2.5599e+114   5.0331e+14  2.8085e+296
+  9.2255e+111 -8.3662e-256  1.7422e-221
+  -4.5446e+70  1.6808e+152  -2.4425e+91
+
+tau values:   7.0253e-171  6.2378e+283  8.4924e-262   1.0033e-74
+   3.0522e-17  3.8009e+274  2.5825e+141 -8.3104e-170
+  2.6068e-175  9.9750e+170  3.1299e+203 -2.1073e+238
+   1.3599e-18 -8.9618e-170  -6.5688e-40  3.5108e+255
+ -2.1534e+248  -2.6633e+65 -6.8714e+124 -1.0766e-144
+  1.5291e-300  7.6329e-274   4.0035e-11 -8.6424e+102
+ -4.7470e-102 -6.3680e-185   4.1638e-13 -1.4499e-263
+
+input ends
+
+error: element-wise multiplication: incompatible matrix dimensions: 10x0 and 7x0
+terminate called after throwing an instance of 'std::logic_error'
+  what():  element-wise multiplication: incompatible matrix dimensions: 10x0 and 7x0
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/segclust2d/inst/testfiles/colsums_sapply/colsums_sapply_output/1592600ad95395ff6d722d0c71686d372da8da2a.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+i values: -293123844
+rupt values:   2.9877e-188  -3.7379e+59 -5.0281e-216   2.1622e+38
+  4.6111e-106  7.5467e+136  3.5716e-109  -1.1412e+67
+   2.6722e-96 -4.5610e+108  2.1110e-190  2.3442e-262
+   3.6455e+68  -1.7038e+98  1.9604e+169 -4.0341e-215
+   8.4584e-55  1.7311e-152 -4.4341e+267  -1.3240e-49
+  -1.2804e-25  2.0631e+285  1.4741e+187  1.0211e-250
+ -5.0722e+195  1.2779e-261   3.1149e+30  2.0338e-295
+ -1.6347e-257  5.5586e-198   4.7110e+56  -9.5860e-76
+
+x values:   -6.9057e-18 -1.0963e-166   7.8939e+85  -1.4891e+39  2.6373e+261  4.5195e+163  -7.6277e-53  2.0962e+257
+ -4.6883e-154  1.1190e+232   3.2629e-84   3.9669e-30  1.3095e+193  2.8117e+284   7.8134e-69   8.0644e-68
+
+mu values:   -8.6608e-93 -4.4412e-236
+   8.7984e-85   1.1876e+27
+
+tau values:   -1.4798e+74
+   1.0829e-20
+  3.1889e-291
+   1.8941e+44
+ -3.2523e-308
+  4.1622e+189
+ -3.4719e+104
+
+input ends
+
+error: element-wise multiplication: incompatible matrix dimensions: 8x0 and 7x0
+terminate called after throwing an instance of 'std::logic_error'
+  what():  element-wise multiplication: incompatible matrix dimensions: 8x0 and 7x0
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/segclust2d/inst/testfiles/colsums_sapply/colsums_sapply_output/7c3ace97244d125bb8ad0e806c5d1a2966324c96.fail`
+INFO: Done fuzzing! Ran 3 tests (1 tests/second) with 3 failed/0 passed/0 abandoned tests

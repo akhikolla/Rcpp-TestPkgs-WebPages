@@ -1,0 +1,28 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/diffusr/inst/testfiles/neighbors_/neighbors__output/213c782907ee3299b362a396a6f846877b3f4584.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/diffusr/inst/testfiles/neighbors_/neighbors__DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+node_idxs values: 1123438673 2069757405 -1364041863 1062769791 2120796143
+Missing value
+W values: 4.59987e+18 8.95062e-07 1.49741e+196 4.33867e+27
+1.51667e-225 6.47600e+188 1.44529e+91 2.84159e-210
+6.61249e-257 1.02818e-81 4.09428e+146 8.31362e+90
+2.62736e-264 1.83374e-104 8.78821e+143 1.42291
+8.62422e-89 9.93170e-171 1.60646e-158 1.53510e-99
+1.01363e+74 1088.08 2.54096e-21 7.52989e+12
+6.47600e+188 8.88077e+282 2.36295e+123 3.77445e+64
+1.56356e-81     nan     nan 14780.2
+1.87145e+289 9.71140e-241 0.00892625 4.33815e+110
+4.33714e-104 7.70719e-71     nan 8.53986e-281
+
+k values: 1420742679
+input ends
+==2446104==  If you believe this happened as a result of a stack
+==2446104==  overflow in your program's main thread (unlikely but
+==2446104==  possible), you can try to increase the size of the
+==2446104==  main thread stack using the --main-stacksize= flag.
+==2446104==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/diffusr/inst/testfiles/neighbors_/neighbors__output/213c782907ee3299b362a396a6f846877b3f4584.crash crashed

@@ -1,0 +1,14 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/womblR/inst/testfiles/makeSymm/makeSymm_output/06fd08204fbb432315d2006eef5b6946f33fb6ff.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/womblR/inst/testfiles/makeSymm/makeSymm_DeepState_TestHarness.cpp(13)
+input starts
+A values:    7.9675e+95  -4.4054e-65
+  9.9377e+292   2.3200e+83
+
+input ends
+
+error: symmatu()/symmatl(): given matrix must be square sized
+terminate called after throwing an instance of 'std::logic_error'
+  what():  symmatu()/symmatl(): given matrix must be square sized
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/womblR/inst/testfiles/makeSymm/makeSymm_output/06fd08204fbb432315d2006eef5b6946f33fb6ff.fail failed

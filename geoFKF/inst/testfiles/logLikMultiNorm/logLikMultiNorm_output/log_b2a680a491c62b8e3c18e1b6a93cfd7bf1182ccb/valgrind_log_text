@@ -1,0 +1,24 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/geoFKF/inst/testfiles/logLikMultiNorm/logLikMultiNorm_output/b2a680a491c62b8e3c18e1b6a93cfd7bf1182ccb.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/geoFKF/inst/testfiles/logLikMultiNorm/logLikMultiNorm_DeepState_TestHarness.cpp(13)
+input starts
+mCoef values:   1.5640e+138  1.8651e-245 -1.6578e-126   8.3192e+76   1.2121e-73 -1.8285e+183
+  4.2949e-206  4.5496e+119 -1.5165e+167 -3.7500e-129  3.6939e+234  5.5012e+234
+ -5.8565e+106  2.3360e+187  -2.6101e-89  5.3980e+140   4.3495e-92  4.4304e-127
+  3.4402e-175  5.9791e+292 -2.9147e-218 -1.6507e-137  -2.2394e+46  8.1101e+134
+
+mDist values:   1.0715e+139 -1.3283e+231  4.8805e-239 -5.2607e+264
+
+EXTERNAL: qs v0.23.5.
+
+s2 values: -5.76397e-280
+phi values: -9.94651e+188
+p values: -1.49919e+56
+input ends
+==2366864==  If you believe this happened as a result of a stack
+==2366864==  overflow in your program's main thread (unlikely but
+==2366864==  possible), you can try to increase the size of the
+==2366864==  main thread stack using the --main-stacksize= flag.
+==2366864==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/geoFKF/inst/testfiles/logLikMultiNorm/logLikMultiNorm_output/b2a680a491c62b8e3c18e1b6a93cfd7bf1182ccb.crash crashed

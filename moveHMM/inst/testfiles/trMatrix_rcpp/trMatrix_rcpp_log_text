@@ -1,0 +1,112 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+nbStates values: 467495432
+beta values:   3.7687e+222
+  2.1759e+276
+  8.2391e+275
+ -6.7706e-186
+   2.8936e-02
+ -1.9249e+220
+ -7.7605e-203
+ -1.4482e-217
+ -2.1016e+110
+ -6.6558e-306
+
+covs values:  -1.5015e+251  1.5787e-307  -7.0076e-50  -6.9957e-60  2.5820e-253
+ -2.6324e-196  9.3225e-200  1.6671e-146   2.4867e+34  4.3932e-139
+ -1.3601e+107   2.8638e-96  3.0228e-165   1.3486e-57  5.8682e+165
+ -4.9114e+258 -5.3360e+203 -6.8885e+106 -3.4379e-268  8.9481e+170
+  -2.0443e-36 -6.0399e-114   2.6072e+99  -6.2978e-66  3.9179e+115
+
+input ends
+
+error: Cube::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Cube::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/trMatrix_rcpp/trMatrix_rcpp_output/fb9843c67d136ea1c5e6216f83948138cd000c77.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+nbStates values: -498905818
+beta values:    2.3019e+66   7.9847e+52 -4.3921e-147  2.4515e+303 -1.9644e+262
+ -2.5081e+199   1.2050e-80 -2.2462e-139   6.1377e-71 -6.8384e-207
+ -5.1399e-188 -3.8494e+177  7.6249e+266  -7.0140e+67  3.2809e-274
+ -2.9208e-207  1.9849e-257  8.2897e+166   9.6678e-50  1.2183e+303
+   2.4699e+76 -1.0160e-235 -8.9592e-135 -6.0625e-109  2.1244e-244
+  2.7088e-266  4.3063e-136 -1.0242e+174  3.5872e-115 -4.0720e+259
+   7.9603e+55 -1.5203e+179  2.1142e-279 -3.3306e+212 -1.3341e+176
+   1.2859e-74 -1.9060e+273 -1.1032e-225 -1.8933e+185  3.3553e-161
+ -6.4805e-229  2.7835e-180   1.5661e-82 -9.3504e-273 -8.2092e-196
+  8.0809e-255  1.1119e+119  1.1249e+250 -3.4533e+258  3.9671e+161
+
+covs values:   4.7861e+109  -1.4451e+77
+   2.2901e-47  5.0440e+140
+  1.3823e+180 -2.4607e+197
+   2.1088e-35 -2.6548e+246
+  4.4651e+151  1.4652e+258
+  2.1447e+273  4.4147e-172
+ -3.1857e-239 -1.3664e+130
+  5.1571e-165  8.7057e+101
+  1.4944e-138   2.6598e-25
+ -1.7086e+300 -3.6183e+111
+
+input ends
+
+error: Cube::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Cube::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/trMatrix_rcpp/trMatrix_rcpp_output/0d6291c9fb28faa4e1456477cff9de3eca05bcfa.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+nbStates values: -293123844
+beta values:   2.9877e-188  -3.7379e+59 -5.0281e-216   2.1622e+38
+  4.6111e-106  7.5467e+136  3.5716e-109  -1.1412e+67
+   2.6722e-96 -4.5610e+108  2.1110e-190  2.3442e-262
+   3.6455e+68  -1.7038e+98  1.9604e+169 -4.0341e-215
+   8.4584e-55  1.7311e-152 -4.4341e+267  -1.3240e-49
+  -1.2804e-25  2.0631e+285  1.4741e+187  1.0211e-250
+ -5.0722e+195  1.2779e-261   3.1149e+30  2.0338e-295
+ -1.6347e-257  5.5586e-198   4.7110e+56  -9.5860e-76
+
+covs values:   -6.9057e-18 -1.0963e-166   7.8939e+85  -1.4891e+39  2.6373e+261  4.5195e+163  -7.6277e-53  2.0962e+257
+ -4.6883e-154  1.1190e+232   3.2629e-84   3.9669e-30  1.3095e+193  2.8117e+284   7.8134e-69   8.0644e-68
+
+input ends
+
+error: Cube::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Cube::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/trMatrix_rcpp/trMatrix_rcpp_output/1e6825154a11dc2ea163aae2183ea61c4746d5b1.fail`
+input starts
+EXTERNAL: qs v0.23.5.
+
+nbStates values: -1105761949
+beta values:  -1.0937e-292
+  1.7937e+195
+ -9.3936e-248
+  -3.9895e+09
+
+covs values:  -6.3815e+212 -5.1383e+191 -7.2187e-208  1.9376e+269  -4.1588e-02  6.1889e+205
+  -1.6688e-96  6.4564e-174  5.5064e+255 -5.0229e+117 -5.7294e+144  3.5716e+306
+   5.1075e-90  -2.6061e-23 -1.0132e-174  1.2321e-272  -2.4734e+92   1.6077e-28
+ -2.4671e+282  1.5416e+153  1.2763e-286   4.0917e+80  5.0572e-294  2.1240e-163
+ -9.5132e-197  3.1925e-184  1.4944e+214  -7.2616e+03   1.8025e+45 -1.1998e-167
+  -1.2543e+73 -2.8538e-285 -4.9618e+212   2.9345e+51 -3.4846e-264 -2.0911e-209
+  2.7031e+165 -4.3512e-245  -4.7888e-91 -6.1561e-134  1.5839e+299  1.7599e-188
+  2.9251e-276  2.0544e-194 -8.7434e-139  3.2233e-237   6.2075e+00  8.2741e+256
+
+input ends
+
+error: Cube::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+terminate called after throwing an instance of 'std::logic_error'
+  what():  Cube::init(): requested size is too large; suggest to enable ARMA_64BIT_WORD
+ERROR: Failed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/moveHMM/inst/testfiles/trMatrix_rcpp/trMatrix_rcpp_output/2a38eefcebbec951b939876e98b04306e3ec1d8f.fail`
+INFO: Done fuzzing! Ran 4 tests (2 tests/second) with 4 failed/0 passed/0 abandoned tests

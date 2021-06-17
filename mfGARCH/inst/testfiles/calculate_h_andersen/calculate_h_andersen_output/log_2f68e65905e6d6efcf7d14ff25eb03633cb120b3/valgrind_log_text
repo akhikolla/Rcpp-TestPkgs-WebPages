@@ -1,0 +1,18 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/calculate_h_andersen/calculate_h_andersen_output/2f68e65905e6d6efcf7d14ff25eb03633cb120b3.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/calculate_h_andersen/calculate_h_andersen_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+ndays values: -2.43318e-187
+delta values: -1.64581e+174
+mu values: -1.66668e-49
+theta values: 1.91698e-80
+omega values: 2.93871e+294
+lambda values: 6.2389e-80
+Missing value
+Z values: 5.22278e+77 -2.97932e-194 -2.68155e-130 -2.84435e-188 nan -1.92492e+220 3.43512e-26 -2.80408e+194 -2.69316e-264 8.88375e+93 -1.2815e+192 -1.92492e+220 9.93485e-272 -4.49673e-166 1.0879e-197 nan 5.69436e+304 -4.3128e+297 -8.50762e-293 inf 5.79155e-162 -1.52842e+202 1.08405e-287 6.87024e+274 -5.68765e-181 -1.13845e-199 1.96261e-252 5.33405e-300 2.59209e-42 -9.97307e-54 -2.72163e-171 -3.62547e+168 -1.05877e+151 2.42724e-180 2.71379e-129 -2.99574e+172 -3.92218e+180 3.87645e+40 2.8753e-21 2.16137e-216 -1.24268e+93 1.12959e-232 3.9216e-79 0
+pi values: -6.91902e+224
+h0 values: -1.16799e+232
+input ends
+TRACE: Passed: _

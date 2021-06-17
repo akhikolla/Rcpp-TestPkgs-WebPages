@@ -1,0 +1,14 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/RJcluster/inst/testfiles/tcrossprod_c/tcrossprod_c_output/82d4f9a08b611e8047d18621e844f0b728b1161a.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/RJcluster/inst/testfiles/tcrossprod_c/tcrossprod_c_DeepState_TestHarness.cpp(13)
+input starts
+X values:   4.5428e-241
+  2.4025e-278
+  -3.6097e+55
+
+Y values:   9.2566e+260  1.0461e+288 -4.4695e+285 -3.8085e+121   4.0382e+81  2.2493e-239
+ -5.2946e-202  -2.9565e+65  -7.3054e+59  -1.5453e+76   6.6372e+22  2.3812e-167
+  -3.3071e+68  1.4961e-304  5.9276e-300  7.3864e-168 -1.5036e+120   7.7919e-90
+
+input ends
+TRACE: Passed: _

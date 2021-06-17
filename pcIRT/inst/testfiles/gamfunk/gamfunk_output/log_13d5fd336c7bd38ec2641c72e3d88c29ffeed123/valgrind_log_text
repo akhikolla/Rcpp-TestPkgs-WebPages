@@ -1,0 +1,63 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/pcIRT/inst/testfiles/gamfunk/gamfunk_output/13d5fd336c7bd38ec2641c72e3d88c29ffeed123.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/pcIRT/inst/testfiles/gamfunk/gamfunk_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+epsmat values: 10.9345 4.13144e+182 -8.40393e-124 -1.71931e-91 -3.98832e+298 nan -inf -3.17528e+212 2.46668e-86 2.28394e-55 inf inf 1.19332e+132 -7.27981e+99 4.54276e-241 0
+gammat values: 7.70806e+120 9.84998e+122 5.89190e+51 1.75410e-70 5.26815e+89 3.55393e-308 1.19461e-290 1.45059e-59
+6.23761e+256 1.08068e-237 9.20244e-140 1.78770e+280 2.10944e-227 2.73704e+86 4.20966e-153 1.88132e-193
+2.38724e-271 1.27446e-225 1.65509e-37 1.93711e-173 2.61627e+47 2.61569e+08 1.58009e+08 448818.
+4.23654e+262 1.49057e-39 9.11589e+29 6.63215e+17 5.02837e-217 1.82876e-181 2.49349e-228 3.22386e-233
+7.49286e+260 5.08475e-225 0.294650 5.74928e-103 4.86840e+44 5.35176e-198 1.03278e-156 3.12331e+53
+2.65866e-149 1.38425e+117 7.66405e-113 1.43850e-250 5.32134e-188 2.79721e-52 7.08933e-274 4.84994e+58
+7.35556e-289 5.95893e+31 2.11837e+68 4.86864e-227 8.33174e+144 9.07186e+288 1.37779e-273 4.90352e+260
+1.11643e+200 4.01407e-209 1.99643e-141 4.07599e+266 5.03035e-163 4.45118e+136 1.08725e-182 5.05445e+268
+
+input ends
+
+valgrind: m_mallocfree.c:305 (get_bszB_as_is): Assertion 'bszB_lo == bszB_hi' failed.
+valgrind: Heap block lo/hi size mismatch: lo = 624, hi = 9221120237041092514.
+This is probably caused by your program erroneously writing past the
+end of a heap block and corrupting heap metadata.  If you fix any
+invalid writes reported by Memcheck, this assertion failure will
+probably go away.  Please try that before reporting this as a bug.
+
+
+host stacktrace:
+==2500608==    at 0x58046FFA: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2500608==    by 0x58047127: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2500608==    by 0x580472CB: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2500608==    by 0x580514B4: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2500608==    by 0x5803DE9A: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2500608==    by 0x5803CD9F: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2500608==    by 0x58041F04: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2500608==    by 0x5803C1D8: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux)
+==2500608==    by 0x1003AB36DA: ???
+==2500608==    by 0x1002CB5F2F: ???
+==2500608==    by 0x1002CB5F17: ???
+==2500608==    by 0x1002CB5F2F: ???
+==2500608==    by 0x1002CB5F3F: ???
+
+sched status:
+  running_tid=1
+
+Thread 1: status = VgTs_Runnable (lwpid 2500608)
+client stack range: [0x1FFEF77000 0x1FFF000FFF] client SP: 0x1FFEFFF900
+valgrind stack range: [0x1002BB6000 0x1002CB5FFF] top usage: 14592 of 1048576
+
+
+Note: see also the FAQ in the source distribution.
+It contains workarounds to several common problems.
+In particular, if Valgrind aborted or crashed after
+identifying problems in your program, there's a good chance
+that fixing those problems will prevent Valgrind aborting or
+crashing, especially if it happened in m_mallocfree.c.
+
+If that doesn't help, please report this bug to: www.valgrind.org
+
+In the bug report, send all the above text, the valgrind
+version, and what OS and version you are using.  Thanks.
+
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/pcIRT/inst/testfiles/gamfunk/gamfunk_output/13d5fd336c7bd38ec2641c72e3d88c29ffeed123.fail failed

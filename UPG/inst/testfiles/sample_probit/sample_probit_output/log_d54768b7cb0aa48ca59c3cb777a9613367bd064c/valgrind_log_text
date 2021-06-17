@@ -1,0 +1,27 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/UPG/inst/testfiles/sample_probit/sample_probit_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/UPG/inst/testfiles/sample_probit/sample_probit_DeepState_TestHarness.cpp(13)
+input starts
+y_matrix values:   3.0201e-260  -9.9123e-57
+
+y_categ values:   1.0539e+182   8.0561e-38
+ -3.8435e+136  2.3608e-100
+
+X values:   9.5730e+229 -7.9981e-243  3.0603e-110   3.2770e-93  -2.1037e+36  -5.2951e-20   9.8113e+30  -3.4039e+03  -3.6484e+05
+
+beta_old values:  -4.5355e+269  3.9563e-268   8.7240e-16   7.8487e-78  7.1035e+183  6.8708e-155  -6.9056e+64  1.1026e+184
+   1.6953e-11 -3.2201e+207  1.8768e-179   7.6027e-52  -3.1894e-67 -4.0783e-125   1.2468e+68 -2.7582e-295
+
+EXTERNAL: qs v0.23.5.
+
+nsave values: 1732732646
+nburn values: 2038995054
+A0 values: -3.54965e-194
+d0 values: 1.60096e-198
+D0 values: 4.16403e-243
+G0 values: 1.67598e+109
+BOOST values: -1153731449
+verbose values: -180871458
+input ends
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/UPG/inst/testfiles/sample_probit/sample_probit_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash crashed

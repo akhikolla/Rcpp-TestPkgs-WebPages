@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./nest2ring_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring/nest2ring_output/4ebb3f1419d2958b349c5fb8b3e045b8363665a7.pass</line>
+</preamble>
+
+<pid>2435796</pid>
+<ppid>2435795</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring/nest2ring_output/log_4ebb3f1419d2958b349c5fb8b3e045b8363665a7/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./nest2ring_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring/nest2ring_output/4ebb3f1419d2958b349c5fb8b3e045b8363665a7.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.035 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x4D2F981</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/src/rcosmo.so</obj>
+      <fn>nest2ring(int, Rcpp::Vector&lt;13, Rcpp::PreserveStorage&gt;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/src</dir>
+      <file>Manipulation.cpp</file>
+      <line>153</line>
+    </frame>
+    <frame>
+      <ip>0x409F84</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring/nest2ring_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring</dir>
+      <file>nest2ring_DeepState_TestHarness.cpp</file>
+      <line>27</line>
+    </frame>
+    <frame>
+      <ip>0x409B48</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring/nest2ring_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring</dir>
+      <file>nest2ring_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41CD18</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring/nest2ring_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41CFB9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring/nest2ring_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41D094</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring/nest2ring_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407655</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/rcosmo/inst/testfiles/nest2ring/nest2ring_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x981ed90 is 2,960 bytes inside an unallocated block of size 3,520 in arena "client"</auxwhat>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:08.582 </time>
+</status>
+
+<errorcounts>
+  <pair>
+    <count>14</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:09.130 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

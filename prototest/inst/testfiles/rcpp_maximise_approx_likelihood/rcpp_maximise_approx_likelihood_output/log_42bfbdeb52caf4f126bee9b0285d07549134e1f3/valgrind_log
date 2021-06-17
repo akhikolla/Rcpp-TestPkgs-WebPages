@@ -1,0 +1,638 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./rcpp_maximise_approx_likelihood_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_output/42bfbdeb52caf4f126bee9b0285d07549134e1f3.fail</line>
+</preamble>
+
+<pid>2423100</pid>
+<ppid>2423099</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_output/log_42bfbdeb52caf4f126bee9b0285d07549134e1f3/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./rcpp_maximise_approx_likelihood_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_output/42bfbdeb52caf4f126bee9b0285d07549134e1f3.fail</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.060 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:15.989 </time>
+</status>
+
+<error>
+  <unique>0x9</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8 bytes in 1 blocks are definitely lost in loss record 10 of 1,325</text>
+    <leakedbytes>8</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D060F7</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::initialize(int, char const* const*, bool, bool, bool)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>198</line>
+    </frame>
+    <frame>
+      <ip>0x4D06483</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::RInside()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>61</line>
+    </frame>
+    <frame>
+      <ip>0x409BC3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>14</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DE28</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E0C9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E1A4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x20</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>56 bytes in 1 blocks are possibly lost in loss record 33 of 1,325</text>
+    <leakedbytes>56</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E4A308</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E4BFB8</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E4C055</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E2D331</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+    </frame>
+    <frame>
+      <ip>0x4E3D6D5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::logic_error::logic_error(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D25F98</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>void arma::arma_stop_logic_error&lt;char const*&gt;(char const* const&amp;)</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>144</line>
+    </frame>
+    <frame>
+      <ip>0x4D2643F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>arma_check&lt;char [32]&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>382</line>
+    </frame>
+    <frame>
+      <ip>0x4D2643F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>col</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>3007</line>
+    </frame>
+    <frame>
+      <ip>0x4D2643F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>compute_H(arma::Mat&lt;double&gt; const&amp;, std::vector&lt;int, std::allocator&lt;int&gt; &gt; const&amp;, int) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>multivariate_alr.cpp</file>
+      <line>59</line>
+    </frame>
+    <frame>
+      <ip>0x4D3BACA</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>rcpp_maximise_approx_likelihood(Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>multivariate_alr.cpp</file>
+      <line>177</line>
+    </frame>
+    <frame>
+      <ip>0x40A4B7</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>39</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DE28</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x35</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 54 of 1,325</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4E052E3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>__cxa_allocate_exception</fn>
+    </frame>
+    <frame>
+      <ip>0x4D25F79</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>void arma::arma_stop_logic_error&lt;char const*&gt;(char const* const&amp;)</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>144</line>
+    </frame>
+    <frame>
+      <ip>0x4D2643F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>arma_check&lt;char [32]&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>382</line>
+    </frame>
+    <frame>
+      <ip>0x4D2643F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>col</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>3007</line>
+    </frame>
+    <frame>
+      <ip>0x4D2643F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>compute_H(arma::Mat&lt;double&gt; const&amp;, std::vector&lt;int, std::allocator&lt;int&gt; &gt; const&amp;, int) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>multivariate_alr.cpp</file>
+      <line>59</line>
+    </frame>
+    <frame>
+      <ip>0x4D3BACA</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>rcpp_maximise_approx_likelihood(Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>multivariate_alr.cpp</file>
+      <line>177</line>
+    </frame>
+    <frame>
+      <ip>0x40A4B7</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>39</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DE28</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E0C9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E1A4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4d</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>224 bytes in 1 blocks are definitely lost in loss record 78 of 1,325</text>
+    <leakedbytes>224</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x4D3D537</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>acquire&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>memory.hpp</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x4D3D537</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>arma::Mat&lt;double&gt;::init_cold()</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>225</line>
+    </frame>
+    <frame>
+      <ip>0x4D3B974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>Mat</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>Mat_meat.hpp</file>
+      <line>71</line>
+    </frame>
+    <frame>
+      <ip>0x4D3B974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>get</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/internal</dir>
+      <file>Exporter.h</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x4D3B974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>as&lt;arma::Mat&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp</dir>
+      <file>as.h</file>
+      <line>89</line>
+    </frame>
+    <frame>
+      <ip>0x4D3B974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>as&lt;arma::Mat&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp</dir>
+      <file>as.h</file>
+      <line>152</line>
+    </frame>
+    <frame>
+      <ip>0x4D3B974</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>rcpp_maximise_approx_likelihood(Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>multivariate_alr.cpp</file>
+      <line>167</line>
+    </frame>
+    <frame>
+      <ip>0x40A4B7</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>39</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DE28</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E0C9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E1A4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x56</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>256 bytes in 1 blocks are definitely lost in loss record 87 of 1,325</text>
+    <leakedbytes>256</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D3D285</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>allocate</fn>
+      <dir>/usr/include/c++/9/ext</dir>
+      <file>new_allocator.h</file>
+      <line>114</line>
+    </frame>
+    <frame>
+      <ip>0x4D3D285</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>allocate</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>444</line>
+    </frame>
+    <frame>
+      <ip>0x4D3D285</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>_M_allocate</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_vector.h</file>
+      <line>343</line>
+    </frame>
+    <frame>
+      <ip>0x4D3D285</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>void std::vector&lt;int, std::allocator&lt;int&gt; &gt;::_M_realloc_insert&lt;int const&amp;&gt;(__gnu_cxx::__normal_iterator&lt;int*, std::vector&lt;int, std::allocator&lt;int&gt; &gt; &gt;, int const&amp;)</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>vector.tcc</file>
+      <line>440</line>
+    </frame>
+    <frame>
+      <ip>0x4D39E4B</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>push_back</fn>
+      <dir>/usr/include/c++/9/bits</dir>
+      <file>stl_vector.h</file>
+      <line>1195</line>
+    </frame>
+    <frame>
+      <ip>0x4D39E4B</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>fix_groups(Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, int&amp;)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>multivariate_alr.cpp</file>
+      <line>29</line>
+    </frame>
+    <frame>
+      <ip>0x4D3BA7E</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src/prototest.so</obj>
+      <fn>rcpp_maximise_approx_likelihood(Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt; const&amp;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/src</dir>
+      <file>multivariate_alr.cpp</file>
+      <line>173</line>
+    </frame>
+    <frame>
+      <ip>0x40A4B7</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>39</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DE28</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E0C9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E1A4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xb5</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,025 bytes in 1 blocks are definitely lost in loss record 182 of 1,325</text>
+    <leakedbytes>1025</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E9F3AF</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::reserve(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D04C55</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>MemBuf::MemBuf(int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>MemBuf.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x4D06467</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::RInside()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>56</line>
+    </frame>
+    <frame>
+      <ip>0x409BC3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>14</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood</dir>
+      <file>rcpp_maximise_approx_likelihood_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DE28</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E0C9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E1A4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/prototest/inst/testfiles/rcpp_maximise_approx_likelihood/rcpp_maximise_approx_likelihood_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:17.162 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

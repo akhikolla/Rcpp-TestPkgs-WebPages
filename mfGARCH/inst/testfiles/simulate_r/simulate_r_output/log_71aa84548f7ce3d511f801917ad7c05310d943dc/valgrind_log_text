@@ -1,0 +1,15 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_output/71aa84548f7ce3d511f801917ad7c05310d943dc.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+n_days values: 3.16522e+06
+n_intraday values: 3.72126e-82
+alpha values: 5.29799e-243
+beta values: 7.52749e+12
+gamma values: -2.14488e+105
+Z values: 1.36993e-76 3.42032e-93 8.27932e-269 -4.36409e-38 -4.27191e+09 7.90884e+272
+h0 values: -1.30385e-295
+input ends
+TRACE: Passed: _

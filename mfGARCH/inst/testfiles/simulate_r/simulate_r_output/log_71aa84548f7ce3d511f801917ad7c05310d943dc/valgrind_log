@@ -1,0 +1,1042 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./simulate_r_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_output/71aa84548f7ce3d511f801917ad7c05310d943dc.pass</line>
+</preamble>
+
+<pid>2498998</pid>
+<ppid>2498997</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_output/log_71aa84548f7ce3d511f801917ad7c05310d943dc/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./simulate_r_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_output/71aa84548f7ce3d511f801917ad7c05310d943dc.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.040 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2A58D</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x104b7190 is 0 bytes after a block of size 25,321,808 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2A2BF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>Vector&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector</dir>
+      <file>Vector.h</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2A2BF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>10</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2A5B0</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>34</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x104b7190 is 0 bytes after a block of size 25,321,808 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2A2BF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>Vector&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector</dir>
+      <file>Vector.h</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2A2BF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>10</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x2</unique>
+  <tid>1</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2A601</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>37</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xec90190 is 0 bytes after a block of size 25,321,808 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2A14E</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>Vector&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector</dir>
+      <file>Vector.h</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2A14E</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>8</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x3</unique>
+  <tid>1</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2A60C</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>38</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x11cde190 is 0 bytes after a block of size 25,321,808 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2A36F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>Vector&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector</dir>
+      <file>Vector.h</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2A36F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>11</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2A618</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>40</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xec90190 is 0 bytes after a block of size 25,321,808 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2A14E</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>Vector&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector</dir>
+      <file>Vector.h</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2A14E</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>8</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x5</unique>
+  <tid>1</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2A624</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>40</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xec90190 is 0 bytes after a block of size 25,321,808 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2A14E</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>Vector&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector</dir>
+      <file>Vector.h</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2A14E</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>8</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2A634</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x11cde190 is 0 bytes after a block of size 25,321,808 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2A36F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>Vector&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector</dir>
+      <file>Vector.h</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2A36F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>11</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x7</unique>
+  <tid>1</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D2A638</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x11cde190 is 0 bytes after a block of size 25,321,808 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2A36F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>Vector&lt;double&gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector</dir>
+      <file>Vector.h</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2A36F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src/mfGARCH.so</obj>
+      <fn>simulate_r(double, double, double, double, double, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/src</dir>
+      <file>simulate_r.cpp</file>
+      <line>11</line>
+    </frame>
+    <frame>
+      <ip>0x40AA46</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>52</line>
+    </frame>
+    <frame>
+      <ip>0x409B58</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r</dir>
+      <file>simulate_r_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DB88</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41DE29</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41DF04</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x407665</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/simulate_r/simulate_r_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:10.501 </time>
+</status>
+
+<errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x7</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x6</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x5</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x4</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x3</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x2</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x1</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:11.344 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

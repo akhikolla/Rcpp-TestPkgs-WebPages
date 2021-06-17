@@ -1,0 +1,18 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/GMCM/inst/testfiles/rowSdsArma/rowSdsArma_output/34728df49364ad96e21144e693097c8a0fc8ccd6.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/GMCM/inst/testfiles/rowSdsArma/rowSdsArma_DeepState_TestHarness.cpp(13)
+input starts
+X values:  -4.2952e-278   4.2420e+22
+ -1.3485e-218  8.0763e-201
+  9.9636e-247  2.9001e+287
+
+EXTERNAL: qs v0.23.5.
+
+norm_type values: -1848040725
+input ends
+
+error: stddev(): parameter 'norm_type' must be 0 or 1
+terminate called after throwing an instance of 'std::logic_error'
+  what():  stddev(): parameter 'norm_type' must be 0 or 1
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/GMCM/inst/testfiles/rowSdsArma/rowSdsArma_output/34728df49364ad96e21144e693097c8a0fc8ccd6.fail failed

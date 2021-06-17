@@ -1,0 +1,48 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+p0 values: -2.43318e-187
+p1 values: -1.64581e+174
+p2 values: -1.66668e-49
+p3 values: 1.91698e-80
+x values: 2.93871e+294
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+p0 values: -1.5615e-299
+p1 values: -1.20777e+13
+p2 values: 2.79236e-196
+p3 values: 1.26379e+187
+x values: 1.42068e+49
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+p0 values: 1.27048e-62
+p1 values: -2.88162e-134
+p2 values: 8.18711e+299
+p3 values: 0.00468189
+x values: 9.28697e-257
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+p0 values: 3.16522e+06
+p1 values: 3.72126e-82
+p2 values: 5.29799e-243
+p3 values: 7.52749e+12
+x values: -2.14488e+105
+input ends
+input starts
+EXTERNAL: qs v0.23.5.
+
+p0 values: -1.92672e-302
+p1 values: -4.2952e-278
+p2 values: 4.24195e+22
+p3 values: -1.34847e-218
+x values: 8.07634e-201
+input ends
+INFO: Done fuzzing! Ran 5 tests (2 tests/second) with 0 failed/5 passed/0 abandoned tests

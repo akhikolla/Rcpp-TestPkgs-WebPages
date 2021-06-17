@@ -1,0 +1,13 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/genieclust/inst/testfiles/gini_index/gini_index_output/21a71bad2dc3516d630863cb22630ef3f9a044e6.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/genieclust/inst/testfiles/gini_index/gini_index_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+x values: 1.27891e-188 7.52749e+12 -2.14488e+105 inf -2.02048e-44 nan 3.42032e-93 8.27932e-269 -4.36409e-38 inf 0
+input ends
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  genieclust: Assertion x[0] >= 0 failed in c_inequity.h:62
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/genieclust/inst/testfiles/gini_index/gini_index_output/21a71bad2dc3516d630863cb22630ef3f9a044e6.fail failed

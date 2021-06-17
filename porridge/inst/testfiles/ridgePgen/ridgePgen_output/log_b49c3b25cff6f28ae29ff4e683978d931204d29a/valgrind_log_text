@@ -1,0 +1,39 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_output/b49c3b25cff6f28ae29ff4e683978d931204d29a.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness.cpp(13)
+input starts
+S values:  -2.8816e-134  8.1871e+299   4.6819e-03  9.2870e-257 -4.4731e+269 -1.0846e-247 -1.0696e+114 -3.4796e-216
+ -8.9518e+215  1.3835e-136  6.2461e+181  -4.1137e+80          nan  2.7901e+291 -2.4367e+290  1.1372e+165
+  1.2493e+186 -9.0601e-190  1.2437e-163   1.0736e-51 -6.7207e-236  3.9327e-254  -3.4557e+99   8.9578e+89
+ -1.0443e+114   2.7723e+43 -2.1856e+139  -2.6381e-55  -1.7767e-44 -2.0391e+240  6.8406e+216  5.0511e+120
+  -5.7894e+93   6.8941e+47   2.4454e-86  1.0935e-207  1.3872e-134  1.5525e+275   2.4974e+56  -2.1968e+60
+
+lambda values:  -1.9960e-140  -4.6994e-20 -1.1159e+170  1.8280e+153  3.1284e+187 -2.3968e-245 -4.7279e-172  -3.6039e+41  3.7879e-243  1.8326e+116
+ -4.4259e+160   3.2176e+40  3.4833e-264  1.1204e-122  -5.4991e+23 -5.5706e-183  6.7767e+126  2.6490e-139   1.3181e+39  1.8798e-221
+ -6.7094e-151   5.4869e+38  1.3146e-288   7.1779e-77  3.1140e+159   2.2584e+27  -4.1660e+69  8.5222e-255 -3.6379e+124  1.2670e+289
+ -2.2121e+287 -2.9469e+143 -3.8594e+192 -3.1972e+172 -1.0034e+304  4.0235e-135  1.0753e+242 -9.2918e+274  -1.7027e-87 -1.0123e-219
+  3.4363e-270   5.1092e+05  3.5194e+166  1.2204e+170 -1.2373e+278 -4.0162e+183  1.6663e-279  -1.6604e+30  -4.7689e-91 -1.8604e+269
+  1.6357e+203 -7.9484e+111 -2.9840e-201  1.3112e-197 -5.5797e+116  2.3483e+206 -2.7620e-182  2.2799e-219   4.2759e-50   5.6356e+75
+
+target values:    1.0680e+83  1.1073e+184 -7.7965e+247 -5.5392e-274 -3.7877e+108
+   6.7189e-14  2.1604e-138 -4.0634e-221  3.2090e+202 -1.4841e+128
+  -3.7302e-70   1.0570e+03   7.7018e+83   3.5016e-55   1.7778e-85
+ -4.9985e-284  1.1855e-304 -1.3526e-108  5.1359e-280 -1.0534e+145
+  -4.4693e-90 -2.1151e+149   1.4795e-34   7.0181e+40 -9.6719e-115
+  1.1910e+278 -5.1252e-216  1.4448e-269  2.4263e-241 -1.7550e+190
+  1.0150e-167   6.2209e-25 -4.5381e-228 -1.2141e+179   1.1161e+77
+  -1.6426e+50 -1.1260e+138 -9.4806e+109  7.0955e+210 -1.0437e-177
+ -6.3643e-130 -4.8190e-211 -3.7744e+261 -2.7024e-269  1.0330e+182
+  3.8000e-135   7.7357e+21 -4.5970e-187  7.8337e-298   6.1875e-81
+
+EXTERNAL: qs v0.23.5.
+
+nInit values: 2050929450
+minSuccDiff values: 9.83754e+188
+input ends
+
+error: addition: incompatible matrix dimensions: 0x0 and 10x0
+terminate called after throwing an instance of 'std::logic_error'
+  what():  addition: incompatible matrix dimensions: 0x0 and 10x0
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_output/b49c3b25cff6f28ae29ff4e683978d931204d29a.fail failed

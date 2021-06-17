@@ -1,0 +1,717 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./ridgePgen_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_output/6752568f195ecd956d234649ced2acc032398b89.fail</line>
+</preamble>
+
+<pid>2421732</pid>
+<ppid>2421731</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_output/log_6752568f195ecd956d234649ced2acc032398b89/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./ridgePgen_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_output/6752568f195ecd956d234649ced2acc032398b89.fail</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.042 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:15.359 </time>
+</status>
+
+<error>
+  <unique>0x9</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>8 bytes in 1 blocks are definitely lost in loss record 10 of 1,324</text>
+    <leakedbytes>8</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D060F7</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::initialize(int, char const* const*, bool, bool, bool)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>198</line>
+    </frame>
+    <frame>
+      <ip>0x4D06483</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::RInside()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>61</line>
+    </frame>
+    <frame>
+      <ip>0x409BD3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>14</line>
+    </frame>
+    <frame>
+      <ip>0x409BB8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DF68</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E209</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2E4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076C5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1b</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>54 bytes in 1 blocks are definitely lost in loss record 28 of 1,324</text>
+    <leakedbytes>54</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EC4E7D</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_mutate(unsigned long, unsigned long, char const*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EC5DB5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_replace(unsigned long, unsigned long, char const*, unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EBA76E</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_stringbuf&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::str() const</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2AFE4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>str</fn>
+      <dir>/usr/include/c++/9</dir>
+      <file>sstream</file>
+      <line>678</line>
+    </frame>
+    <frame>
+      <ip>0x4D2AFE4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>arma::arma_incompat_size_string(unsigned int, unsigned int, unsigned int, unsigned int, char const*)</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>439</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7CA</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>arma_assert_same_size</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>495</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7CA</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>eGlue</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eGlue_meat.hpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7CA</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>operator+&lt;arma::Op&lt;arma::eOp&lt;arma::Op&lt;arma::Mat&lt;double&gt;, arma::op_diagvec&gt;, arma::eop_scalar_div_pre&gt;, arma::op_diagmat&gt;, arma::Mat&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>operator_plus.hpp</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7CA</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>ridgePgen(arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;, int const&amp;, double const&amp;) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src</dir>
+      <file>ridgePgen.h</file>
+      <line>86</line>
+    </frame>
+    <frame>
+      <ip>0x40A294</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>46</line>
+    </frame>
+    <frame>
+      <ip>0x409BB8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DF68</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E209</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2E4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076C5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x25</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>78 bytes in 1 blocks are possibly lost in loss record 38 of 1,324</text>
+    <leakedbytes>78</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E70308</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E71FB8</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>char* std::string::_S_construct&lt;char const*&gt;(char const*, char const*, std::allocator&lt;char&gt; const&amp;, std::forward_iterator_tag)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E72055</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string(char const*, unsigned long, std::allocator&lt;char&gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4E53331</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+    </frame>
+    <frame>
+      <ip>0x4E636D5</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::logic_error::logic_error(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2B2C4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>void arma::arma_stop_logic_error&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>144</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7D2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>arma_assert_same_size</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>495</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7D2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>eGlue</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eGlue_meat.hpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7D2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>operator+&lt;arma::Op&lt;arma::eOp&lt;arma::Op&lt;arma::Mat&lt;double&gt;, arma::op_diagvec&gt;, arma::eop_scalar_div_pre&gt;, arma::op_diagmat&gt;, arma::Mat&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>operator_plus.hpp</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7D2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>ridgePgen(arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;, int const&amp;, double const&amp;) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src</dir>
+      <file>ridgePgen.h</file>
+      <line>86</line>
+    </frame>
+    <frame>
+      <ip>0x40A294</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>46</line>
+    </frame>
+    <frame>
+      <ip>0x409BB8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DF68</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E209</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x37</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 56 of 1,324</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x4E2B2E3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>__cxa_allocate_exception</fn>
+    </frame>
+    <frame>
+      <ip>0x4D2B29F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>void arma::arma_stop_logic_error&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>144</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7D2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>arma_assert_same_size</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>debug.hpp</file>
+      <line>495</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7D2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>eGlue</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>eGlue_meat.hpp</file>
+      <line>41</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7D2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>operator+&lt;arma::Op&lt;arma::eOp&lt;arma::Op&lt;arma::Mat&lt;double&gt;, arma::op_diagvec&gt;, arma::eop_scalar_div_pre&gt;, arma::op_diagmat&gt;, arma::Mat&lt;double&gt; &gt;</fn>
+      <dir>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits</dir>
+      <file>operator_plus.hpp</file>
+      <line>125</line>
+    </frame>
+    <frame>
+      <ip>0x4D2C7D2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src/porridge.so</obj>
+      <fn>ridgePgen(arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;, arma::Mat&lt;double&gt; const&amp;, int const&amp;, double const&amp;) [clone .cold]</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/src</dir>
+      <file>ridgePgen.h</file>
+      <line>86</line>
+    </frame>
+    <frame>
+      <ip>0x40A294</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>46</line>
+    </frame>
+    <frame>
+      <ip>0x409BB8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DF68</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E209</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2E4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076C5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4b</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>216 bytes in 1 blocks are definitely lost in loss record 76 of 1,324</text>
+    <leakedbytes>216</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x419D95</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>double* arma::memory::acquire&lt;double&gt;(unsigned long long)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/memory.hpp</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x419C27</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>arma::Mat&lt;double&gt;::init_cold()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/Mat_meat.hpp</file>
+      <line>225</line>
+    </frame>
+    <frame>
+      <ip>0x40F899</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>arma::Mat&lt;double&gt;::Mat(unsigned long long, unsigned long long)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/Mat_meat.hpp</file>
+      <line>71</line>
+    </frame>
+    <frame>
+      <ip>0x409807</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>RcppDeepState_mat()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppDeepState/include/RcppDeepState.h</file>
+      <line>214</line>
+    </frame>
+    <frame>
+      <ip>0x409CD7</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>23</line>
+    </frame>
+    <frame>
+      <ip>0x409BB8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DF68</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E209</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2E4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076C5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x54</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>240 bytes in 1 blocks are definitely lost in loss record 85 of 1,324</text>
+    <leakedbytes>240</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483E0F0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x483E212</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>posix_memalign</fn>
+    </frame>
+    <frame>
+      <ip>0x419D95</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>double* arma::memory::acquire&lt;double&gt;(unsigned long long)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/memory.hpp</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x419C27</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>arma::Mat&lt;double&gt;::init_cold()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/Mat_meat.hpp</file>
+      <line>225</line>
+    </frame>
+    <frame>
+      <ip>0x40F899</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>arma::Mat&lt;double&gt;::Mat(unsigned long long, unsigned long long)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppArmadillo/include/armadillo_bits/Mat_meat.hpp</file>
+      <line>71</line>
+    </frame>
+    <frame>
+      <ip>0x409807</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>RcppDeepState_mat()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppDeepState/include/RcppDeepState.h</file>
+      <line>214</line>
+    </frame>
+    <frame>
+      <ip>0x409C21</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>17</line>
+    </frame>
+    <frame>
+      <ip>0x409BB8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DF68</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E209</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2E4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076C5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xb4</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>1,025 bytes in 1 blocks are definitely lost in loss record 181 of 1,324</text>
+    <leakedbytes>1025</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x483BE63</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4EC53AF</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28</obj>
+      <fn>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::reserve(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4D04C55</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>MemBuf::MemBuf(int)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>MemBuf.cpp</file>
+      <line>35</line>
+    </frame>
+    <frame>
+      <ip>0x4D06467</ip>
+      <obj>/home/akhila/R/x86_64-pc-linux-gnu-library/4.0/RInside/lib/libRInside.so</obj>
+      <fn>RInside::RInside()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/RInside/src</dir>
+      <file>RInside.cpp</file>
+      <line>56</line>
+    </frame>
+    <frame>
+      <ip>0x409BD3</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>14</line>
+    </frame>
+    <frame>
+      <ip>0x409BB8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen</dir>
+      <file>ridgePgen_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41DF68</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41E209</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41E2E4</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076C5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/porridge/inst/testfiles/ridgePgen/ridgePgen_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:16.557 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

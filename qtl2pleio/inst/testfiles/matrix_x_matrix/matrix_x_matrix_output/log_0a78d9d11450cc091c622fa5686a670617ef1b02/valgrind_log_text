@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/qtl2pleio/inst/testfiles/matrix_x_matrix/matrix_x_matrix_output/0a78d9d11450cc091c622fa5686a670617ef1b02.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/qtl2pleio/inst/testfiles/matrix_x_matrix/matrix_x_matrix_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+X values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+Missing value
+Y values: 4.19790e+140    -inf     inf 2.00396e-158 2.91601e+272     inf     nan     nan
+
+input ends
+terminate called after throwing an instance of 'std::range_error'
+  what():  ncol(X) != nrow(Y)
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/qtl2pleio/inst/testfiles/matrix_x_matrix/matrix_x_matrix_output/0a78d9d11450cc091c622fa5686a670617ef1b02.fail failed

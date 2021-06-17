@@ -1,0 +1,26 @@
+INFO: Starting fuzzing
+WARNING: No test specified, defaulting to first test defined (_)
+input starts
+EXTERNAL: qs v0.23.5.
+
+mtx values: 1.05415e-68 1.86447e-211 4.49059e+17 2.72551e-214 6.53679e-70 2.42643e+241 1.65687e+24
+
+xpos values: 644268439
+ypos values: 123721430
+val values: -6.65583e-306
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/maxnodf/inst/testfiles/put_val/put_val_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash`
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+mtx values: 2.58036e-206    -inf     nan
+
+xpos values: 1078897549
+ypos values: -289987065
+val values: -2.92076e-207
+input ends
+ERROR: Crashed: _
+INFO: Saved test case in file `/home/akhila/fuzzer_packages/fuzzedpackages/maxnodf/inst/testfiles/put_val/put_val_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash`
+INFO: Done fuzzing! Ran 2 tests (1 tests/second) with 2 failed/0 passed/0 abandoned tests

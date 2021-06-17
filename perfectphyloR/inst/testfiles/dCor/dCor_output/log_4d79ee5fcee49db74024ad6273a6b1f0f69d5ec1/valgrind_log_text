@@ -1,0 +1,33 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/perfectphyloR/inst/testfiles/dCor/dCor_output/4d79ee5fcee49db74024ad6273a6b1f0f69d5ec1.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/perfectphyloR/inst/testfiles/dCor/dCor_DeepState_TestHarness.cpp(13)
+input starts
+mDx values:    7.9675e+95  -4.4054e-65
+  9.9377e+292   2.3200e+83
+
+mDy values:   1.8883e-213  2.4540e-127 -5.1683e+138
+ -6.5185e+234   5.7088e+39  -1.9260e+03
+  3.4062e+177  3.7912e-141  -3.7869e-26
+  6.6800e+201  1.9530e-225  3.6712e+174
+ -6.0225e+297  -2.4781e-14 -3.6407e+264
+ -1.0267e+221 -4.9390e-292   1.1883e+83
+   4.5494e+83  6.1455e-207  2.6827e+268
+ -1.4940e+247  7.6874e-208  5.5498e+180
+
+mC values:  -9.5676e-120 -1.2378e+306 -6.5868e-128  6.8792e+136 -4.0975e-228  5.9333e-215  2.8911e+289 -1.6463e+219
+   2.7772e+36  9.3050e-126  -8.4017e-48 -8.7277e-222  4.2706e+243  7.5618e+267  1.4852e-139  4.5828e+262
+  2.7412e+272 -8.2398e-124 -1.6163e-196  1.8740e-146  3.2384e-244   3.4644e-66 -5.3769e-158 -1.2866e-139
+  2.0127e+306  -4.3147e-53   2.7711e-96   4.3775e+95  1.0968e+241 -4.2654e-172 -4.9116e+144 -3.3850e+134
+  -5.7803e+47   3.1454e+71  1.4571e-150  -1.4965e+55 -1.8636e-294  -8.0370e-63  6.7375e+204 -6.8764e+114
+   4.8813e-36  6.0651e-274  -1.6745e-78  2.9938e-157  -1.6524e-16  -3.5068e-01 -1.8690e+257 -3.5610e+153
+ -4.8499e+224 -3.7700e-227 -8.3403e-233  -1.2428e-05  -2.8841e+04 -4.3773e+254   3.1365e-85  -3.7623e+52
+ -6.3174e-211 -8.6699e+261  1.1117e+142  5.1069e-129  -1.4604e+48  1.7126e-283 -9.0833e+305 -1.3060e+305
+  1.0893e-148  2.7168e+132  -5.8033e-11 -2.8587e+241  -7.7479e-19  -9.5940e+77   4.8397e+69 -5.4548e-271
+
+input ends
+
+error: matrix multiplication: incompatible matrix dimensions: 9x0 and 2x0
+terminate called after throwing an instance of 'std::logic_error'
+  what():  matrix multiplication: incompatible matrix dimensions: 9x0 and 2x0
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/perfectphyloR/inst/testfiles/dCor/dCor_output/4d79ee5fcee49db74024ad6273a6b1f0f69d5ec1.fail failed

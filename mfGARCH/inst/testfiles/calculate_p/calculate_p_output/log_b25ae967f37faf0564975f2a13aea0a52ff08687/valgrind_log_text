@@ -1,0 +1,16 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/calculate_p/calculate_p_output/b25ae967f37faf0564975f2a13aea0a52ff08687.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/mfGARCH/inst/testfiles/calculate_p/calculate_p_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+ndays values: 3.16522e+06
+delta values: 3.72126e-82
+mu values: 5.29799e-243
+Missing value
+Zp values: -9.39364e-248 -2.02048e-44 1.36993e-76 nan inf
+Missing value
+h values: 5.14867e+83 4.38983e+276 -2.83919e+230 5.50641e+255 -1.5601e+246 inf -9.27444e+240 9.49004e+222 -2.74092e+256 -6.06629e-44 -0.0010194 3.06108e+238 5.50641e+255 -1.484e+47 9.16905e-35 -2.07468e-284 6.94131e+164 -5.59672e-168 inf 4.92682e-88 -1.11189e-72 1.39766e-176 -1.46674e+64 1.5471e-298 0
+p0 values: -3.95541e-64
+input ends
+TRACE: Passed: _

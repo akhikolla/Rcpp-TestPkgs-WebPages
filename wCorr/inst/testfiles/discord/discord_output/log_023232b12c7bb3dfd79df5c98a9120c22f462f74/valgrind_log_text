@@ -1,0 +1,9 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/wCorr/inst/testfiles/discord/discord_output/023232b12c7bb3dfd79df5c98a9120c22f462f74.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/wCorr/inst/testfiles/discord/discord_DeepState_TestHarness.cpp(13)
+input starts
+xytab values:    7.9675e+95  -4.4054e-65
+  9.9377e+292   2.3200e+83
+
+input ends
+TRACE: Passed: _

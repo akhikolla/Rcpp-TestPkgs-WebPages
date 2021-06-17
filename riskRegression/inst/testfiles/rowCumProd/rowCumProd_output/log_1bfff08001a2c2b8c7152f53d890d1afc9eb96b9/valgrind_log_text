@@ -1,0 +1,11 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/riskRegression/inst/testfiles/rowCumProd/rowCumProd_output/1bfff08001a2c2b8c7152f53d890d1afc9eb96b9.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/riskRegression/inst/testfiles/rowCumProd/rowCumProd_DeepState_TestHarness.cpp(13)
+input starts
+Missing value
+EXTERNAL: qs v0.23.5.
+
+x values:     nan    -inf    -inf     nan    -inf 1.55275e+40
+
+input ends
+TRACE: Passed: _

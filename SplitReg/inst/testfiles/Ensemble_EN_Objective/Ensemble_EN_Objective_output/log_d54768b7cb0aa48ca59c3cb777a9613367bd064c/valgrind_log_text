@@ -1,0 +1,22 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/SplitReg/inst/testfiles/Ensemble_EN_Objective/Ensemble_EN_Objective_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/SplitReg/inst/testfiles/Ensemble_EN_Objective/Ensemble_EN_Objective_DeepState_TestHarness.cpp(13)
+input starts
+current_res values:   3.0201e-260  -9.9123e-57
+
+beta values:   1.0539e+182   8.0561e-38
+ -3.8435e+136  2.3608e-100
+
+EXTERNAL: qs v0.23.5.
+
+lambda_sparsity values: 3.01724e-124
+lambda_diversity values: 9.57301e+229
+alpha values: -7.99809e-243
+input ends
+==2451268==  If you believe this happened as a result of a stack
+==2451268==  overflow in your program's main thread (unlikely but
+==2451268==  possible), you can try to increase the size of the
+==2451268==  main thread stack using the --main-stacksize= flag.
+==2451268==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/SplitReg/inst/testfiles/Ensemble_EN_Objective/Ensemble_EN_Objective_output/d54768b7cb0aa48ca59c3cb777a9613367bd064c.crash crashed

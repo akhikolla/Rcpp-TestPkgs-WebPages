@@ -1,0 +1,8 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/rliger/inst/testfiles/cpp_rank_matrix_dense/cpp_rank_matrix_dense_output/237b94474009463bda7443cb37b9959b90624b98.pass`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/rliger/inst/testfiles/cpp_rank_matrix_dense/cpp_rank_matrix_dense_DeepState_TestHarness.cpp(13)
+input starts
+X values:  -5.4812e-145  4.7921e-250  9.6064e+283  5.0046e-274  7.5238e-133  -2.0449e-51   1.0935e+01
+
+input ends
+TRACE: Passed: _

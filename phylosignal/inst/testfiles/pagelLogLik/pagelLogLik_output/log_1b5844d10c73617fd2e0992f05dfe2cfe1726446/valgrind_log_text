@@ -1,0 +1,17 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/phylosignal/inst/testfiles/pagelLogLik/pagelLogLik_output/1b5844d10c73617fd2e0992f05dfe2cfe1726446.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/phylosignal/inst/testfiles/pagelLogLik/pagelLogLik_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+lambda values: -1.92672e-302
+xr values: -1.34847e-218 8.07634e-201 9.96356e-247 2.90007e+287 -3.62253e+84 -0.000168525 -5.51904e-05 -2.04972e+224 2.91998e-47 4.09708e+206 -1.08136e+108 -0.0456404 7.86532e-108
+vcvr values: 2.48283e-176 8.21196e+288 4.55606e+117
+
+input ends
+
+error: inv(): matrix seems singular
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  inv(): matrix seems singular
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/phylosignal/inst/testfiles/pagelLogLik/pagelLogLik_output/1b5844d10c73617fd2e0992f05dfe2cfe1726446.fail failed

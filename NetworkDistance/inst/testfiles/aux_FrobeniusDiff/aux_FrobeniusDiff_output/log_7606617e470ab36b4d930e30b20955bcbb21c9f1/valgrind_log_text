@@ -1,0 +1,26 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_output/7606617e470ab36b4d930e30b20955bcbb21c9f1.fail`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_DeepState_TestHarness.cpp(13)
+input starts
+A values:   2.9001e+287  -3.6225e+84  -1.6853e-04  -5.5190e-05 -2.0497e+224   2.9200e-47  4.0971e+206
+ -1.0814e+108  -4.5640e-02  7.8653e-108  1.7778e+279  1.9251e-122 -1.7485e+192 -8.6218e+250
+   1.6261e+96  1.5640e+138  1.8651e-245 -1.6578e-126   8.3192e+76   1.2121e-73 -1.8285e+183
+  4.2949e-206  4.5496e+119 -1.5165e+167 -3.7500e-129  3.6939e+234  5.5012e+234 -5.8565e+106
+  2.3360e+187  -2.6101e-89  5.3980e+140   4.3495e-92  4.4304e-127  3.4402e-175  5.9791e+292
+ -2.9147e-218 -1.6507e-137  -2.2394e+46  8.1101e+134 -1.0326e+153  1.0715e+139 -1.3283e+231
+  4.8805e-239 -5.2607e+264 -5.7640e-280 -9.9465e+188  -1.4992e+56  1.8131e-164  7.2643e+160
+   3.9789e-75  -3.6310e+53  1.3110e+226  -8.0193e-77 -2.7156e+194  2.0929e+260   7.6069e-29
+  4.5936e+258 -1.0211e+209  -1.6623e+71  -1.0038e-02  2.3419e+295 -9.2050e-170 -3.3931e+131
+
+B values:  -1.7159e-172  5.9368e-148  3.2541e+150
+  9.0621e-102   5.2196e-76 -2.4354e-299
+ -8.4645e+109  1.7831e+123  9.0688e-199
+ -5.0885e-155  4.4837e-181   2.4740e-73
+
+input ends
+
+error: subtraction: incompatible matrix dimensions: 9x0 and 4x0
+terminate called after throwing an instance of 'std::logic_error'
+  what():  subtraction: incompatible matrix dimensions: 9x0 and 4x0
+ERROR: Failed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/NetworkDistance/inst/testfiles/aux_FrobeniusDiff/aux_FrobeniusDiff_output/7606617e470ab36b4d930e30b20955bcbb21c9f1.fail failed

@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./predcompreg_DeepState_TestHarness --input_test_file /home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_output/e37c8cdfd42bea8d5766ec9c69303bf1f6e73b60.pass</line>
+</preamble>
+
+<pid>2346520</pid>
+<ppid>2346519</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_output/log_e37c8cdfd42bea8d5766ec9c69303bf1f6e73b60/valgrind_log</arg>
+    <arg>--tool=memcheck</arg>
+    <arg>--leak-check=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./predcompreg_DeepState_TestHarness</exe>
+    <arg>--input_test_file</arg>
+    <arg>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_output/e37c8cdfd42bea8d5766ec9c69303bf1f6e73b60.pass</arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.041 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x4D57CF2</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/src/DPWeibull.so</obj>
+      <fn>predcompreg(Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt;, Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;, double)</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/src</dir>
+      <file>compreg.cpp</file>
+      <line>496</line>
+    </frame>
+    <frame>
+      <ip>0x40ADD0</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg</dir>
+      <file>predcompreg_DeepState_TestHarness.cpp</file>
+      <line>59</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg</dir>
+      <file>predcompreg_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41EE18</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41F0B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41F194</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0xa1ef960 is 0 bytes after a block of size 272 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x483B7F3</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+    </frame>
+    <frame>
+      <ip>0x49D5CB3</ip>
+      <obj>/usr/lib/R/lib/libR.so</obj>
+      <fn>Rf_allocVector3</fn>
+    </frame>
+    <frame>
+      <ip>0x41952F</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>Rcpp::Vector&lt;14, Rcpp::PreserveStorage&gt;::Vector(Rcpp::Dimension const&amp;)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector/Vector.h</file>
+      <line>135</line>
+    </frame>
+    <frame>
+      <ip>0x410756</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>Rcpp::Matrix&lt;14, Rcpp::PreserveStorage&gt;::Matrix(int const&amp;, int const&amp;)</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include/Rcpp/vector/Matrix.h</file>
+      <line>59</line>
+    </frame>
+    <frame>
+      <ip>0x408BAF</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>RcppDeepState_NumericMatrix()</fn>
+      <dir>/home/akhila</dir>
+      <file>R/x86_64-pc-linux-gnu-library/4.0/RcppDeepState/include/RcppDeepState.h</file>
+      <line>137</line>
+    </frame>
+    <frame>
+      <ip>0x409F20</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>DeepState_Test__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg</dir>
+      <file>predcompreg_DeepState_TestHarness.cpp</file>
+      <line>24</line>
+    </frame>
+    <frame>
+      <ip>0x409BA8</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>DeepState_Run__()</fn>
+      <dir>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg</dir>
+      <file>predcompreg_DeepState_TestHarness.cpp</file>
+      <line>13</line>
+    </frame>
+    <frame>
+      <ip>0x41EE18</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>DeepState_RunTest.isra.0</fn>
+    </frame>
+    <frame>
+      <ip>0x41F0B9</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>DeepState_ForkAndRunTest</fn>
+    </frame>
+    <frame>
+      <ip>0x41F194</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>DeepState_RunSavedTestCase</fn>
+    </frame>
+    <frame>
+      <ip>0x4076B5</ip>
+      <obj>/home/akhila/fuzzer_packages/fuzzedpackages/DPWeibull/inst/testfiles/predcompreg/predcompreg_DeepState_TestHarness</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:11.077 </time>
+</status>
+
+<errorcounts>
+  <pair>
+    <count>24424</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:11.639 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

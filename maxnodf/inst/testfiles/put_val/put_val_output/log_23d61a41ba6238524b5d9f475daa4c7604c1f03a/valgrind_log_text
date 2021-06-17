@@ -1,0 +1,19 @@
+WARNING: No test specified, defaulting to first test defined (_)
+TRACE: Initialized test input buffer with data from `/home/akhila/fuzzer_packages/fuzzedpackages/maxnodf/inst/testfiles/put_val/put_val_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash`
+TRACE: Running: _ from /home/akhila/fuzzer_packages/fuzzedpackages/maxnodf/inst/testfiles/put_val/put_val_DeepState_TestHarness.cpp(13)
+input starts
+EXTERNAL: qs v0.23.5.
+
+mtx values: 1.05415e-68 1.86447e-211 4.49059e+17 2.72551e-214 6.53679e-70 2.42643e+241 1.65687e+24
+
+xpos values: 644268439
+ypos values: 123721430
+val values: -6.65583e-306
+input ends
+==2378755==  If you believe this happened as a result of a stack
+==2378755==  overflow in your program's main thread (unlikely but
+==2378755==  possible), you can try to increase the size of the
+==2378755==  main thread stack using the --main-stacksize= flag.
+==2378755==  The main thread stack size used in this run was 8388608.
+ERROR: Crashed: _
+ERROR: Test case /home/akhila/fuzzer_packages/fuzzedpackages/maxnodf/inst/testfiles/put_val/put_val_output/23d61a41ba6238524b5d9f475daa4c7604c1f03a.crash crashed
